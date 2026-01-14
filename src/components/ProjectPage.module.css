@@ -1,0 +1,261 @@
+.projectPage {
+  min-height: 100vh;
+  padding: 0.25rem 1rem 0.5rem;
+  padding-top: calc(70px + 0.25rem);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  zoom: 1.2;
+}
+
+.projectLayout {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* Left side centered text */
+.projectInfo {
+  flex: 0 0 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: calc(70px + 1rem);
+}
+
+.projectInfo h1 {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.tags span {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  background: rgba(16, 185, 129, 0.15);
+  border-radius: 6px;
+  color: var(--color-accent);
+}
+
+.metrics {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.metricItem {
+  text-align: center;
+  padding: 0.5rem;
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  flex: 1;
+  min-width: 0;
+}
+
+.metricNum {
+  display: block;
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.metricLabel {
+  font-size: 0.65rem;
+  color: var(--color-text-light);
+}
+
+.cta {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: var(--color-accent);
+  color: #0f172a;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btnDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnDisabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.btnSecondary {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-text-light);
+  border-radius: 6px;
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.btnSecondary:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.projectDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.detailCard {
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.detailCard h2 {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detailCard p {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projectPage {
+    padding: 1rem;
+    padding-top: calc(70px + 1rem);
+  }
+
+  .projectLayout {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .projectInfo {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    position: static;
+  }
+
+  .projectDetails {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .metrics {
+    flex-wrap: wrap;
+  }
+
+  .metricItem {
+    min-width: calc(33% - 0.5rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .projectPage {
+    padding: 0.75rem;
+    padding-top: calc(70px + 0.75rem);
+  }
+
+  .projectInfo h1 {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+  }
+
+  .metricItem {
+    min-width: calc(50% - 0.25rem);
+    padding: 0.4rem;
+  }
+
+  .metricNum {
+    font-size: 1rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn,
+  .btnSecondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .detailCard {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .detailCard h2 {
+    font-size: 0.7rem;
+  }
+
+  .detailCard p {
+    font-size: 0.8rem;
+  }
+}
