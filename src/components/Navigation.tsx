@@ -33,6 +33,7 @@ export default function Navigation() {
 
       <ul className={`${styles.links} ${isOpen ? styles.active : ''}`}>
         <li><Link href="/about" onClick={() => setIsOpen(false)}>About</Link></li>
+        <li><Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link></li>
         <li><Link href="/portfolio" onClick={() => setIsOpen(false)}>Portfolio</Link></li>
         <li><ThemeToggle /></li>
       </ul>

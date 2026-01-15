@@ -11,6 +11,7 @@ export interface ProjectData {
   tags: string[];
   metrics: ProjectMetric[];
   githubUrl: string | null;
+  huggingFaceUrl: string | null;
   isPrivate: boolean;
   techStack: string;
   problem: string;
@@ -32,6 +33,7 @@ export const projects: ProjectData[] = [
       { value: '24/7', label: 'Monitoring' }
     ],
     githubUrl: 'https://github.com/davidfertube/geo-insight-hse',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/geo-insight-hse',
     isPrivate: false,
     techStack: 'YOLOv8 • Azure Container Apps',
     problem: 'HSE is #1 priority in energy operations. Manual PPE monitoring is slow, inconsistent, and impossible to scale across large industrial sites.',
@@ -51,6 +53,7 @@ export const projects: ProjectData[] = [
       { value: '30%', label: 'Cost Reduction' }
     ],
     githubUrl: 'https://github.com/davidfertube/predictive-maintenance',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-maintenance',
     isPrivate: false,
     techStack: 'LSTM • NASA Dataset • FFT',
     problem: 'Unplanned equipment failures cause costly downtime and safety hazards. Traditional scheduled maintenance is wasteful and ineffective.',
@@ -70,6 +73,7 @@ export const projects: ProjectData[] = [
       { value: '95%', label: 'Relevance' }
     ],
     githubUrl: null,
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/chat-with-assets-rag',
     isPrivate: true,
     techStack: 'Azure AI Search • Next.js',
     problem: 'Engineers waste hours searching through thousands of PDFs, manuals, and P&IDs. Knowledge is siloed and hard to access.',
@@ -89,6 +93,7 @@ export const projects: ProjectData[] = [
       { value: 'Multi LLM', label: 'Architecture' }
     ],
     githubUrl: null,
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/legal-eagle-agent',
     isPrivate: true,
     techStack: 'LangGraph • Azure OpenAI • Gemini',
     problem: 'Contract review is tedious, expensive, and prone to human error. Legal teams are bottlenecks for deal velocity.',
@@ -108,6 +113,7 @@ export const projects: ProjectData[] = [
       { value: 'DSPy', label: 'Optimization' }
     ],
     githubUrl: 'https://github.com/davidfertube/policy-guard',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/policy-guard',
     isPrivate: false,
     techStack: 'DSPy • Web Demo',
     problem: 'Regulatory compliance is complex and ever-changing. Manual policy checking is slow, inconsistent, and scales poorly.',
@@ -127,6 +133,7 @@ export const projects: ProjectData[] = [
       { value: 'Real Time', label: 'Decisions' }
     ],
     githubUrl: 'https://github.com/davidfertube/rl-supply-chain',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/rl-supply-chain',
     isPrivate: false,
     techStack: 'Stable Baselines3 • Azure ML',
     problem: 'Traditional supply chain planning uses static rules that cannot adapt to demand volatility, leading to stockouts or excess inventory.',
@@ -146,6 +153,7 @@ export const projects: ProjectData[] = [
       { value: 'EvalOps', label: 'Pipeline' }
     ],
     githubUrl: null,
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/hallucination-hunter',
     isPrivate: true,
     techStack: 'Azure AI Studio • EvalOps',
     problem: 'AI Agents in high-stakes energy environments cannot "hallucinate" or be "lazy." Inaccurate answers about drilling law or safety protocols create immense liability.',
@@ -165,6 +173,7 @@ export const projects: ProjectData[] = [
       { value: 'Vector', label: 'Ready' }
     ],
     githubUrl: 'https://github.com/davidfertube/las-parser',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/las-parser',
     isPrivate: false,
     techStack: 'Python • WITSML • Vectorization',
     problem: 'Decades of valuable well log data trapped in legacy .LAS format. Inconsistent headers, missing metadata, and encoding issues prevent analysis.',

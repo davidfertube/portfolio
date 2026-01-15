@@ -149,6 +149,32 @@
   color: var(--color-text);
 }
 
+.btnHuggingFace {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff9d00 0%, #ffb347 100%);
+  color: #0f172a;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btnHuggingFace:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 157, 0, 0.3);
+  background: linear-gradient(135deg, #ffb347 0%, #ffc64d 100%);
+}
+
 .projectDetails {
   flex: 1;
   display: flex;
