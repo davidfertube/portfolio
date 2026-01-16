@@ -73,29 +73,31 @@ export default function ProjectPage({ project }: ProjectPageProps) {
           </div>
 
           <div className={styles.cta}>
-            {project.huggingFaceUrl && (
-              <a
-                href={project.huggingFaceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.btnHuggingFace}
-              >
-                🤗 Try on HuggingFace
-              </a>
-            )}
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.btn}
-              >
-                GitHub
-              </a>
-            )}
-            <Link href="/portfolio" className={styles.btnSecondary}>
-              Back
-            </Link>
+            <div className={styles.ctaButtons}>
+              {project.huggingFaceUrl && (
+                <a
+                  href={project.huggingFaceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.btnHuggingFace}
+                >
+                  Hugging Face
+                </a>
+              )}
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.btn}
+                >
+                  GitHub
+                </a>
+              )}
+              <Link href="/portfolio" className={styles.btnSecondary}>
+                Back
+              </Link>
+            </div>
           </div>
         </div>
 

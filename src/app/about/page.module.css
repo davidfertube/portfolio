@@ -9,10 +9,43 @@
 
 .layout {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.5rem;
   max-width: 1400px;
   width: 100%;
   align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profileCol {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+  }
+
+  .mainCol,
+  .sidebarCol {
+    flex: 1 1 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutPage {
+    padding: 1rem;
+    padding-top: calc(70px + 1rem);
+  }
+
+  .layout {
+    gap: 1.5rem;
+  }
+
+  .mainCol,
+  .sidebarCol {
+    flex: 1 1 100%;
+  }
 }
 
 /* Column 1: Profile */
@@ -22,6 +55,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
 }
 
 .photo {
@@ -34,7 +70,7 @@
 
 .profileCol h1 {
   font-family: 'JetBrains Mono', var(--font-mono-loaded), monospace;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 0.3rem;
   width: 100%;
   letter-spacing: 0.05em;
@@ -42,7 +78,7 @@
 
 .subtitle {
   font-family: 'JetBrains Mono', var(--font-mono-loaded), monospace;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: 0.3rem;
@@ -75,8 +111,8 @@
 }
 
 .socialIcon {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,8 +125,8 @@
 }
 
 .socialIcon svg {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 .socialIcon:hover {
@@ -101,52 +137,78 @@
 
 /* Column 2 & 3: Content */
 .mainCol {
-  flex: 1.6;
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .sidebarCol {
-  flex: 1;
+  flex: 1.1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+
+
 .block {
   background: var(--color-bg-alt);
-  border-radius: 10px;
-  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--color-border);
 }
 
 .block h2 {
   font-family: 'JetBrains Mono', var(--font-mono-loaded), monospace;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
   letter-spacing: 0.08em;
   border-bottom: 2px solid var(--color-accent);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.6rem;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.3rem;
 }
 
 .tags span {
   font-family: 'JetBrains Mono', var(--font-mono-loaded), monospace;
-  font-size: 0.7rem;
-  padding: 0.35rem 0.6rem;
+  font-size: 0.6rem;
+  padding: 0.25rem 0.5rem;
   background: var(--color-bg-input);
   border: 1px solid var(--color-border);
   border-radius: 4px;
   color: var(--color-text);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+/* Specific styling for Open Source tags (Main Column) - keep compact */
+.mainCol .tags {
+  gap: 0.5rem;
+}
+
+.mainCol .tags span {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.7rem;
+}
+
+/* Specific styling for Skills tags (Sidebar) - bigger and spaced out */
+.sidebarCol .tags {
+  gap: 0.6rem;
+}
+
+.sidebarCol .tags span {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  background: rgba(var(--color-accent-rgb), 0.05);
+  /* Slight tint difference? Or stick to default */
 }
 
 .expItem {
@@ -163,15 +225,21 @@
 }
 
 .expItem strong {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--color-text);
   font-weight: 600;
 }
 
+.expItem strong {
+  font-size: 0.95rem;
+  color: var(--color-foreground);
+}
+
 .expItem span {
   font-family: 'JetBrains Mono', var(--font-mono-loaded), monospace;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: var(--color-text-light);
+  white-space: nowrap;
   text-align: right;
 }
 
@@ -226,6 +294,7 @@
   .layout {
     flex-direction: column;
     gap: 1rem;
+    align-items: stretch;
   }
 
   .profileCol {
@@ -265,4 +334,6 @@
   .expItem span {
     text-align: left;
   }
+
+
 }

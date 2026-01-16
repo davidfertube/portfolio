@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-import TechStack from '@/components/TechStack';
 
 export const metadata = {
   title: 'About | David Fernandez',
@@ -9,11 +8,15 @@ export const metadata = {
 
 const skills = [
   // Core AI & ML
-  'Azure AI', 'Azure OpenAI', 'Generative AI', 'LLM Ops', 'RAG Pipelines',
+  'Azure AI', 'Azure OpenAI', 'Azure Vision', 'Generative AI', 'LLM Ops', 'RAG Pipelines',
   // Agents & Orchestration
-  'LangGraph', 'AutoGen', 'DSPy', 'LlamaIndex',
+  'LangGraph', 'AutoGen', 'DSPy', 'LlamaIndex', 'Multi-Agent', 'Semantic Kernel',
+  // NLP / RAG
+  'LangChain', 'Azure AI Search',
   // Computer Vision & Edge
   'Computer Vision', 'YOLOv8', 'ONNX Runtime', 'Edge AI',
+  // Time Series / ML
+  'LSTM', 'FFT Analysis', 'Stable Baselines3', 'Azure ML',
   // Industrial & OT
   'SCADA/OT', 'Purdue Model (ISA-95)', 'OPC UA', 'OSIsoft PI', 'Digital Twins',
   // Data & Analytics
@@ -23,7 +26,8 @@ const skills = [
 ];
 
 const contributions = [
-  'LangChain', 'LangGraph', 'Microsoft AutoGen', 'StanfordNLP', 'Unstructured.io', 'DSPy', 'HuggingFace'
+  'LangChain', 'LangGraph', 'AutoGen', 'StanfordNLP', 'Unstructured', 'DSPy', 'Hugging Face',
+  'Cursor', 'Sim.ai', 'PyPSA', 'OpenDSS'
 ];
 
 export default function AboutPage() {
@@ -35,8 +39,8 @@ export default function AboutPage() {
           <Image
             src="/assets/photo.jpg"
             alt="David Fernandez"
-            width={140}
-            height={140}
+            width={180}
+            height={180}
             className={styles.photo}
             priority
           />
@@ -79,7 +83,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Column 2: Experience & Education */}
+        {/* Column 2: Experience, Education, Certifications & Open Source */}
         <div className={styles.mainCol}>
           <div className={styles.block}>
             <h2>Experience</h2>
@@ -104,24 +108,12 @@ export default function AboutPage() {
           <div className={styles.block}>
             <h2>Education</h2>
             <div className={styles.expItem}>
-              <strong>Master&apos;s degree, Artificial Intelligence</strong>
+              <strong>M.S. Artificial Intelligence</strong>
               <span>University of Colorado Boulder | 2026</span>
             </div>
             <div className={styles.expItem}>
-              <strong>Bachelor&apos;s degree, Marketing</strong>
+              <strong>B.S. Marketing</strong>
               <span>Lindenwood University | 2017</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Column 3: Skills & Certs */}
-        <div className={styles.sidebarCol}>
-          <div className={styles.block}>
-            <h2>Skills</h2>
-            <div className={styles.tags}>
-              {skills.map((skill, i) => (
-                <span key={i}>{skill}</span>
-              ))}
             </div>
           </div>
 
@@ -142,10 +134,23 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
+        {/* Column 3: Skills & Certifications */}
+        <div className={styles.sidebarCol}>
+
+
+          <div className={styles.block}>
+            <h2>Skills</h2>
+            <div className={styles.tags}>
+              {skills.map((skill, i) => (
+                <span key={i}>{skill}</span>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Tech Stack Visualization */}
-      <TechStack />
+
     </main>
   );
 }

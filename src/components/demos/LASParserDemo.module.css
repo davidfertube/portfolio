@@ -414,7 +414,7 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .demoSection {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     .demoContainer {

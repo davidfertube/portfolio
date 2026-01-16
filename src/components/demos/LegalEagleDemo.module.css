@@ -1,5 +1,5 @@
 .demoSection {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding-top: 0;
     border-top: none;
     max-width: 1400px;
@@ -16,7 +16,7 @@
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .demoContainer {
@@ -457,7 +457,7 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .demoSection {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     .demoContainer {

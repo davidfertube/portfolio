@@ -94,7 +94,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     background: rgba(16, 185, 129, 0.1);
     border-radius: 20px;
@@ -112,7 +112,7 @@
     display: flex;
     justify-content: center;
     gap: 0.75rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding-top: 1rem;
     border-top: 1px solid var(--color-border);
 }
@@ -456,7 +456,7 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .demoSection {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     .demoContainer {
