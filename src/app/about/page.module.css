@@ -24,6 +24,7 @@
   .profileCol {
     flex: 0 0 100%;
     margin-bottom: 2rem;
+    position: static;
   }
 
   .mainCol,
@@ -36,10 +37,16 @@
   .aboutPage {
     padding: 1rem;
     padding-top: calc(70px + 1rem);
+    align-items: flex-start;
   }
 
   .layout {
     gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  .profileCol {
+    position: static;
   }
 
   .mainCol,
