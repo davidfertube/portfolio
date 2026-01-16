@@ -12,6 +12,8 @@ import PolicyGuardDemo from './demos/PolicyGuardDemo';
 import RLSupplyChainDemo from './demos/RLSupplyChainDemo';
 import HallucinationHunterDemo from './demos/HallucinationHunterDemo';
 import LASParserDemo from './demos/LASParserDemo';
+import IoTAnomalyDemo from './demos/IoTAnomalyDemo';
+
 
 interface ProjectPageProps {
   project: ProjectData;
@@ -40,6 +42,8 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         return <HallucinationHunterDemo />;
       case 'intelligent-las-parser':
         return <LASParserDemo />;
+      case 'iot-anomaly-agent':
+        return <IoTAnomalyDemo />;
       default:
         return null;
     }

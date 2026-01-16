@@ -17,7 +17,7 @@ export interface ProjectData {
   problem: string;
   solution: string;
   architecture: string;
-  demoType?: 'ppe-detection' | 'chat' | 'visualization' | 'none';
+  demoType?: 'ppe-detection' | 'chat' | 'visualization' | 'iot-anomaly' | 'none';
 }
 
 export const projects: ProjectData[] = [
@@ -60,6 +60,26 @@ export const projects: ProjectData[] = [
     solution: 'LSTM neural network trained on NASA turbofan dataset. Uses FFT for vibration analysis and predicts Remaining Useful Life (RUL) with 48-hour lead time.',
     architecture: 'Sensor Data → FFT Processing → LSTM Model → RUL Prediction → Alert System with Azure IoT Hub integration.',
     demoType: 'visualization'
+  },
+  {
+    id: 'iot-anomaly-agent',
+    title: 'IoT Anomaly Agent',
+    tagline: 'Agentic AI for Industrial Sensor Monitoring',
+    description: 'Real-time anomaly detection and automated response using AI agents.',
+    tags: ['Azure IoT Hub', 'Sim.ai', 'Real-time ML'],
+    metrics: [
+      { value: '<30s', label: 'Alert Latency' },
+      { value: '6', label: 'Sensor Types' },
+      { value: 'Auto', label: 'Work Orders' }
+    ],
+    githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/iot-anomaly-agent',
+    isPrivate: false,
+    techStack: 'Azure IoT Hub • Sim.ai • Stream Analytics',
+    problem: 'Industrial sensors generate massive data streams. Manual monitoring is impossible at scale, and traditional threshold alerts create alert fatigue with too many false positives.',
+    solution: 'AI agent that ingests real-time telemetry from Azure IoT Hub, detects multi-sensor anomaly patterns using ML, and autonomously generates work orders with human-in-the-loop approval.',
+    architecture: 'Sensors → Azure IoT Hub (Free Tier) → Stream Analytics → Anomaly Detection ML → Sim.ai Agent → Auto-generate Work Order → Teams/ServiceNow notification.',
+    demoType: 'iot-anomaly'
   },
   {
     id: 'chat-with-assets',
