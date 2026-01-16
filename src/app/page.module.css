@@ -10,6 +10,22 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  padding-top: 60px;
+}
+
+.sphereContainer {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.titleContainer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
 
 .hero h1 {
@@ -38,9 +54,15 @@
 }
 
 @media (max-width: 768px) {
+  .sphereContainer {
+    width: 280px;
+    height: 280px;
+  }
+
   .hero h1 {
     font-size: 1.75rem;
   }
+
   .hero h2 {
     font-size: 1.25rem;
   }
