@@ -88,14 +88,14 @@ export default function AboutPage() {
             </div>
             <div className={styles.expItem}>
               <strong>Digital Project Coordinator</strong>
-              <span>GTB | Mar 2018 - Nov 2019</span>
+              <span>Global Team Blue (GTB) | Mar 2018 - Nov 2019</span>
             </div>
           </div>
 
           <div className={styles.block}>
             <h2>Education</h2>
             <div className={styles.expItem}>
-              <strong>Master&apos;s degree, AI</strong>
+              <strong>Master&apos;s degree, Artificial Intelligence</strong>
               <span>University of Colorado Boulder | 2026</span>
             </div>
             <div className={styles.expItem}>
