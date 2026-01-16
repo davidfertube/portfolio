@@ -4,6 +4,8 @@
   padding-top: calc(70px + 0.25rem);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   overflow-y: auto;
 }
 
@@ -195,6 +197,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  align-items: center;
+  text-align: center;
 }
 
 .detailCard {
