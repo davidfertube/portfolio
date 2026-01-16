@@ -21,7 +21,7 @@ interface CurveData {
     values: number[];
 }
 
-const DEMO_HEADER: LASHeader = {
+const DEMO_HEADER_EXPLORER: LASHeader = {
     well: 'EXPLORER-1',
     company: 'GeoTech Inc.',
     field: 'North Sea Block 4',
@@ -31,7 +31,17 @@ const DEMO_HEADER: LASHeader = {
     step: 0.5,
 };
 
-const DEMO_CURVES: CurveData[] = [
+const DEMO_HEADER_WILDCAT: LASHeader = {
+    well: 'WILDCAT-3',
+    company: 'Maverick Energy',
+    field: 'Eagle Ford',
+    date: '2023-11-22',
+    startDepth: 5500,
+    stopDepth: 5650,
+    step: 0.5,
+};
+
+const DEMO_CURVES_EXPLORER: CurveData[] = [
     {
         name: 'GR',
         unit: 'GAPI',
@@ -55,11 +65,37 @@ const DEMO_CURVES: CurveData[] = [
     },
 ];
 
+const DEMO_CURVES_WILDCAT: CurveData[] = [
+    {
+        name: 'GR',
+        unit: 'GAPI',
+        description: 'Gamma Ray',
+        color: '#22c55e',
+        values: [120, 115, 110, 105, 95, 88, 75, 60, 52, 48, 45, 55, 68, 82, 95, 108, 125, 132, 128, 122]
+    },
+    {
+        name: 'RHOB',
+        unit: 'G/CC',
+        description: 'Bulk Density',
+        color: '#f59e0b',
+        values: [2.65, 2.64, 2.62, 2.60, 2.55, 2.50, 2.45, 2.40, 2.38, 2.35, 2.38, 2.42, 2.50, 2.58, 2.62, 2.65, 2.55, 2.45, 2.55, 2.60]
+    },
+    {
+        name: 'NPHI',
+        unit: 'V/V',
+        description: 'Neutron Porosity',
+        color: '#3b82f6',
+        values: [0.08, 0.09, 0.10, 0.12, 0.15, 0.18, 0.22, 0.25, 0.28, 0.30, 0.28, 0.25, 0.20, 0.15, 0.12, 0.10, 0.12, 0.14, 0.12, 0.10]
+    },
+];
+
 export default function LASParserDemo() {
     const [isParsing, setIsParsing] = useState(false);
     const [parseComplete, setParseComplete] = useState(false);
     const [parseStep, setParseStep] = useState(0);
     const [selectedFile, setSelectedFile] = useState<string | null>(null);
+    const [header, setHeader] = useState<LASHeader>(DEMO_HEADER_EXPLORER);
+    const [curves, setCurves] = useState<CurveData[]>(DEMO_CURVES_EXPLORER);
 
     const parseSteps = [
         'Reading file header...',
@@ -74,6 +110,15 @@ export default function LASParserDemo() {
         setIsParsing(true);
         setParseComplete(false);
         setParseStep(0);
+
+        // Select data based on filename
+        if (filename.includes('WILDCAT')) {
+            setHeader(DEMO_HEADER_WILDCAT);
+            setCurves(DEMO_CURVES_WILDCAT);
+        } else {
+            setHeader(DEMO_HEADER_EXPLORER);
+            setCurves(DEMO_CURVES_EXPLORER);
+        }
 
         parseSteps.forEach((_, idx) => {
             setTimeout(() => {
@@ -96,8 +141,8 @@ export default function LASParserDemo() {
         setSelectedFile(null);
     };
 
-    const maxGR = Math.max(...DEMO_CURVES[0].values);
-    const minGR = Math.min(...DEMO_CURVES[0].values);
+    const maxGR = Math.max(...curves[0].values);
+    const minGR = Math.min(...curves[0].values);
 
     return (
         <section className={styles.demoSection}>
@@ -113,27 +158,27 @@ export default function LASParserDemo() {
                                 <div className={styles.headerGrid}>
                                     <div className={styles.headerItem}>
                                         <span className={styles.headerLabel}>WELL</span>
-                                        <span className={styles.headerValue}>{DEMO_HEADER.well}</span>
+                                        <span className={styles.headerValue}>{header.well}</span>
                                     </div>
                                     <div className={styles.headerItem}>
                                         <span className={styles.headerLabel}>COMPANY</span>
-                                        <span className={styles.headerValue}>{DEMO_HEADER.company}</span>
+                                        <span className={styles.headerValue}>{header.company}</span>
                                     </div>
                                     <div className={styles.headerItem}>
                                         <span className={styles.headerLabel}>FIELD</span>
-                                        <span className={styles.headerValue}>{DEMO_HEADER.field}</span>
+                                        <span className={styles.headerValue}>{header.field}</span>
                                     </div>
                                     <div className={styles.headerItem}>
                                         <span className={styles.headerLabel}>DATE</span>
-                                        <span className={styles.headerValue}>{DEMO_HEADER.date}</span>
+                                        <span className={styles.headerValue}>{header.date}</span>
                                     </div>
                                     <div className={styles.headerItem}>
                                         <span className={styles.headerLabel}>STRT</span>
-                                        <span className={styles.headerValue}>{DEMO_HEADER.startDepth}m</span>
+                                        <span className={styles.headerValue}>{header.startDepth}m</span>
                                     </div>
                                     <div className={styles.headerItem}>
                                         <span className={styles.headerLabel}>STOP</span>
-                                        <span className={styles.headerValue}>{DEMO_HEADER.stopDepth}m</span>
+                                        <span className={styles.headerValue}>{header.stopDepth}m</span>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +186,7 @@ export default function LASParserDemo() {
                             <div className={styles.curvesCard}>
                                 <h4>Well Log Curves</h4>
                                 <div className={styles.curvesContainer}>
-                                    {DEMO_CURVES.map((curve) => (
+                                    {curves.map((curve) => (
                                         <div key={curve.name} className={styles.curveTrack}>
                                             <div className={styles.curveHeader}>
                                                 <span className={styles.curveName} style={{ color: curve.color }}>
@@ -173,7 +218,12 @@ export default function LASParserDemo() {
                                     <div className={styles.depthTrack}>
                                         <span className={styles.depthLabel}>DEPTH (m)</span>
                                         <div className={styles.depthScale}>
-                                            {[2000, 2050, 2100, 2150].map((d) => (
+                                            {[
+                                                header.startDepth,
+                                                header.startDepth + 50,
+                                                header.startDepth + 100,
+                                                header.startDepth + 150
+                                            ].map((d) => (
                                                 <span key={d}>{d}</span>
                                             ))}
                                         </div>

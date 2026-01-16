@@ -25,7 +25,7 @@ const INITIAL_AGENTS: Agent[] = [
     { id: 'summary', name: 'Summary Agent', icon: '📝', status: 'idle' },
 ];
 
-const DEMO_RESULT: AnalysisResult = {
+const DEMO_RESULT_MSA: AnalysisResult = {
     riskScore: 72,
     riskLevel: 'Medium',
     clauses: [
@@ -38,13 +38,26 @@ const DEMO_RESULT: AnalysisResult = {
     summary: 'This MSA contains standard commercial terms with notable risk in indemnification clause (unlimited liability exposure). Recommend negotiation on Section 8.2.'
 };
 
+const DEMO_RESULT_NDA: AnalysisResult = {
+    riskScore: 35,
+    riskLevel: 'Low',
+    clauses: [
+        { name: 'Indemnification', status: 'ok' },
+        { name: 'Limitation of Liability', status: 'ok' },
+        { name: 'Termination', status: 'ok' },
+        { name: 'Confidentiality', status: 'warning' },
+        { name: 'Force Majeure', status: 'ok' },
+    ],
+    summary: 'Standard Mutual NDA. The Confidentiality term is 5 years which is slightly longer than market standard (3 years), but acceptable for IP-heavy collaborations.'
+};
+
 export default function LegalEagleDemo() {
     const [agents, setAgents] = useState<Agent[]>(INITIAL_AGENTS);
     const [isAnalyzing, setIsAnalyzing] = useState(false);
     const [result, setResult] = useState<AnalysisResult | null>(null);
     const [selectedContract, setSelectedContract] = useState<string | null>(null);
 
-    const runAnalysis = () => {
+    const runAnalysis = (contractName: string) => {
         setIsAnalyzing(true);
         setResult(null);
         setAgents(INITIAL_AGENTS.map(a => ({ ...a, status: 'idle' })));
@@ -66,7 +79,8 @@ export default function LegalEagleDemo() {
 
                 if (index === sequence.length - 1) {
                     setTimeout(() => {
-                        setResult(DEMO_RESULT);
+                        const finalResult = contractName.includes('NDA') ? DEMO_RESULT_NDA : DEMO_RESULT_MSA;
+                        setResult(finalResult);
                         setIsAnalyzing(false);
                     }, 500);
                 }
@@ -76,7 +90,7 @@ export default function LegalEagleDemo() {
 
     const handleContractSelect = (contract: string) => {
         setSelectedContract(contract);
-        runAnalysis();
+        runAnalysis(contract);
     };
 
     const handleReset = () => {
