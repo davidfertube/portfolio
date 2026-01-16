@@ -232,6 +232,7 @@
   color: var(--color-accent);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .infoCard p {
@@ -239,6 +240,7 @@
   color: var(--color-text-light);
   line-height: 1.5;
   margin: 0;
+  text-align: center;
 }
 
 .metrics {
