@@ -35,10 +35,10 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/geo-insight-hse',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/geo-insight-hse',
     isPrivate: false,
-    techStack: 'YOLOv8 • Azure Container Apps',
+    techStack: 'YOLOv8 • ONNX Runtime • FastAPI • Docker',
     problem: 'HSE is #1 priority in energy operations. Manual PPE monitoring is slow, inconsistent, and impossible to scale across large industrial sites.',
     solution: 'Real Time computer vision pipeline using YOLOv8 on Azure Edge devices. Processes live camera feeds with sub-100ms latency for instant alerts.',
-    architecture: 'Camera → Edge Device → OPC UA → SCADA/HMI. ONNX optimized for air-gapped OT environments (Purdue Level 3).',
+    architecture: 'Camera → Edge Device (ONNX Runtime) → FastAPI Service → OPC UA → SCADA/HMI. Dockerized for air-gapped OT environments (Purdue Level 3).',
     demoType: 'ppe-detection'
   },
   {
@@ -55,10 +55,10 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/predictive-maintenance',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-maintenance',
     isPrivate: false,
-    techStack: 'LSTM • NASA Dataset • FFT',
+    techStack: 'LSTM • FastAPI • Azure ML • Docker',
     problem: 'Unplanned equipment failures cause costly downtime and safety hazards. Traditional scheduled maintenance is wasteful and ineffective.',
     solution: 'LSTM neural network trained on NASA turbofan dataset. Uses FFT for vibration analysis and predicts Remaining Useful Life (RUL) with 48-hour lead time.',
-    architecture: 'Sensor Data → FFT Processing → LSTM Model → RUL Prediction → Alert System with Azure IoT Hub integration.',
+    architecture: 'Sensor Data → FFT Processing → LSTM Model → FastAPI Endpoint → RUL Prediction → Alert System with Azure IoT Hub integration.',
     demoType: 'visualization'
   },
   {
@@ -95,10 +95,10 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/chat-with-assets-rag',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/chat-with-assets-rag',
     isPrivate: true,
-    techStack: 'Azure AI Search • Next.js',
+    techStack: 'LlamaIndex • Azure AI Search • FastAPI',
     problem: 'Engineers waste hours searching through thousands of PDFs, manuals, and P&IDs. Knowledge is siloed and hard to access.',
     solution: 'Conversational AI that ingests and indexes all technical documentation. Engineers ask natural language questions and get cited answers instantly.',
-    architecture: 'Documents → Azure AI Search (Hybrid + Semantic) → LangChain → GPT-4o → Cited Response with source links.',
+    architecture: 'Documents → LlamaIndex Ingestion → Azure AI Search (Hybrid + Semantic) → FastAPI → GPT-4o → Cited Response with source links.',
     demoType: 'chat'
   },
   {
@@ -115,10 +115,10 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/legal-eagle-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/legal-eagle-agent',
     isPrivate: true,
-    techStack: 'LangGraph • Azure OpenAI • Gemini',
+    techStack: 'LangGraph • AutoGen • Azure OpenAI',
     problem: 'Contract review is tedious, expensive, and prone to human error. Legal teams are bottlenecks for deal velocity.',
     solution: 'Orchestrated multi-agent system where specialized agents handle different contract aspects: risk analysis, clause extraction, red-flag detection, and summary generation.',
-    architecture: 'Contract → Supervisor Agent → [Risk Agent, Clause Agent, Summary Agent] → LangGraph Orchestration → Structured Report.',
+    architecture: 'Contract → Supervisor Agent (AutoGen) → [Risk Agent, Clause Agent, Summary Agent] → LangGraph Orchestration → Structured Report.',
     demoType: 'none'
   },
   {
@@ -155,10 +155,10 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/rl-supply-chain',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/rl-supply-chain',
     isPrivate: false,
-    techStack: 'Stable Baselines3 • Azure ML',
+    techStack: 'Stable Baselines3 • Azure ML • FastAPI',
     problem: 'Traditional supply chain planning uses static rules that cannot adapt to demand volatility, leading to stockouts or excess inventory.',
     solution: 'PPO agent trained in custom gymnasium environment that learns optimal reorder policies. Adapts to seasonal patterns and demand spikes.',
-    architecture: 'Demand Forecast → Custom Gym Environment → PPO Agent → Inventory Decision → Reward Signal (minimize cost + stockout).',
+    architecture: 'Demand Forecast → Custom Gym Environment → PPO Agent → FastAPI Endpoint → Inventory Decision → Reward Signal (minimize cost + stockout).',
     demoType: 'visualization'
   },
   {
@@ -195,10 +195,10 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/las-parser',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/las-parser',
     isPrivate: false,
-    techStack: 'Python • WITSML • Vectorization',
+    techStack: 'Python • LlamaIndex • Azure AI Search',
     problem: 'Decades of valuable well log data trapped in legacy .LAS format. Inconsistent headers, missing metadata, and encoding issues prevent analysis.',
     solution: 'Intelligent parser that handles all LAS versions, auto-corrects common issues, and outputs clean, vectorized data ready for ML pipelines.',
-    architecture: 'LAS Files → Header Parser → Curve Normalizer → Quality Validator → Vectorized Output (Parquet/PostgreSQL).',
+    architecture: 'LAS Files → Header Parser → Curve Normalizer → Quality Validator → LlamaIndex Vectorization → Output (Parquet/PostgreSQL).',
     demoType: 'none'
   }
 ];

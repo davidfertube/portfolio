@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "David Fernandez | Industrial AI Engineer",
   description: "Industrial AI Engineer specializing in Azure, Agentic RAG, Computer Vision, and LLM deployment for the Energy Corridor. Building production-grade AI systems for Oil & Gas, SCADA, and HSE compliance.",
-  keywords: "Industrial AI, Industrial AI Engineer, Azure AI Engineer, Energy Corridor, Oil and Gas AI, Agentic RAG, LangGraph, Computer Vision, YOLOv8, SCADA Integration, OPC UA, OSDU, HSE Compliance, LLM Deployment",
+  keywords: "Industrial AI, Industrial AI Engineer, Azure AI Engineer, Energy Corridor, Oil and Gas AI, Agentic RAG, LangGraph, AutoGen, LlamaIndex, Computer Vision, YOLOv8, ONNX Runtime, SCADA Integration, OPC UA, OSDU, HSE Compliance, LLM Deployment, FastAPI, Terraform, Bicep, Docker, MLOps, DSPy",
   openGraph: {
     title: "David Fernandez | Industrial AI Engineer",
     description: "Building production-grade Agentic AI systems for the Energy Corridor",

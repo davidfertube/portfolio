@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import TechStack from '@/components/TechStack';
 
 export const metadata = {
   title: 'About | David Fernandez',
@@ -7,10 +8,18 @@ export const metadata = {
 };
 
 const skills = [
-  'Azure AI', 'Generative AI', 'LLM Ops', 'RAG Pipelines', 'Computer Vision',
-  'SCADA/OT', 'Power BI', 'Python', 'Databricks', 'Digital Twins',
-  'Predictive Maintenance', 'MLOps', 'Purdue Model (ISA-95)', 'OSIsoft PI',
-  'OPC UA', 'Microsoft Fabric', 'KQL', 'Physics-Informed ML', 'DSPy', 'AutoGen'
+  // Core AI & ML
+  'Azure AI', 'Azure OpenAI', 'Generative AI', 'LLM Ops', 'RAG Pipelines',
+  // Agents & Orchestration
+  'LangGraph', 'AutoGen', 'DSPy', 'LlamaIndex',
+  // Computer Vision & Edge
+  'Computer Vision', 'YOLOv8', 'ONNX Runtime', 'Edge AI',
+  // Industrial & OT
+  'SCADA/OT', 'Purdue Model (ISA-95)', 'OPC UA', 'OSIsoft PI', 'Digital Twins',
+  // Data & Analytics
+  'Python', 'Databricks', 'Microsoft Fabric', 'Power BI', 'KQL',
+  // MLOps & Infrastructure
+  'MLOps', 'FastAPI', 'Docker', 'Terraform', 'Bicep', 'GitHub Actions'
 ];
 
 const contributions = [
@@ -134,6 +143,10 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+
+      {/* Tech Stack Visualization */}
+      <TechStack />
     </main>
   );
 }
+
