@@ -92,7 +92,7 @@ export const projects: ProjectData[] = [
       { value: '10K+', label: 'Documents' },
       { value: '95%', label: 'Relevance' }
     ],
-    githubUrl: null,
+    githubUrl: 'https://github.com/davidfertube/chat-with-assets-rag',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/chat-with-assets-rag',
     isPrivate: true,
     techStack: 'Azure AI Search • Next.js',
@@ -112,7 +112,7 @@ export const projects: ProjectData[] = [
       { value: '80%', label: 'Time Saved' },
       { value: 'Multi LLM', label: 'Architecture' }
     ],
-    githubUrl: null,
+    githubUrl: 'https://github.com/davidfertube/legal-eagle-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/legal-eagle-agent',
     isPrivate: true,
     techStack: 'LangGraph • Azure OpenAI • Gemini',
@@ -172,7 +172,7 @@ export const projects: ProjectData[] = [
       { value: '50', label: 'Golden Q/A Pairs' },
       { value: 'EvalOps', label: 'Pipeline' }
     ],
-    githubUrl: null,
+    githubUrl: 'https://github.com/davidfertube/hallucination-hunter',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/hallucination-hunter',
     isPrivate: true,
     techStack: 'Azure AI Studio • EvalOps',
