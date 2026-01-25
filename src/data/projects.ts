@@ -59,7 +59,7 @@ export const projects: ProjectData[] = [
       { value: 'Enterprise', label: 'Scale' }
     ],
     githubUrl: 'https://github.com/davidfertube/chat-with-assets-rag',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/Chat-With-Assets-RAG',
+    huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'LangChain • LangGraph • ChromaDB • Pinecone • FastAPI',
     problem: 'Enterprises struggle to retrieve accurate answers from massive, siloed technical documentation. Simple search misses critical context.',
@@ -82,7 +82,7 @@ export const projects: ProjectData[] = [
       { value: 'Offline', label: 'Capable' }
     ],
     githubUrl: null,
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/grid-operations-assistant',
+    huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'Python • Whisper • Local LLM • React Native • Docker',
     problem: 'Power grid technicians need hands-free access to SCADA data, outage maps, and maintenance procedures while working on energized equipment.',
@@ -145,7 +145,7 @@ export const projects: ProjectData[] = [
       { value: 'LLM', label: 'Analysis' }
     ],
     githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
-    huggingFaceUrl: null,
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/iot-anomaly-agent',
     isPrivate: false,
     techStack: 'Python • Isolation Forest • Mistral-7B • Gradio • Time-Series',
     problem: 'Gas turbines generate massive sensor streams. Manual monitoring misses subtle anomalies in vibration and heat rate that precede forced outages.',
