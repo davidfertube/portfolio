@@ -47,8 +47,8 @@ export const projects: ProjectData[] = [
     demoType: 'none'
   },
   {
-    id: 'prediction-agents',
-    title: 'Prediction Agents',
+    id: 'defense-agents',
+    title: 'Defense Agents',
     tagline: 'AI-Powered Defense Contractor Compliance',
     description: 'Automated CMMC 2.0 compliance assessment platform for defense contractors—mapping controls to NIST 800-171 and generating audit-ready evidence packages.',
     category: 'venture',
