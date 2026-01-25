@@ -16,7 +16,7 @@ export default function PortfolioSection() {
 
       <div className={styles.category}>
         <h3 className={styles.categoryTitle}>Ventures</h3>
-        <div className={styles.grid}>
+        <div className={styles.venturesGrid}>
           {ventures.map((project) => (
             <ProjectCard
               key={project.id}
