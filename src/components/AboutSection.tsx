@@ -90,7 +90,7 @@ export default function AboutSection() {
           </div>
           <div className={styles.item}>
             <strong>Founding Engineer</strong>
-            <span>Stealth AI Startup | Feb 2020 - Oct 2022</span>
+            <span>Stealth AI Startup | Sept 2020 - Oct 2022</span>
           </div>
         </div>
 
