@@ -26,24 +26,24 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES (No links - business concepts) ---
   {
-    id: 'predictive-maintenance-venture',
-    title: 'Predictive Maintenance Intelligence',
-    tagline: 'AI-Driven Asset Life Extension',
-    description: 'Enterprise platform predicting equipment RUL using LSTM networks—extending turbine life 15-20% through proactive maintenance scheduling.',
+    id: 'steel-intelligent-knowledge-tool',
+    title: 'Steel Intelligent Knowledge Tool',
+    tagline: 'AI-Powered Steel Manufacturing Intelligence',
+    description: 'Enterprise knowledge platform for steel manufacturing—integrating metallurgical data, process parameters, and quality metrics for intelligent decision support.',
     category: 'venture',
-    tags: ['MLOps', 'Time-Series', 'Enterprise'],
+    tags: ['RAG', 'Manufacturing', 'Enterprise'],
     metrics: [
-      { value: '15-20%', label: 'Life Extension' },
-      { value: 'LSTM', label: 'Neural Network' },
+      { value: 'RAG', label: 'Pipeline' },
+      { value: 'Steel', label: 'Domain' },
       { value: 'Enterprise', label: 'Scale' }
     ],
     githubUrl: null,
     huggingFaceUrl: null,
     isPrivate: false,
-    techStack: 'Python • TensorFlow • LSTM • Azure ML • Kubernetes',
-    problem: 'Run-to-failure maintenance creates grid instability and costly outages. Energy operators need predictive foresight into equipment failure modes.',
-    solution: 'Enterprise platform estimating RUL from degradation trends, enabling proactive maintenance scheduling that extends asset life 15-20%.',
-    architecture: 'Sensor History → Feature Engineering → LSTM Model → RUL Prediction → Maintenance Strategy',
+    techStack: 'Python • LangChain • Azure AI • FastAPI • PostgreSQL',
+    problem: 'Steel manufacturers struggle with siloed technical knowledge across metallurgy, process engineering, and quality control. Engineers spend hours searching for critical specifications.',
+    solution: 'Intelligent knowledge retrieval platform using RAG to surface metallurgical standards, process parameters, and quality benchmarks from enterprise documentation.',
+    architecture: 'Technical Documents → Semantic Chunking → Embeddings → Vector Search → LLM Response → Expert Answer',
     demoType: 'none'
   },
   {
