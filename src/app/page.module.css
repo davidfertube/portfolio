@@ -125,12 +125,7 @@
 
   .hero h2 {
     font-size: 1.25rem;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  .separator {
-    display: none;
+    gap: 0.5rem;
   }
 
   .section {
@@ -167,10 +162,9 @@
   }
 
   .hero h2 {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 0.05em;
-    flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.4rem;
   }
 
   .section {
