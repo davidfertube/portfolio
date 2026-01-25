@@ -82,7 +82,7 @@ export const projects: ProjectData[] = [
       { value: 'Offline', label: 'Capable' }
     ],
     githubUrl: null,
-    huggingFaceUrl: null,
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/grid-operations-assistant',
     isPrivate: false,
     techStack: 'Python • Whisper • Local LLM • React Native • Docker',
     problem: 'Power grid technicians need hands-free access to SCADA data, outage maps, and maintenance procedures while working on energized equipment.',
@@ -103,7 +103,7 @@ export const projects: ProjectData[] = [
       { value: 'Auto', label: 'Audit' }
     ],
     githubUrl: 'https://github.com/davidfertube/policy-guard',
-    huggingFaceUrl: null,
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/policy-guard',
     isPrivate: false,
     techStack: 'PydanticAI • DSPy • Python • FastAPI • Docker',
     problem: 'NERC CIP compliance requires continuous monitoring of 45+ standards across BES cyber systems. Manual audits are resource-intensive and error-prone.',
@@ -145,7 +145,7 @@ export const projects: ProjectData[] = [
       { value: 'LLM', label: 'Analysis' }
     ],
     githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/IoT-Anomaly-Agent',
+    huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'Python • Isolation Forest • Mistral-7B • Gradio • Time-Series',
     problem: 'Gas turbines generate massive sensor streams. Manual monitoring misses subtle anomalies in vibration and heat rate that precede forced outages.',
@@ -168,7 +168,7 @@ export const projects: ProjectData[] = [
       { value: 'Safety', label: 'First' }
     ],
     githubUrl: 'https://github.com/davidfertube/geo-insight-hse',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/geo-insight-hse',
+    huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'Qwen2-VL • Transformers • Python • Gradio • Docker',
     problem: 'Conventional object detection misses behavioral context. Energy facilities need AI that understands unsafe actions, not just objects.',
@@ -189,7 +189,7 @@ export const projects: ProjectData[] = [
       { value: 'Vector', label: 'Ready' }
     ],
     githubUrl: 'https://github.com/davidfertube/las-parser',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/LAS-Parser',
+    huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'Python • LASIO • Pandas • Mistral-7B • Gradio',
     problem: 'Well log data in legacy LAS/DLIS formats is difficult to integrate with modern AI systems and RAG pipelines.',
