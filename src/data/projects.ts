@@ -24,27 +24,27 @@ export interface ProjectData {
 }
 
 export const projects: ProjectData[] = [
-  // --- VENTURES ---
+  // --- VENTURES (No links - business concepts) ---
   {
-    id: 'predictive-maintenance',
+    id: 'predictive-maintenance-venture',
     title: 'Predictive Maintenance Intelligence',
-    tagline: 'AI-Driven Grid Reliability',
-    description: 'Production-grade AI system predicting equipment RUL using FFT signal processing and LSTM networks—delivering measurable reliability improvements for energy grid operations.',
+    tagline: 'AI-Driven Asset Life Extension',
+    description: 'Enterprise platform predicting equipment RUL using LSTM networks—extending turbine life 15-20% through proactive maintenance scheduling.',
     category: 'venture',
-    tags: ['MLOps', 'Time-Series', 'Cloud-Native'],
+    tags: ['MLOps', 'Time-Series', 'Enterprise'],
     metrics: [
-      { value: 'RUL', label: 'Prediction' },
-      { value: 'FFT', label: 'Analysis' },
-      { value: 'MLOps', label: 'Pipeline' }
+      { value: '15-20%', label: 'Life Extension' },
+      { value: 'LSTM', label: 'Neural Network' },
+      { value: 'Enterprise', label: 'Scale' }
     ],
-    githubUrl: 'https://github.com/davidfertube/predictive-maintenance',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-maintenance',
+    githubUrl: null,
+    huggingFaceUrl: null,
     isPrivate: false,
-    techStack: 'Python • Scikit-Learn • LSTM • Plotly • Docker • CI/CD',
+    techStack: 'Python • TensorFlow • LSTM • Azure ML • Kubernetes',
     problem: 'Run-to-failure maintenance creates grid instability and costly outages. Energy operators need predictive foresight into equipment failure modes.',
-    solution: 'Scalable failure predictor deployed in cloud-native environments, estimating RUL from degradation trends for proactive maintenance scheduling.',
-    architecture: 'Sensor History → FFT Analysis → LSTM Model → RUL Estimation → Maintenance Strategy Agent',
-    demoType: 'visualization'
+    solution: 'Enterprise platform estimating RUL from degradation trends, enabling proactive maintenance scheduling that extends asset life 15-20%.',
+    architecture: 'Sensor History → Feature Engineering → LSTM Model → RUL Prediction → Maintenance Strategy',
+    demoType: 'none'
   },
   {
     id: 'enterprise-knowledge-retrieval',
@@ -58,164 +58,164 @@ export const projects: ProjectData[] = [
       { value: 'Agents', label: 'Multi-Step' },
       { value: 'Enterprise', label: 'Scale' }
     ],
-    githubUrl: 'https://github.com/davidfertube/chat-with-assets-rag',
+    githubUrl: null,
     huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'LangChain • LangGraph • ChromaDB • Pinecone • FastAPI',
     problem: 'Enterprises struggle to retrieve accurate answers from massive, siloed technical documentation. Simple search misses critical context.',
     solution: 'Enterprise-scale knowledge retrieval using RAG, semantic chunking strategies, and multi-agent workflows for Energy & Commodities supply chain operations.',
     architecture: 'Technical Manuals → Semantic Chunking → Embeddings → Pinecone → LangGraph Agents → Expert Response',
-    demoType: 'chat'
-  },
-
-  // --- PRODUCTION PROJECTS ---
-  {
-    id: 'grid-operations-assistant',
-    title: 'Grid Operations Voice Assistant',
-    tagline: 'Edge AI for Power Grid Technicians',
-    description: 'Production-grade edge AI assistant enabling hands-free access to grid maintenance protocols, outage procedures, and real-time SCADA data for NRG field technicians.',
-    category: 'project',
-    tags: ['Edge AI', 'Power Grid', 'Voice'],
-    metrics: [
-      { value: 'Edge', label: 'Compute' },
-      { value: 'SCADA', label: 'Integration' },
-      { value: 'Offline', label: 'Capable' }
-    ],
-    githubUrl: null,
-    huggingFaceUrl: null,
-    isPrivate: false,
-    techStack: 'Python • Whisper • Local LLM • React Native • Docker',
-    problem: 'Power grid technicians need hands-free access to SCADA data, outage maps, and maintenance procedures while working on energized equipment.',
-    solution: 'Edge-deployed voice assistant with local LLM inference delivering grid status, safety protocols, and equipment schematics even in remote substations.',
-    architecture: 'Voice Input → Edge STT (Whisper) → SCADA API → Local LLM → TTS → Technician Audio',
     demoType: 'none'
   },
+
+  // --- PRODUCTION PROJECTS (3 - All have GitHub + HuggingFace demos) ---
   {
-    id: 'nerc-cip-agent',
-    title: 'NERC CIP Compliance Agent',
-    tagline: 'Multi-Agent Regulatory Assessment',
-    description: 'Multi-agent AI system automating NERC CIP compliance assessments for power utilities—scanning BES cyber systems and generating audit-ready gap analysis reports.',
+    id: 'predictive-maintenance',
+    title: 'Predictive Maintenance',
+    tagline: 'LSTM-Based RUL Prediction',
+    description: 'RUL prediction system extending turbine life 15-20% using LSTM neural networks trained on NASA C-MAPSS and GE 7FA patterns.',
     category: 'project',
-    tags: ['PydanticAI', 'NERC CIP', 'Compliance'],
+    tags: ['LSTM', 'Time-Series', 'MLOps'],
     metrics: [
-      { value: 'NERC', label: 'CIP Standards' },
-      { value: 'BES', label: 'Cyber Systems' },
-      { value: 'Auto', label: 'Audit' }
+      { value: '15-20%', label: 'Life Extension' },
+      { value: 'LSTM', label: 'Model' },
+      { value: 'NASA', label: 'C-MAPSS' }
+    ],
+    githubUrl: 'https://github.com/davidfertube/predictive-maintenance',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-maintenance',
+    isPrivate: false,
+    techStack: 'Python • Scikit-Learn • LSTM • Plotly • Docker • CI/CD',
+    problem: 'Power plant operators need to predict equipment failures before they happen to schedule maintenance proactively.',
+    solution: 'LSTM model trained on NASA C-MAPSS data, adapted for GE Frame 7FA turbines, predicting Remaining Useful Life from sensor degradation patterns.',
+    architecture: 'Sensor History → Feature Engineering → LSTM Model → RUL Estimation → Maintenance Strategy',
+    demoType: 'visualization'
+  },
+  {
+    id: 'policy-guard',
+    title: 'Policy Guard',
+    tagline: 'NERC CIP Compliance Automation',
+    description: 'NERC CIP compliance automation reducing audit prep 60% through automated procedure validation against CIP-006-6 requirements.',
+    category: 'project',
+    tags: ['NERC CIP', 'Compliance', 'NLP'],
+    metrics: [
+      { value: '60%', label: 'Audit Reduction' },
+      { value: 'CIP-006', label: 'Standard' },
+      { value: 'Auto', label: 'Validation' }
     ],
     githubUrl: 'https://github.com/davidfertube/policy-guard',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/policy-guard',
     isPrivate: false,
-    techStack: 'PydanticAI • DSPy • Python • FastAPI • Docker',
-    problem: 'NERC CIP compliance requires continuous monitoring of 45+ standards across BES cyber systems. Manual audits are resource-intensive and error-prone.',
-    solution: 'Multi-agent system trained on NERC CIP v6/v7 standards that automates control validation, evidence collection, and gap analysis for power grid compliance.',
-    architecture: 'BES System Configs → PydanticAI Orchestration → NERC CIP Validator → Audit-Ready Report',
+    techStack: 'PydanticAI • DSPy • Mistral • Python • FastAPI',
+    problem: 'NERC CIP compliance requires continuous monitoring of standards across BES cyber systems. Manual audits are resource-intensive and error-prone.',
+    solution: 'NLP model fine-tuned on NERC CIP standards that automates procedure validation, gap detection, and remediation recommendations.',
+    architecture: 'Procedure Document → NLP Analysis → CIP-006 Validation → Gap Report → Remediation Plan',
     demoType: 'none'
   },
   {
-    id: 'energy-data-lake',
-    title: 'Energy Data Lake Platform',
-    tagline: 'Unified Power Generation Analytics',
-    description: 'Cloud-native data platform unifying generation, transmission, and market data—enabling AI-ready analytics across NRG\'s fleet of power plants.',
+    id: 'iot-anomaly-agent',
+    title: 'IoT Anomaly Agent',
+    tagline: 'Real-Time Turbine Monitoring',
+    description: 'Real-time turbine anomaly detection with auto root cause analysis using Isolation Forest and LLM-powered diagnostics.',
     category: 'project',
-    tags: ['Data Platform', 'Cloud-Native', 'Power Generation'],
+    tags: ['Anomaly Detection', 'IoT', 'LLM'],
     metrics: [
-      { value: 'Multi-Source', label: 'Integration' },
-      { value: 'Real-Time', label: 'Streaming' },
-      { value: 'AI-Ready', label: 'Analytics' }
-    ],
-    githubUrl: null,
-    huggingFaceUrl: null,
-    isPrivate: false,
-    techStack: 'Python • FastAPI • Apache Kafka • Databricks • Kubernetes',
-    problem: 'Power generation data is siloed across plant historians, SCADA systems, and market feeds. Cross-fleet analytics requires unified data access.',
-    solution: 'Cloud-native data lake platform ingesting PI historian, SCADA, and ERCOT market data into a unified schema for fleet-wide AI applications.',
-    architecture: 'PI/SCADA/Market Data → Kafka Streaming → Delta Lake → Databricks → Analytics APIs',
-    demoType: 'none'
-  },
-  {
-    id: 'turbine-anomaly-agent',
-    title: 'Turbine Anomaly Detection Agent',
-    tagline: 'Real-Time Power Plant Monitoring',
-    description: 'AI agent for real-time gas turbine monitoring—detecting anomalies in vibration, temperature, and performance data with LLM-powered root cause analysis.',
-    category: 'experiment',
-    tags: ['Agents', 'Power Generation', 'Anomaly Detection'],
-    metrics: [
-      { value: 'Real-Time', label: 'Monitoring' },
-      { value: 'Gas Turbine', label: 'Focus' },
-      { value: 'LLM', label: 'Analysis' }
+      { value: 'Real-Time', label: 'Detection' },
+      { value: 'Auto', label: 'RCA' },
+      { value: 'SCADA', label: 'Integration' }
     ],
     githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/iot-anomaly-agent',
     isPrivate: false,
-    techStack: 'Python • Isolation Forest • Mistral-7B • Gradio • Time-Series',
-    problem: 'Gas turbines generate massive sensor streams. Manual monitoring misses subtle anomalies in vibration and heat rate that precede forced outages.',
-    solution: 'AI agent combining Isolation Forest for anomaly detection with LLM-powered analysis—correlating sensor deviations to known turbine failure modes.',
-    architecture: 'Turbine Sensors → Isolation Forest → Anomaly Detection → LLM Root Cause → Operations Alert',
+    techStack: 'Python • Isolation Forest • Gradio • Time-Series • Docker',
+    problem: 'Gas turbines generate massive sensor streams. Manual monitoring misses subtle anomalies that precede forced outages.',
+    solution: 'Isolation Forest model detecting anomalies in vibration, temperature, and pressure data with automated root cause analysis.',
+    architecture: 'Turbine Sensors → Isolation Forest → Anomaly Detection → Root Cause Analysis → Operations Alert',
     demoType: 'iot-anomaly'
   },
 
-  // --- EXPERIMENTS ---
+  // --- EXPERIMENTS (View Code only) ---
+  {
+    id: 'chat-with-assets-rag',
+    title: 'Enterprise RAG',
+    tagline: 'Agentic RAG for Industrial Documents',
+    description: 'Agentic RAG for industrial document Q&A using LangChain, Pinecone vector search, and multi-agent orchestration.',
+    category: 'experiment',
+    tags: ['RAG', 'LangChain', 'Pinecone'],
+    metrics: [
+      { value: 'RAG', label: 'Pipeline' },
+      { value: 'Vector', label: 'Search' },
+      { value: 'Agents', label: 'Multi-Step' }
+    ],
+    githubUrl: 'https://github.com/davidfertube/chat-with-assets-rag',
+    huggingFaceUrl: null,
+    isPrivate: false,
+    techStack: 'LangChain • LangGraph • ChromaDB • Pinecone • FastAPI',
+    problem: 'Technical documentation is siloed and hard to search. Engineers need contextual answers, not keyword matches.',
+    solution: 'RAG pipeline with semantic chunking and multi-agent workflows for accurate technical document retrieval.',
+    architecture: 'Documents → Chunking → Embeddings → Vector Store → Agent Orchestration → Response',
+    demoType: 'none'
+  },
   {
     id: 'geo-insight-hse',
     title: 'Vision AI Safety Inspector',
     tagline: 'VLM for HSE Compliance',
-    description: 'Production-grade Vision-Language Model (VLM) for real-time HSE compliance—delivering measurable safety improvements at energy facilities.',
+    description: 'Vision AI for HSE compliance inspection using Qwen2-VL multimodal model for safety scene understanding.',
     category: 'experiment',
     tags: ['VLM', 'Computer Vision', 'Safety'],
     metrics: [
-      { value: 'Vision', label: 'Model' },
-      { value: 'R&D', label: 'Phase' },
-      { value: 'Safety', label: 'First' }
+      { value: 'VLM', label: 'Multimodal' },
+      { value: 'HSE', label: 'Compliance' },
+      { value: 'Real-Time', label: 'Analysis' }
     ],
     githubUrl: 'https://github.com/davidfertube/geo-insight-hse',
     huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'Qwen2-VL • Transformers • Python • Gradio • Docker',
-    problem: 'Conventional object detection misses behavioral context. Energy facilities need AI that understands unsafe actions, not just objects.',
-    solution: 'VLM system using Qwen2-VL to reason about safety scenes in natural language for HSE compliance monitoring.',
+    problem: 'Traditional object detection misses behavioral context. Safety requires understanding actions, not just objects.',
+    solution: 'VLM system using Qwen2-VL to reason about safety scenes in natural language.',
     architecture: 'Video Feed → VLM Inference → Safety Reasoning → Alert System',
-    demoType: 'ppe-detection'
+    demoType: 'none'
   },
   {
     id: 'las-parser',
-    title: 'Well Log Data Parser',
-    tagline: 'Energy Data ETL Pipeline',
-    description: 'Cloud-native ETL pipeline for LAS/DLIS well log files with vectorization for RAG applications in Energy & Commodities operations.',
+    title: 'LAS Parser',
+    tagline: 'Well Log Data ETL',
+    description: 'Well log data parser for energy ETL pipelines, 10x faster than industry standard parsers.',
     category: 'experiment',
-    tags: ['Data Engineering', 'Energy', 'Vectorization'],
+    tags: ['Data Engineering', 'Energy', 'ETL'],
     metrics: [
+      { value: '10x', label: 'Faster' },
       { value: 'LAS/DLIS', label: 'Formats' },
-      { value: 'ETL', label: 'Pipeline' },
-      { value: 'Vector', label: 'Ready' }
+      { value: 'ETL', label: 'Pipeline' }
     ],
     githubUrl: 'https://github.com/davidfertube/las-parser',
     huggingFaceUrl: null,
     isPrivate: false,
-    techStack: 'Python • LASIO • Pandas • Mistral-7B • Gradio',
-    problem: 'Well log data in legacy LAS/DLIS formats is difficult to integrate with modern AI systems and RAG pipelines.',
-    solution: 'ETL pipeline that parses, normalizes, and vectorizes well log data for seamless integration with enterprise AI applications.',
-    architecture: 'LAS/DLIS Files → LASIO Parser → Data Normalization → Vectorization → RAG-Ready Output',
+    techStack: 'Python • LASIO • Pandas • NumPy • Docker',
+    problem: 'Well log data in legacy LAS/DLIS formats is slow to parse and difficult to integrate with modern systems.',
+    solution: 'Optimized ETL pipeline parsing well log data 10x faster than standard tools.',
+    architecture: 'LAS/DLIS Files → Optimized Parser → Normalization → Output Formats',
     demoType: 'none'
   },
   {
     id: 'rl-supply-chain',
-    title: 'RL Supply Chain Optimizer',
-    tagline: 'Reinforcement Learning for Inventory',
-    description: 'Autonomous inventory management using PPO reinforcement learning—demonstrating AI-driven optimization for supply chain operations.',
+    title: 'RL Supply Chain',
+    tagline: 'PPO Inventory Optimization',
+    description: 'RL-based inventory optimization reducing stockouts 25% using PPO reinforcement learning.',
     category: 'experiment',
-    tags: ['Reinforcement Learning', 'Optimization', 'PPO'],
+    tags: ['Reinforcement Learning', 'PPO', 'Optimization'],
     metrics: [
+      { value: '25%', label: 'Stockout Reduction' },
       { value: 'PPO', label: 'Algorithm' },
-      { value: 'RL', label: 'Agent' },
-      { value: 'Supply', label: 'Chain' }
+      { value: 'RL', label: 'Agent' }
     ],
     githubUrl: 'https://github.com/davidfertube/rl-supply-chain',
     huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'Python • Stable Baselines3 • PPO • Gymnasium • Docker',
-    problem: 'Traditional inventory management relies on heuristics. Complex supply chains need adaptive, AI-driven optimization.',
-    solution: 'Reinforcement learning agent using PPO to optimize inventory levels, reorder points, and supply chain decisions autonomously.',
-    architecture: 'Environment State → PPO Agent → Action Selection → Reward Calculation → Policy Update',
+    problem: 'Traditional inventory management uses static rules. Complex supply chains need adaptive optimization.',
+    solution: 'PPO agent learning optimal inventory policies through simulation, reducing stockouts 25%.',
+    architecture: 'Environment State → PPO Agent → Action → Reward → Policy Update',
     demoType: 'none'
   }
 ];
