@@ -1,0 +1,274 @@
+.aboutContainer {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+/* Profile - centered */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border: 3px solid var(--color-border);
+}
+
+.name {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.location {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+
+.summary {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  transition: all 0.2s ease;
+}
+
+.socialIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.socialIcon:hover {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+}
+
+/* Content blocks */
+.blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.block {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.block h3 {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item strong {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.item span {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.tags span:hover {
+  border-color: var(--color-text);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .aboutContainer {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .summary {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .socialLinks {
+    gap: 0.75rem;
+  }
+
+  .socialIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .socialIcon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .blocks {
+    gap: 1.5rem;
+  }
+
+  .block {
+    padding: 1.25rem;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .item strong {
+    font-size: 0.85rem;
+  }
+
+  .item span {
+    font-size: 0.7rem;
+  }
+
+  .tags span {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .aboutContainer {
+    gap: 1.5rem;
+  }
+
+  .photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 0.65rem;
+  }
+
+  .location {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .summary {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .socialIcon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .block {
+    padding: 1rem;
+  }
+
+  .block h3 {
+    font-size: 0.75rem;
+  }
+
+  .tags {
+    gap: 0.4rem;
+  }
+
+  .tags span {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.4rem;
+  }
+}

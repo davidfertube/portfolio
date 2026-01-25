@@ -1,0 +1,173 @@
+.main {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 8vh;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sphereContainer {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-mono);
+  font-size: 5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  z-index: 1;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+  z-index: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Scroll indicator - Bittensor style */
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-light);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 40px;
+  background: var(--color-text-light);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scaleY(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/* Generic section styling */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .sphereContainer {
+    width: 350px;
+    height: 350px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+    min-height: auto;
+    padding-top: calc(70px + 2rem);
+  }
+
+  .scrollIndicator {
+    bottom: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .scrollLine {
+    height: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero {
+    padding-bottom: 5vh;
+  }
+
+  .sphereContainer {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+
+  .section {
+    padding: 1.5rem 0.75rem;
+    padding-top: calc(70px + 1.5rem);
+  }
+
+  .scrollIndicator {
+    bottom: 1rem;
+    font-size: 0.6rem;
+    gap: 0.3rem;
+  }
+
+  .scrollLine {
+    height: 25px;
+  }
+}

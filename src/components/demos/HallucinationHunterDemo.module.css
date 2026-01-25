@@ -1,0 +1,456 @@
+.demoSection {
+    margin-top: 0.25rem;
+    padding-top: 0;
+    border-top: none;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.demoSection h2 {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+}
+
+.demoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+}
+
+.dashboardColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.metricsRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.35rem;
+}
+
+.scoreCard {
+    background: var(--color-bg-alt);
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.circleGauge {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 0.3rem;
+}
+
+.circleGauge svg {
+    width: 100%;
+    height: 100%;
+}
+
+.gaugeProgress {
+    transition: stroke-dasharray 0.5s ease-out;
+}
+
+.gaugeValue {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.scoreLabel {
+    font-size: 0.65rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+}
+
+.testResults {
+    background: var(--color-bg-alt);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    flex: 1;
+}
+
+.resultsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--color-border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.evalBadge {
+    font-size: 0.75rem;
+    color: var(--color-accent);
+    background: rgba(16, 185, 129, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.passRate {
+    font-size: 0.75rem;
+    color: var(--color-accent);
+    background: rgba(16, 185, 129, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--color-text-light);
+}
+
+.emptyState svg {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.5rem;
+    opacity: 0.5;
+}
+
+.emptyState p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.resultsList {
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.resultItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.resultItem:last-child {
+    border-bottom: none;
+}
+
+.resultStatus {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.resultItem.pass .resultStatus {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.resultItem.fail .resultStatus {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.resultInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+}
+
+.testId {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--color-accent);
+}
+
+.testPrompt {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resultScores {
+    display: flex;
+    gap: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--color-text-light);
+}
+
+.resultScores span {
+    padding: 0.2rem 0.4rem;
+    background: var(--color-bg-muted);
+    border-radius: 3px;
+}
+
+.controlsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.infoCard {
+    background: var(--color-bg-alt);
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.infoCard h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+  text-align: center;
+}
+
+.infoCard p {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    line-height: 1.4;
+    margin: 0;
+  text-align: center;
+}
+
+.metrics {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.metricItem {
+    flex: 1;
+    background: var(--color-bg-alt);
+    border-radius: 8px;
+    padding: 0.6rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.metricValue {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+.metricLabel {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+}
+
+.pipelineInfo {
+    background: var(--color-bg-alt);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.pipelineInfo h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+}
+
+.pipelineSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.pipelineStep {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+}
+
+.stepNum {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--color-accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.controls {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btnPrimary {
+    flex: 1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-accent);
+    color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btnPrimary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btnPrimary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btnSecondary {
+    flex: 1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-text-light);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btnSecondary:hover {
+    border-color: var(--color-text);
+}
+
+.previewImage {
+    margin-top: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.demoImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .demoSection {
+        margin-top: 1rem;
+    }
+
+    .demoContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .metricsRow {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .scoreCard {
+        padding: 0.75rem;
+    }
+
+    .circleGauge {
+        width: 60px;
+        height: 60px;
+    }
+
+    .gaugeValue {
+        font-size: 0.9rem;
+    }
+
+    .resultScores {
+        display: none;
+    }
+
+    .metrics {
+        flex-wrap: wrap;
+    }
+
+    .metricItem {
+        min-width: calc(50% - 0.5rem);
+    }
+
+    .previewImage {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

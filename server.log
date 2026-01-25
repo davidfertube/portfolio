@@ -1,0 +1,11 @@
+
+> portfolio@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by process 59677, using available port 3003 instead.
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3003
+- Network:       http://10.0.0.215:3003
+
+✓ Starting...
+✓ Ready in 857ms

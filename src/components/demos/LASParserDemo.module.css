@@ -1,0 +1,469 @@
+.demoSection {
+    margin-top: 0.5rem;
+    padding-top: 0;
+    border-top: none;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.demoSection h2 {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+}
+
+.demoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.vizColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.uploadArea {
+    background: var(--color-bg-alt);
+    border: 2px dashed var(--color-border-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadIcon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+    opacity: 0.5;
+}
+
+.uploadIcon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.uploadText {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+}
+
+.uploadHint {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+.parsingStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.parseProgress {
+    width: 100%;
+    height: 8px;
+    background: var(--color-border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--color-accent);
+    border-radius: 4px;
+    transition: width 0.3s ease-out;
+}
+
+.parseStep {
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.fileName {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+}
+
+.headerCard {
+    background: var(--color-bg-alt);
+    border-radius: 12px;
+    padding: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.headerCard h4,
+.curvesCard h4,
+.outputCard h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.headerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.headerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.headerLabel {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+}
+
+.headerValue {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.curvesCard {
+    background: var(--color-bg-alt);
+    border-radius: 12px;
+    padding: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    animation: fadeIn 0.4s ease-out 0.1s both;
+}
+
+.curvesContainer {
+    display: flex;
+    gap: 0.5rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.curveTrack {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.curveHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    background: #2a2a2a;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.curveName {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.curveUnit {
+    font-size: 0.6rem;
+    color: #888;
+}
+
+.curveChart {
+    flex: 1;
+    height: 100px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 20% 100%;
+}
+
+.curveChart svg {
+    width: 100%;
+    height: 100%;
+}
+
+.depthTrack {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    border-left: 1px solid #333;
+}
+
+.depthLabel {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.depthScale {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: #888;
+}
+
+.outputCard {
+    background: var(--color-bg-alt);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    animation: fadeIn 0.4s ease-out 0.2s both;
+}
+
+.outputFormats {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.formatTag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--color-accent);
+    border-radius: 6px;
+}
+
+.formatTag svg {
+    opacity: 0.7;
+}
+
+.controlsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.infoCard {
+    background: var(--color-bg-alt);
+    border-radius: 12px;
+    padding: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.infoCard h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  text-align: center;
+}
+
+.infoCard p {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0;
+  text-align: center;
+}
+
+.metrics {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.metricItem {
+    flex: 1;
+    background: var(--color-bg-alt);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.metricValue {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+.metricLabel {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+}
+
+.sampleFiles {
+    background: var(--color-bg-alt);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.sampleFiles h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.fileBtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.fileBtn:last-child {
+    margin-bottom: 0;
+}
+
+.fileBtn:hover:not(:disabled) {
+    border-color: var(--color-accent);
+    background: rgba(16, 185, 129, 0.05);
+}
+
+.fileBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btnSecondary {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 0.75rem;
+    background: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-text-light);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btnSecondary:hover {
+    border-color: var(--color-text);
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.techTag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--color-accent);
+    border-radius: 4px;
+}
+
+.previewImage {
+    margin-top: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.demoImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .demoSection {
+        margin-top: 1rem;
+    }
+
+    .demoContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .headerGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .curvesContainer {
+        flex-wrap: wrap;
+    }
+
+    .curveTrack {
+        min-width: calc(50% - 0.25rem);
+    }
+
+    .depthTrack {
+        width: 100%;
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
+        border-left: none;
+        border-top: 1px solid #333;
+    }
+
+    .depthLabel {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+
+    .depthScale {
+        flex-direction: row;
+    }
+
+    .metrics {
+        flex-wrap: wrap;
+    }
+
+    .metricItem {
+        min-width: calc(50% - 0.5rem);
+    }
+
+    .previewImage {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

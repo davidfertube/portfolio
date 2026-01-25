@@ -1,0 +1,31 @@
+.toggleBtn {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+    height: 36px;
+    width: 36px;
+}
+
+[data-theme='dark'] .toggleBtn {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggleBtn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .toggleBtn:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
