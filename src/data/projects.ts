@@ -47,8 +47,8 @@ export const projects: ProjectData[] = [
     demoType: 'none'
   },
   {
-    id: 'prediction-agent',
-    title: 'Prediction Agent',
+    id: 'prediction-agents',
+    title: 'Prediction Agents',
     tagline: 'AI-Powered Defense Contractor Compliance',
     description: 'Automated CMMC 2.0 compliance assessment platform for defense contractors—mapping controls to NIST 800-171 and generating audit-ready evidence packages.',
     category: 'venture',
@@ -70,8 +70,8 @@ export const projects: ProjectData[] = [
 
   // --- PRODUCTION PROJECTS (3 - All have GitHub + HuggingFace demos) ---
   {
-    id: 'predictive-maintenance',
-    title: 'Predictive Maintenance',
+    id: 'predictive-agent',
+    title: 'Predictive Agent',
     tagline: 'LSTM-Based RUL Prediction',
     description: 'RUL prediction system extending turbine life 15-20% using LSTM neural networks trained on NASA C-MAPSS and GE 7FA patterns.',
     category: 'project',
