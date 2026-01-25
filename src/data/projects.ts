@@ -26,8 +26,8 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES (No links - business concepts) ---
   {
-    id: 'steel-intelligent-knowledge-tool',
-    title: 'Steel Intelligent Knowledge Tool',
+    id: 'steel-agents',
+    title: 'Steel Agents',
     tagline: 'AI-Powered Steel Manufacturing Intelligence',
     description: 'Enterprise knowledge platform for steel manufacturing—integrating metallurgical data, process parameters, and quality metrics for intelligent decision support.',
     category: 'venture',
@@ -47,8 +47,8 @@ export const projects: ProjectData[] = [
     demoType: 'none'
   },
   {
-    id: 'cmmc-compliance-platform',
-    title: 'CMMC 2.0 Compliance Platform',
+    id: 'prediction-agent',
+    title: 'Prediction Agent',
     tagline: 'AI-Powered Defense Contractor Compliance',
     description: 'Automated CMMC 2.0 compliance assessment platform for defense contractors—mapping controls to NIST 800-171 and generating audit-ready evidence packages.',
     category: 'venture',
@@ -91,8 +91,8 @@ export const projects: ProjectData[] = [
     demoType: 'visualization'
   },
   {
-    id: 'policy-guard',
-    title: 'Policy Guard',
+    id: 'compliance-agent',
+    title: 'Compliance Agent',
     tagline: 'NERC CIP Compliance Automation',
     description: 'NERC CIP compliance automation reducing audit prep 60% through automated procedure validation against CIP-006-6 requirements.',
     category: 'project',
@@ -112,8 +112,8 @@ export const projects: ProjectData[] = [
     demoType: 'none'
   },
   {
-    id: 'iot-anomaly-agent',
-    title: 'IoT Anomaly Agent',
+    id: 'anomaly-agent',
+    title: 'Anomaly Agent',
     tagline: 'Real-Time Turbine Monitoring',
     description: 'Real-time turbine anomaly detection with auto root cause analysis using Isolation Forest and LLM-powered diagnostics.',
     category: 'project',
@@ -177,8 +177,8 @@ export const projects: ProjectData[] = [
     demoType: 'none'
   },
   {
-    id: 'las-parser',
-    title: 'LAS Parser',
+    id: 'data-parser-energy',
+    title: 'Data Parser - Energy',
     tagline: 'Well Log Data ETL',
     description: 'Well log data parser for energy ETL pipelines, 10x faster than industry standard parsers.',
     category: 'experiment',
