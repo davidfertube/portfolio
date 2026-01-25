@@ -21,10 +21,6 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className={styles.scrollIndicator}>
-          <span>Scroll</span>
-          <div className={styles.scrollLine}></div>
-        </div>
       </section>
 
       {/* Section 2: About - Vertically centered */}
