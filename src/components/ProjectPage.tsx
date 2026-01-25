@@ -46,7 +46,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
                 Run Demo
               </a>
             )}
-            {project.category !== 'venture' && project.githubUrl && (
+            {project.category === 'experiment' && project.githubUrl && (
               <a
                 href={project.githubUrl}
                 target="_blank"
@@ -107,7 +107,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h3>Explore This Project</h3>
-            <p>{project.category === 'venture' ? 'Run the live demo.' : 'View the source code, architecture, and run the live demo.'}</p>
+            <p>{project.category === 'experiment' ? 'View the source code and architecture.' : 'Run the live demo.'}</p>
             <div className={styles.ctaActions}>
               {project.huggingFaceUrl && (
                 <a
@@ -119,7 +119,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
                   Run Demo
                 </a>
               )}
-              {project.category !== 'venture' && project.githubUrl && (
+              {project.category === 'experiment' && project.githubUrl && (
                 <a
                   href={project.githubUrl}
                   target="_blank"
