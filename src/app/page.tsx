@@ -14,7 +14,11 @@ export default function Home() {
           </div>
           <div className={styles.titleContainer}>
             <h1>AI ENGINEER</h1>
-            <h2>ENERGY INDUSTRY | Greater Houston</h2>
+            <h2>
+              <span>ENERGY INDUSTRY</span>
+              <span className={styles.separator}>|</span>
+              <span>Greater Houston</span>
+            </h2>
           </div>
         </div>
         <div className={styles.scrollIndicator}>

@@ -58,6 +58,15 @@
   z-index: 1;
   text-align: center;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.separator {
+  color: var(--color-text-light);
 }
 
 /* Scroll indicator - Bittensor style */
@@ -116,6 +125,12 @@
 
   .hero h2 {
     font-size: 1.25rem;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .separator {
+    display: none;
   }
 
   .section {
@@ -154,6 +169,8 @@
   .hero h2 {
     font-size: 0.9rem;
     letter-spacing: 0.05em;
+    flex-direction: column;
+    gap: 0.15rem;
   }
 
   .section {

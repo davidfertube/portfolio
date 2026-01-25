@@ -47,24 +47,24 @@ export const projects: ProjectData[] = [
     demoType: 'none'
   },
   {
-    id: 'enterprise-knowledge-retrieval',
-    title: 'Enterprise Knowledge Retrieval',
-    tagline: 'Agentic RAG for Energy & Commodities',
-    description: 'Production-grade agentic RAG pipeline for Energy & Commodities featuring semantic chunking, OpenAI embeddings, Pinecone vector search, and LangGraph multi-agent orchestration.',
+    id: 'cmmc-compliance-platform',
+    title: 'CMMC 2.0 Compliance Platform',
+    tagline: 'AI-Powered Defense Contractor Compliance',
+    description: 'Automated CMMC 2.0 compliance assessment platform for defense contractors—mapping controls to NIST 800-171 and generating audit-ready evidence packages.',
     category: 'venture',
-    tags: ['RAG', 'LangGraph', 'Vector Search'],
+    tags: ['CMMC 2.0', 'Compliance', 'Defense'],
     metrics: [
-      { value: '50K+', label: 'Documents' },
-      { value: 'Agents', label: 'Multi-Step' },
-      { value: 'Enterprise', label: 'Scale' }
+      { value: 'Level 2', label: 'Certification' },
+      { value: '110', label: 'Controls' },
+      { value: 'DoD', label: 'Ready' }
     ],
     githubUrl: null,
     huggingFaceUrl: null,
     isPrivate: false,
-    techStack: 'LangChain • LangGraph • ChromaDB • Pinecone • FastAPI',
-    problem: 'Enterprises struggle to retrieve accurate answers from massive, siloed technical documentation. Simple search misses critical context.',
-    solution: 'Enterprise-scale knowledge retrieval using RAG, semantic chunking strategies, and multi-agent workflows for Energy & Commodities supply chain operations.',
-    architecture: 'Technical Manuals → Semantic Chunking → Embeddings → Pinecone → LangGraph Agents → Expert Response',
+    techStack: 'Python • LangChain • Azure AI • FastAPI • PostgreSQL',
+    problem: 'Defense contractors must achieve CMMC 2.0 certification to bid on DoD contracts. Manual compliance mapping is error-prone and resource-intensive.',
+    solution: 'AI platform automating CMMC 2.0 control assessment, evidence collection, and gap remediation—reducing certification timeline by 40%.',
+    architecture: 'Policy Documents → NLP Analysis → NIST 800-171 Mapping → Gap Detection → Evidence Package Generation',
     demoType: 'none'
   },
 
