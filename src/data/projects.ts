@@ -81,8 +81,8 @@ export const projects: ProjectData[] = [
       { value: 'LSTM', label: 'Model' },
       { value: 'NASA', label: 'C-MAPSS' }
     ],
-    githubUrl: 'https://github.com/davidfertube/predictive-maintenance',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-maintenance',
+    githubUrl: 'https://github.com/davidfertube/predictive-agent',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-agent',
     isPrivate: false,
     techStack: 'Python • Scikit-Learn • LSTM • Plotly • Docker • CI/CD',
     problem: 'Power plant operators need to predict equipment failures before they happen to schedule maintenance proactively.',
@@ -102,8 +102,8 @@ export const projects: ProjectData[] = [
       { value: 'CIP-006', label: 'Standard' },
       { value: 'Auto', label: 'Validation' }
     ],
-    githubUrl: 'https://github.com/davidfertube/policy-guard',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/policy-guard',
+    githubUrl: 'https://github.com/davidfertube/compliance-agent',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/compliance-agent',
     isPrivate: false,
     techStack: 'PydanticAI • DSPy • Mistral • Python • FastAPI',
     problem: 'NERC CIP compliance requires continuous monitoring of standards across BES cyber systems. Manual audits are resource-intensive and error-prone.',
@@ -123,8 +123,8 @@ export const projects: ProjectData[] = [
       { value: 'Auto', label: 'RCA' },
       { value: 'SCADA', label: 'Integration' }
     ],
-    githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
-    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/iot-anomaly-agent',
+    githubUrl: 'https://github.com/davidfertube/anomaly-agent',
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/anomaly-agent',
     isPrivate: false,
     techStack: 'Python • Isolation Forest • Gradio • Time-Series • Docker',
     problem: 'Gas turbines generate massive sensor streams. Manual monitoring misses subtle anomalies that precede forced outages.',
