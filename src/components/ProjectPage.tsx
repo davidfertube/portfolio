@@ -53,7 +53,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
                 rel="noopener noreferrer"
                 className={styles.btnPrimary}
               >
-                Run Demo
+                {project.category === 'venture' ? 'Sign Up' : 'Run Demo'}
               </a>
             )}
             {project.category === 'experiment' && project.githubUrl && (
@@ -117,7 +117,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h3>{project.category === 'venture' ? 'Explore This Business' : 'Explore This Project'}</h3>
-            <p>{project.category === 'experiment' ? 'View the source code and architecture.' : 'Run the live demo.'}</p>
+            <p>{project.category === 'experiment' ? 'View the source code and architecture.' : project.category === 'venture' ? 'Sign up and get started.' : 'Run the live demo.'}</p>
             <div className={styles.ctaActions}>
               {project.huggingFaceUrl && (
                 <a
@@ -136,7 +136,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
                   rel="noopener noreferrer"
                   className={styles.btnPrimary}
                 >
-                  Run Demo
+                  {project.category === 'venture' ? 'Sign Up' : 'Run Demo'}
                 </a>
               )}
               {project.category === 'experiment' && project.githubUrl && (
