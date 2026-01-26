@@ -15,6 +15,7 @@ export interface ProjectData {
   metrics: ProjectMetric[];
   githubUrl: string | null;
   huggingFaceUrl: string | null;
+  demoUrl?: string | null;
   isPrivate: boolean;
   techStack: string;
   problem: string;
@@ -39,16 +40,17 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: null,
     huggingFaceUrl: null,
+    demoUrl: 'https://red-flower-0152ee60f.1.azurestaticapps.net/',
     isPrivate: false,
     techStack: 'Python • LangChain • Azure AI • FastAPI • PostgreSQL',
     problem: 'Steel manufacturers struggle with siloed technical knowledge across metallurgy, process engineering, and quality control. Engineers spend hours searching for critical specifications.',
     solution: 'Intelligent knowledge retrieval platform using RAG to surface metallurgical standards, process parameters, and quality benchmarks from enterprise documentation.',
     architecture: 'Technical Documents → Semantic Chunking → Embeddings → Vector Search → LLM Response → Expert Answer',
-    demoType: 'none'
+    demoType: 'chat'
   },
   {
-    id: 'defense-agents',
-    title: 'Defense Agents',
+    id: 'renewal-agents',
+    title: 'Renewal Agents',
     tagline: 'AI-Powered Defense Contractor Compliance',
     description: 'Automated CMMC 2.0 compliance assessment platform for defense contractors—mapping controls to NIST 800-171 and generating audit-ready evidence packages.',
     category: 'venture',
@@ -60,12 +62,13 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: null,
     huggingFaceUrl: null,
+    demoUrl: 'https://renewal-agents-649096848847.us-central1.run.app/',
     isPrivate: false,
     techStack: 'Python • LangChain • Azure AI • FastAPI • PostgreSQL',
     problem: 'Defense contractors must achieve CMMC 2.0 certification to bid on DoD contracts. Manual compliance mapping is error-prone and resource-intensive.',
     solution: 'AI platform automating CMMC 2.0 control assessment, evidence collection, and gap remediation—reducing certification timeline by 40%.',
     architecture: 'Policy Documents → NLP Analysis → NIST 800-171 Mapping → Gap Detection → Evidence Package Generation',
-    demoType: 'none'
+    demoType: 'chat'
   },
 
   // --- PRODUCTION PROJECTS (3 - All have GitHub + HuggingFace demos) ---

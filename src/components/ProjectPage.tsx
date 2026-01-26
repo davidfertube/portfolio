@@ -46,6 +46,16 @@ export default function ProjectPage({ project }: ProjectPageProps) {
                 Run Demo
               </a>
             )}
+            {project.demoUrl && (
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.btnPrimary}
+              >
+                Run Demo
+              </a>
+            )}
             {project.category === 'experiment' && project.githubUrl && (
               <a
                 href={project.githubUrl}
@@ -112,6 +122,16 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               {project.huggingFaceUrl && (
                 <a
                   href={project.huggingFaceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.btnPrimary}
+                >
+                  Run Demo
+                </a>
+              )}
+              {project.demoUrl && (
+                <a
+                  href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.btnPrimary}
