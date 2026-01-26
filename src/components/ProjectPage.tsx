@@ -116,7 +116,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         {/* CTA Section */}
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
-            <h3>Explore This Project</h3>
+            <h3>{project.category === 'venture' ? 'Explore This Business' : 'Explore This Project'}</h3>
             <p>{project.category === 'experiment' ? 'View the source code and architecture.' : 'Run the live demo.'}</p>
             <div className={styles.ctaActions}>
               {project.huggingFaceUrl && (
