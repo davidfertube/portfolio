@@ -1,4 +1,4 @@
-# David Fernandez \u2014 Senior AI Engineer | Azure Native
+# David Fernandez \ AI Engineer
 
 [![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-davidfernandez.dev-00d4ff?style=for-the-badge)](https://davidfernandez.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge\u0026logo=linkedin)](https://linkedin.com/in/davidfertube)
@@ -9,7 +9,7 @@
 
 ## About This Portfolio
 
-This repository contains my **interactive portfolio website** showcasing **production-ready AI systems** built for high-stakes industries. Each project features a **live, working demo** that demonstrates real functionality\u2014not just mockups.
+This repository contains my **interactive portfolio website** showcasing **production-ready AI systems** built for high-stakes industries. Each project features a **live, working demo** that demonstrates real functionality, not just mockups.
 
 **Live Site: [davidfernandez.dev](https://davidfernandez.dev)**
 
@@ -42,7 +42,7 @@ This repository contains my **interactive portfolio website** showcasing **produ
 \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
 \u2502  RAG \u0026 SEARCH               \u2502  MLOPS \u0026 CLOUD                    \u2502
 \u2502  \u2022 ChromaDB / Search      \u2502  \u2022 Azure ML                       \u2502
-\u2502  \u2022 LangChain              \u2502  \u2022 Docker \u0026 K8s                \u2502
+\u2502  \u2022 LangGraph              \u2502  \u2022 Docker Conteiner                \u2502
 \u2502  \u2022 Semantic Kernel        \u2502  \u2022 GitHub Actions                 \u2502
 \u2502  \u2022 Citation Gronding      \u2502  \u2022 Terraform                      \u2502
 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
