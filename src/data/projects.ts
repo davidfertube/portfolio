@@ -40,7 +40,7 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: null,
     huggingFaceUrl: null,
-    demoUrl: 'https://red-flower-0152ee60f.1.azurestaticapps.net/',
+    demoUrl: 'https://steel-venture.vercel.app/',
     isPrivate: false,
     techStack: 'Python • LangGraph • Azure AI • FastAPI • PostgreSQL',
     problem: 'Engineering teams waste hours manually searching through PDFs to find steel specifications, ASTM standards, and compliance requirements.',
