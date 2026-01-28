@@ -40,11 +40,11 @@ export default function AboutSection() {
           priority
         />
         <h2 className={styles.name}>David Fernandez</h2>
-        <p className={styles.title}>APPLIED AI ENGINEER | LANGGRAPH CORE CONTRIBUTOR</p>
+        <p className={styles.title}>APPLIED AI ENGINEER | LANGGRAPH CONTRIBUTOR</p>
         <p className={styles.location}>Katy, TX (Houston Metro)</p>
 
         <p className={styles.summary}>
-          Applied AI Engineer with 5+ years of software engineering experience and 4+ years specializing in GenAI. Core contributor to LangGraph. Delivering enterprise RAG systems and multi-agent orchestration for the Energy & Commodities sector.
+          Applied AI Engineer with 5+ years of software engineering experience and 4+ years specializing in GenAI. Contributor to LangGraph. Delivering enterprise RAG systems and multi-agent orchestration for the Energy & Commodities sector.
         </p>
 
         <div className={styles.socialLinks}>
