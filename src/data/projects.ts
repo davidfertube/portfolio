@@ -48,28 +48,6 @@ export const projects: ProjectData[] = [
     architecture: 'Technical Documents → Semantic Chunking → 100K+ Vector Store → AI Context Understanding → Cited Answer',
     demoType: 'chat'
   },
-  {
-    id: 'renewal-agents',
-    title: 'Renewal Agents',
-    tagline: 'Never Lose a Customer to Rate Shock Again',
-    description: 'AI-powered retention platform for Texas energy retailers predicting churn risk, generating personalized renewal offers, and automating outreach before rates expire.',
-    category: 'venture',
-    tags: ['Churn Prediction', 'Energy Retail', 'Texas REPs'],
-    metrics: [
-      { value: 'AI', label: 'Risk Scoring' },
-      { value: 'Auto', label: 'Outreach' },
-      { value: 'Compliant', label: 'Templates' }
-    ],
-    githubUrl: null,
-    huggingFaceUrl: null,
-    demoUrl: 'https://renewal-agents-649096848847.us-central1.run.app/',
-    isPrivate: false,
-    techStack: 'Python • LangGraph • GCP • FastAPI • PostgreSQL',
-    problem: 'Texas energy retailers lose customers to rate shock when promotional rates expire and bills increase 50-200%. Manual retention efforts are reactive and ineffective.',
-    solution: 'AI platform that scores churn risk based on contract expiry, rate vs. market, and tenure—then generates personalized renewal offers with compliant Texas energy communication templates.',
-    architecture: 'Customer Data → Churn Risk Scoring → Personalized Offer Generation → Automated Email Outreach → Audit Trail',
-    demoType: 'chat'
-  },
 
   // --- PRODUCTION PROJECTS (3 - All have GitHub + HuggingFace demos) ---
   {

@@ -39,7 +39,7 @@ npm run lint     # Run ESLint
 ```
 
 ## Project Categories
-- **venture**: Business products (Steel Agents, Renewal Agents) - Show "Sign Up" button
+- **venture**: Business products (Steel Agents) - Show "Sign Up" button
 - **project**: Production projects with HuggingFace demos - Show "Run Demo" button
 - **experiment**: Code experiments - Show "View Code" button
 
