@@ -27,25 +27,25 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES (No links - business concepts) ---
   {
-    id: 'steel-agents',
-    title: 'Steel Agents',
-    tagline: 'The Intelligent Engine for Steel Specifications',
-    description: 'AI-powered RAG system helping engineering teams instantly access ASTM standards, material specifications, and compliance requirements through conversational queries with cited answers.',
+    id: 'steel-agent',
+    title: 'Steel Agent',
+    tagline: 'AI Compliance Verification for O&G Materials Engineers',
+    description: 'AI-powered RAG system for querying steel specifications with traceable citations. Query NACE MR0175, ASTM, and API standards instantly with answers engineers can cite in compliance reports.',
     category: 'venture',
-    tags: ['RAG', 'ASTM', 'Engineering'],
+    tags: ['RAG', 'NACE/ASTM/API', 'Compliance', 'O&G'],
     metrics: [
-      { value: '<2s', label: 'Response Time' },
-      { value: '100K+', label: 'Vectors' },
-      { value: 'ASTM/ASME', label: 'Standards' }
+      { value: '<5s', label: 'Response Time' },
+      { value: '100%', label: 'Cited Answers' },
+      { value: '$0', label: 'Monthly Cost' }
     ],
-    githubUrl: null,
+    githubUrl: 'https://github.com/davidfertube/steel-venture',
     huggingFaceUrl: null,
-    demoUrl: 'https://steel-venture.vercel.app/',
+    demoUrl: 'https://steel-venture.vercel.app',
     isPrivate: false,
-    techStack: 'Python • LangGraph • Azure AI • FastAPI • PostgreSQL',
-    problem: 'Engineering teams waste hours manually searching through PDFs to find steel specifications, ASTM standards, and compliance requirements.',
-    solution: 'RAG-powered knowledge engine that retrieves precise information from technical documents in under 2 seconds with traceable source citations including document names, pages, and sections.',
-    architecture: 'Technical Documents → Semantic Chunking → 100K+ Vector Store → AI Context Understanding → Cited Answer',
+    techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Google Gemini • Vercel',
+    problem: 'Materials engineers spend 2-4 hours/day searching specs manually. Wrong material specification = $10M+ liability. NACE/ASTM/API docs scattered across systems cause compliance audit failures.',
+    solution: 'RAG-powered compliance verification engine that retrieves precise specifications from uploaded PDFs with traceable [1] [2] citations pointing to exact documents and pages.',
+    architecture: 'PDF Upload → Text Extraction → Google Embeddings (3072d) → pgvector Search → Gemini 2.5 Flash → Cited Answer',
     demoType: 'chat'
   },
 
