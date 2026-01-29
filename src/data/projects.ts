@@ -27,8 +27,8 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES (No links - business concepts) ---
   {
-    id: 'spec-agent',
-    title: 'Spec Agent',
+    id: 'spec-agents',
+    title: 'Spec Agents',
     tagline: 'AI Compliance Verification for O&G Materials Engineers',
     description: 'AI-powered RAG system for querying steel specifications with traceable citations. Query NACE MR0175, ASTM, and API standards instantly with answers engineers can cite in compliance reports.',
     category: 'venture',
