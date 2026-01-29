@@ -27,8 +27,8 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES (No links - business concepts) ---
   {
-    id: 'steel-agent',
-    title: 'Steel Agent',
+    id: 'spec-agent',
+    title: 'Spec Agent',
     tagline: 'AI Compliance Verification for O&G Materials Engineers',
     description: 'AI-powered RAG system for querying steel specifications with traceable citations. Query NACE MR0175, ASTM, and API standards instantly with answers engineers can cite in compliance reports.',
     category: 'venture',
@@ -42,10 +42,10 @@ export const projects: ProjectData[] = [
     huggingFaceUrl: null,
     demoUrl: 'https://steel-venture.vercel.app',
     isPrivate: false,
-    techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Google Gemini • Vercel',
+    techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
     problem: 'Materials engineers spend 2-4 hours/day searching specs manually. Wrong material specification = $10M+ liability. NACE/ASTM/API docs scattered across systems cause compliance audit failures.',
     solution: 'RAG-powered compliance verification engine that retrieves precise specifications from uploaded PDFs with traceable [1] [2] citations pointing to exact documents and pages.',
-    architecture: 'PDF Upload → Text Extraction → Google Embeddings (3072d) → pgvector Search → Gemini 2.5 Flash → Cited Answer',
+    architecture: 'PDF Upload → Text Extraction → Voyage AI Embeddings (1024d) → pgvector Search → Groq Llama 3.3 70B → Cited Answer',
     demoType: 'chat'
   },
 
