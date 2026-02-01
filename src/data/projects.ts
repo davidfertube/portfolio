@@ -40,7 +40,7 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/steel-venture',
     huggingFaceUrl: null,
-    demoUrl: 'https://steel-venture.vercel.app',
+    demoUrl: 'https://spec-agents.vercel.app',
     isPrivate: false,
     techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
     problem: 'Materials engineers spend 2-4 hours/day searching specs manually. Wrong material specification = $10M+ liability. NACE/ASTM/API docs scattered across systems cause compliance audit failures.',
