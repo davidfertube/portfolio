@@ -48,14 +48,36 @@ export const projects: ProjectData[] = [
     architecture: 'PDF Upload → Text Extraction → Voyage AI Embeddings (1024d) → pgvector Search → Groq Llama 3.3 70B → Cited Answer',
     demoType: 'chat'
   },
+  {
+    id: 'new-venture',
+    title: 'New Venture',
+    tagline: 'Coming Soon',
+    description: 'New venture project coming soon. Details to be announced.',
+    category: 'venture',
+    tags: ['AI', 'GenAI', 'Coming Soon'],
+    metrics: [
+      { value: 'TBA', label: 'Status' },
+      { value: 'TBA', label: 'Tech' },
+      { value: 'TBA', label: 'Impact' }
+    ],
+    githubUrl: null,
+    huggingFaceUrl: null,
+    demoUrl: null,
+    isPrivate: false,
+    techStack: 'To be announced',
+    problem: 'Project details coming soon.',
+    solution: 'Project details coming soon.',
+    architecture: 'Project details coming soon.',
+    demoType: 'none'
+  },
 
-  // --- PRODUCTION PROJECTS (3 - All have GitHub + HuggingFace demos) ---
+  // --- EXPERIMENTS (GitHub repos only) ---
   {
     id: 'predictive-agent',
     title: 'Predictive Agent',
     tagline: 'LSTM-Based RUL Prediction',
     description: 'RUL prediction system extending turbine life 15-20% using LSTM neural networks trained on NASA C-MAPSS and GE 7FA patterns.',
-    category: 'project',
+    category: 'experiment',
     tags: ['LSTM', 'Time-Series', 'MLOps'],
     metrics: [
       { value: '15-20%', label: 'Life Extension' },
@@ -76,7 +98,7 @@ export const projects: ProjectData[] = [
     title: 'Compliance Agent',
     tagline: 'NERC CIP Compliance Automation',
     description: 'NERC CIP compliance automation reducing audit prep 60% through automated procedure validation against CIP-006-6 requirements.',
-    category: 'project',
+    category: 'experiment',
     tags: ['NERC CIP', 'Compliance', 'NLP'],
     metrics: [
       { value: '60%', label: 'Audit Reduction' },
@@ -97,7 +119,7 @@ export const projects: ProjectData[] = [
     title: 'Anomaly Agent',
     tagline: 'Real-Time Turbine Monitoring',
     description: 'Real-time turbine anomaly detection with auto root cause analysis using Isolation Forest and LLM-powered diagnostics.',
-    category: 'project',
+    category: 'experiment',
     tags: ['Anomaly Detection', 'IoT', 'LLM'],
     metrics: [
       { value: 'Real-Time', label: 'Detection' },
@@ -113,8 +135,6 @@ export const projects: ProjectData[] = [
     architecture: 'Turbine Sensors → Isolation Forest → Anomaly Detection → Root Cause Analysis → Operations Alert',
     demoType: 'iot-anomaly'
   },
-
-  // --- EXPERIMENTS (View Code only) ---
   {
     id: 'chat-with-assets-rag',
     title: 'Enterprise RAG',

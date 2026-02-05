@@ -5,7 +5,7 @@ import styles from './AboutSection.module.css';
 
 const skills = [
   // GenAI & Orchestration
-  'LangGraph (Contributor)', 'LangChain', 'LlamaIndex', 'Multi-Agent Workflows', 'Agentic RAG', 'Prompt Engineering', 'Fine-Tuning',
+  'LangGraph (Contributor)', 'Pydantic (Contributor)', 'LangChain', 'LlamaIndex', 'Multi-Agent Workflows', 'Agentic RAG', 'Prompt Engineering', 'Fine-Tuning',
   // LLM APIs & Models
   'OpenAI', 'Claude', 'Gemini', 'Azure OpenAI', 'Model Eval (Ragas, DeepEval)',
   // RAG & Vector Search
@@ -40,11 +40,11 @@ export default function AboutSection() {
           priority
         />
         <h2 className={styles.name}>David Fernandez</h2>
-        <p className={styles.title}>APPLIED AI ENGINEER | LANGGRAPH CONTRIBUTOR</p>
+        <p className={styles.title}>APPLIED AI ENGINEER | CONTRIBUTOR LANGGRAPH AND PYDANTIC</p>
         <p className={styles.location}>Katy, TX (Houston Metro)</p>
 
         <p className={styles.summary}>
-          Applied AI Engineer with 5+ years of software engineering experience and 4+ years specializing in GenAI. Contributor to LangGraph. Delivering enterprise RAG systems and multi-agent orchestration for the Energy & Commodities sector.
+          Applied AI Engineer with 5+ years of software engineering experience and 3+ years specializing in GenAI. Contributor to LangGraph and Pydantic. Delivering enterprise RAG systems and multi-agent orchestration for the Energy & Commodities sector.
         </p>
 
         <div className={styles.socialLinks}>

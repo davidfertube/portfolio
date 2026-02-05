@@ -4,7 +4,6 @@ import styles from './PortfolioSection.module.css';
 
 export default function PortfolioSection() {
   const ventures = projects.filter(p => p.category === 'venture');
-  const endToEndProjects = projects.filter(p => p.category === 'project');
   const experiments = projects.filter(p => p.category === 'experiment');
 
   return (
@@ -18,21 +17,6 @@ export default function PortfolioSection() {
         <h3 className={styles.categoryTitle}>Ventures</h3>
         <div className={styles.venturesGrid}>
           {ventures.map((project) => (
-            <ProjectCard
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              description={project.description}
-              techStack={project.techStack}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className={styles.category}>
-        <h3 className={styles.categoryTitle}>Production Projects</h3>
-        <div className={styles.grid}>
-          {endToEndProjects.map((project) => (
             <ProjectCard
               key={project.id}
               id={project.id}
