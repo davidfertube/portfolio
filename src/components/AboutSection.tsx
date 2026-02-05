@@ -85,7 +85,7 @@ export default function AboutSection() {
             <span>Independent Consultant | May 2024 - Present</span>
           </div>
           <div className={styles.item}>
-            <strong>Machine Learning Engineer</strong>
+            <strong>Product Engineer</strong>
             <span>TestMachine Inc | Oct 2022 - Mar 2024</span>
           </div>
           <div className={styles.item}>
