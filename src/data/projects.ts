@@ -60,7 +60,7 @@ export const projects: ProjectData[] = [
       { value: '10', label: 'Compressors' },
       { value: '4', label: 'TX Stations' }
     ],
-    githubUrl: 'https://github.com/davidfertube/compressor-health-pipeline',
+    githubUrl: 'https://github.com/davidfertube/altaviz',
     huggingFaceUrl: null,
     demoUrl: 'https://altaviz.app',
     isPrivate: false,
