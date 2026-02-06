@@ -27,8 +27,8 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES (No links - business concepts) ---
   {
-    id: 'spec-agents',
-    title: 'Spec Agents',
+    id: 'citedai',
+    title: 'CitedAI',
     tagline: 'AI Compliance Verification for O&G Materials Engineers',
     description: 'AI-powered RAG system for querying steel specifications with traceable citations. Query NACE MR0175, ASTM, and API standards instantly with answers engineers can cite in compliance reports.',
     category: 'venture',
@@ -40,7 +40,7 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/steel-venture',
     huggingFaceUrl: null,
-    demoUrl: 'https://spec-agents.vercel.app',
+    demoUrl: 'https://citedai.dev',
     isPrivate: false,
     techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
     problem: 'Materials engineers spend 2-4 hours/day searching specs manually. Wrong material specification = $10M+ liability. NACE/ASTM/API docs scattered across systems cause compliance audit failures.',
@@ -136,27 +136,6 @@ export const projects: ProjectData[] = [
     demoType: 'iot-anomaly'
   },
   {
-    id: 'chat-with-assets-rag',
-    title: 'Enterprise RAG',
-    tagline: 'Agentic RAG for Industrial Documents',
-    description: 'Agentic RAG for industrial document Q&A using LangChain, Pinecone vector search, and multi-agent orchestration.',
-    category: 'experiment',
-    tags: ['RAG', 'LangChain', 'Pinecone'],
-    metrics: [
-      { value: 'RAG', label: 'Pipeline' },
-      { value: 'Vector', label: 'Search' },
-      { value: 'Agents', label: 'Multi-Step' }
-    ],
-    githubUrl: 'https://github.com/davidfertube/chat-with-assets-rag',
-    huggingFaceUrl: null,
-    isPrivate: false,
-    techStack: 'LangChain • LangGraph • ChromaDB • Pinecone • FastAPI',
-    problem: 'Technical documentation is siloed and hard to search. Engineers need contextual answers, not keyword matches.',
-    solution: 'RAG pipeline with semantic chunking and multi-agent workflows for accurate technical document retrieval.',
-    architecture: 'Documents → Chunking → Embeddings → Vector Store → Agent Orchestration → Response',
-    demoType: 'none'
-  },
-  {
     id: 'geo-insight-hse',
     title: 'Vision AI Safety Inspector',
     tagline: 'VLM for HSE Compliance',
@@ -177,48 +156,6 @@ export const projects: ProjectData[] = [
     architecture: 'Video Feed → VLM Inference → Safety Reasoning → Alert System',
     demoType: 'none'
   },
-  {
-    id: 'data-parser-energy',
-    title: 'Data Parser - Energy',
-    tagline: 'Well Log Data ETL',
-    description: 'Well log data parser for energy ETL pipelines, 10x faster than industry standard parsers.',
-    category: 'experiment',
-    tags: ['Data Engineering', 'Energy', 'ETL'],
-    metrics: [
-      { value: '10x', label: 'Faster' },
-      { value: 'LAS/DLIS', label: 'Formats' },
-      { value: 'ETL', label: 'Pipeline' }
-    ],
-    githubUrl: 'https://github.com/davidfertube/las-parser',
-    huggingFaceUrl: null,
-    isPrivate: false,
-    techStack: 'Python • LASIO • Pandas • NumPy • Docker',
-    problem: 'Well log data in legacy LAS/DLIS formats is slow to parse and difficult to integrate with modern systems.',
-    solution: 'Optimized ETL pipeline parsing well log data 10x faster than standard tools.',
-    architecture: 'LAS/DLIS Files → Optimized Parser → Normalization → Output Formats',
-    demoType: 'none'
-  },
-  {
-    id: 'rl-supply-chain',
-    title: 'RL Supply Chain',
-    tagline: 'PPO Inventory Optimization',
-    description: 'RL-based inventory optimization reducing stockouts 25% using PPO reinforcement learning.',
-    category: 'experiment',
-    tags: ['Reinforcement Learning', 'PPO', 'Optimization'],
-    metrics: [
-      { value: '25%', label: 'Stockout Reduction' },
-      { value: 'PPO', label: 'Algorithm' },
-      { value: 'RL', label: 'Agent' }
-    ],
-    githubUrl: 'https://github.com/davidfertube/rl-supply-chain',
-    huggingFaceUrl: null,
-    isPrivate: false,
-    techStack: 'Python • Stable Baselines3 • PPO • Gymnasium • Docker',
-    problem: 'Traditional inventory management uses static rules. Complex supply chains need adaptive optimization.',
-    solution: 'PPO agent learning optimal inventory policies through simulation, reducing stockouts 25%.',
-    architecture: 'Environment State → PPO Agent → Action → Reward → Policy Update',
-    demoType: 'none'
-  }
 ];
 
 export function getProjectById(id: string): ProjectData | undefined {

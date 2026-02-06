@@ -20,11 +20,9 @@ This repository contains my **interactive portfolio website** showcasing **produ
 | # | Project | Tech Stack | Live Demo | GitHub | HuggingFace |
 |---|---------|------------|-----------|--------|-------------|
 | 1 | **Policy Guard** | Pydantic-AI, Compliance | [Demo](https://davidfernandez.dev/projects/policy-guard) | [Repo](https://github.com/davidfertube/policy-guard) | [Space](https://huggingface.co/spaces/davidfertube/policy-guard) |
-| 2 | **Chat With Assets RAG** | LangChain, ChromaDB | [Demo](https://davidfernandez.dev/projects/chat-with-assets-rag) | [Repo](https://github.com/davidfertube/chat-with-assets-rag) | [Space](https://huggingface.co/spaces/davidfertube/chat-with-assets-rag) |
-| 3 | **Geo Insight HSE** | Qwen2-VL, VLM, Safety | [Demo](https://davidfernandez.dev/projects/geo-insight-hse) | [Repo](https://github.com/davidfertube/geo-insight-hse) | [Space](https://huggingface.co/spaces/davidfertube/geo-insight-hse) |
-| 4 | **IoT Anomaly Agent** | Isolation Forest, Mistral-7B | [Demo](https://davidfernandez.dev/projects/iot-anomaly-agent) | [Repo](https://github.com/davidfertube/iot-anomaly-agent) | [Space](https://huggingface.co/spaces/davidfertube/iot-anomaly-agent) |
-| 5 | **Predictive Maintenance** | Regression, RUL, Strategy | [Demo](https://davidfernandez.dev/projects/predictive-maintenance) | [Repo](https://github.com/davidfertube/predictive-maintenance) | [Space](https://huggingface.co/spaces/davidfertube/predictive-maintenance) |
-| 6 | **LAS Parser** | LASIO, Petrophysics | [Demo](https://davidfernandez.dev/projects/las-parser) | [Repo](https://github.com/davidfertube/las-parser) | [Space](https://huggingface.co/spaces/davidfertube/las-parser) |
+| 2 | **Geo Insight HSE** | Qwen2-VL, VLM, Safety | [Demo](https://davidfernandez.dev/projects/geo-insight-hse) | [Repo](https://github.com/davidfertube/geo-insight-hse) | [Space](https://huggingface.co/spaces/davidfertube/geo-insight-hse) |
+| 3 | **IoT Anomaly Agent** | Isolation Forest, Mistral-7B | [Demo](https://davidfernandez.dev/projects/iot-anomaly-agent) | [Repo](https://github.com/davidfertube/iot-anomaly-agent) | [Space](https://huggingface.co/spaces/davidfertube/iot-anomaly-agent) |
+| 4 | **Predictive Maintenance** | Regression, RUL, Strategy | [Demo](https://davidfernandez.dev/projects/predictive-maintenance) | [Repo](https://github.com/davidfertube/predictive-maintenance) | [Space](https://huggingface.co/spaces/davidfertube/predictive-maintenance) |
 
 ---
 
