@@ -49,25 +49,25 @@ export const projects: ProjectData[] = [
     demoType: 'chat'
   },
   {
-    id: 'new-venture',
-    title: 'New Venture',
-    tagline: 'Coming Soon',
-    description: 'New venture project coming soon. Details to be announced.',
+    id: 'altaviz',
+    title: 'Altaviz',
+    tagline: 'Predictive Maintenance MLOps for Natural Gas Compression',
+    description: 'Production-ready MLOps platform monitoring 10 compressor units across 4 Texas stations. PySpark ETL pipelines process 50k+ sensor readings through a Bronze/Silver/Gold medallion architecture into real-time fleet health dashboards.',
     category: 'venture',
-    tags: ['AI', 'GenAI', 'Coming Soon'],
+    tags: ['MLOps', 'PySpark', 'Predictive Maintenance', 'Energy'],
     metrics: [
-      { value: 'TBA', label: 'Status' },
-      { value: 'TBA', label: 'Tech' },
-      { value: 'TBA', label: 'Impact' }
+      { value: '50k+', label: 'Sensor Readings' },
+      { value: '10', label: 'Compressors' },
+      { value: '4', label: 'TX Stations' }
     ],
-    githubUrl: null,
+    githubUrl: 'https://github.com/davidfertube/compressor-health-pipeline',
     huggingFaceUrl: null,
-    demoUrl: null,
+    demoUrl: 'https://altaviz.app',
     isPrivate: false,
-    techStack: 'To be announced',
-    problem: 'Project details coming soon.',
-    solution: 'Project details coming soon.',
-    architecture: 'Project details coming soon.',
+    techStack: 'PySpark • Delta Lake • PostgreSQL • Streamlit • Plotly • Docker • Terraform',
+    problem: 'Gas compression operators rely on reactive maintenance, leading to unplanned downtime costing $50k+/day. Sensor data across distributed stations is siloed and not actionable.',
+    solution: 'End-to-end MLOps pipeline: simulate sensor data, process through medallion architecture ETL, store multi-window aggregates in PostgreSQL, and visualize fleet health with real-time alerting.',
+    architecture: 'Data Simulator → PySpark ETL (Bronze/Silver/Gold) → PostgreSQL (7 tables) → Streamlit Dashboard (4 pages)',
     demoType: 'none'
   },
 
