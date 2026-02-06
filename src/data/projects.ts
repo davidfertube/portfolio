@@ -27,8 +27,8 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES (No links - business concepts) ---
   {
-    id: 'citedai',
-    title: 'CitedAI',
+    id: 'specvault',
+    title: 'SpecVault',
     tagline: 'AI Compliance Verification for O&G Materials Engineers',
     description: 'AI-powered RAG system for querying steel specifications with traceable citations. Query NACE MR0175, ASTM, and API standards instantly with answers engineers can cite in compliance reports.',
     category: 'venture',
@@ -40,7 +40,7 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/steel-venture',
     huggingFaceUrl: null,
-    demoUrl: 'https://citedai.dev',
+    demoUrl: 'https://specvault.app',
     isPrivate: false,
     techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
     problem: 'Materials engineers spend 2-4 hours/day searching specs manually. Wrong material specification = $10M+ liability. NACE/ASTM/API docs scattered across systems cause compliance audit failures.',
