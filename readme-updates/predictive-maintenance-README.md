@@ -81,8 +81,8 @@ Trained on NASA C-MAPSS FD001 (100 engines, 21 sensors). Validated against GE 7F
 ## Getting Started
 
 ```bash
-git clone https://github.com/davidfertube/predictive-maintenance.git
-cd predictive-maintenance
+git clone https://github.com/davidfertube/predictive-agent.git
+cd predictive-agent
 
 pip install -r requirements.txt
 
@@ -90,8 +90,8 @@ pip install -r requirements.txt
 uvicorn app:app --host 0.0.0.0 --port 8000
 
 # Or run with Docker
-docker build -t predictive-maintenance .
-docker run -p 8000:8000 predictive-maintenance
+docker build -t predictive-agent .
+docker run -p 8000:8000 predictive-agent
 ```
 
 ## License

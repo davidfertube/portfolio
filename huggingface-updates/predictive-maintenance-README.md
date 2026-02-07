@@ -5,7 +5,7 @@
 Condition-based maintenance system that predicts equipment degradation in power generation assets, extending turbine service intervals by 15-20% while reducing unplanned downtime.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-davidfernandez.dev-00d4ff?style=flat-square)](https://davidfernandez.dev/projects/predictive-agent)
-[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=flat-square&logo=github)](https://github.com/davidfertube/predictive-maintenance)
+[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=flat-square&logo=github)](https://github.com/davidfertube/predictive-agent)
 
 ---
 

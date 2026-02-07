@@ -5,7 +5,7 @@
 Vision Language Model system using Qwen2-VL for safety scene understanding that goes beyond object detection — reasoning about behavioral compliance, environmental hazards, and procedural violations in natural language.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-davidfernandez.dev-00d4ff?style=flat-square)](https://davidfernandez.dev/projects/vision-agent)
-[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=flat-square&logo=github)](https://github.com/davidfertube/geo-insight-hse)
+[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=flat-square&logo=github)](https://github.com/davidfertube/vision-agent)
 
 ---
 

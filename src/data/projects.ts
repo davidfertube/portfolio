@@ -84,7 +84,7 @@ export const projects: ProjectData[] = [
       { value: 'LSTM', label: 'Model' },
       { value: 'NASA', label: 'C-MAPSS' }
     ],
-    githubUrl: 'https://github.com/davidfertube/predictive-maintenance',
+    githubUrl: 'https://github.com/davidfertube/predictive-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-agent',
     isPrivate: false,
     techStack: 'Python • Scikit-Learn • LSTM • Plotly • Docker • CI/CD',
@@ -147,7 +147,7 @@ export const projects: ProjectData[] = [
       { value: 'HSE', label: 'Compliance' },
       { value: 'Real-Time', label: 'Analysis' }
     ],
-    githubUrl: 'https://github.com/davidfertube/geo-insight-hse',
+    githubUrl: 'https://github.com/davidfertube/vision-agent',
     huggingFaceUrl: null,
     isPrivate: false,
     techStack: 'Qwen2-VL • Transformers • Python • Gradio • Docker',

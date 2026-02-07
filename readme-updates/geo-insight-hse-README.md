@@ -4,7 +4,7 @@
 
 Vision Language Model system using Qwen2-VL for safety scene understanding that goes beyond object detection — reasoning about behavioral compliance, environmental hazards, and procedural violations in natural language.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HuggingFace-yellow?style=flat-square)](https://huggingface.co/spaces/davidfertube/geo-insight-hse)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HuggingFace-yellow?style=flat-square)](https://huggingface.co/spaces/davidfertube/vision-agent)
 [![Portfolio](https://img.shields.io/badge/Portfolio-davidfernandez.dev-00d4ff?style=flat-square)](https://davidfernandez.dev/projects/vision-agent)
 
 ---
@@ -88,8 +88,8 @@ Beyond traditional PPE detection, the VLM reasons about:
 ## Getting Started
 
 ```bash
-git clone https://github.com/davidfertube/geo-insight-hse.git
-cd geo-insight-hse
+git clone https://github.com/davidfertube/vision-agent.git
+cd vision-agent
 
 pip install -r requirements.txt
 
