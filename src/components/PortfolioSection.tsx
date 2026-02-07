@@ -23,6 +23,7 @@ export default function PortfolioSection() {
               title={project.title}
               description={project.description}
               techStack={project.techStack}
+              externalUrl={project.demoUrl}
             />
           ))}
         </div>
