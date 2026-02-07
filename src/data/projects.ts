@@ -136,8 +136,8 @@ export const projects: ProjectData[] = [
     demoType: 'iot-anomaly'
   },
   {
-    id: 'geo-insight-hse',
-    title: 'Vision AI Safety Inspector',
+    id: 'vision-agent',
+    title: 'Vision Agent',
     tagline: 'VLM for HSE Compliance',
     description: 'Vision AI for HSE compliance inspection using Qwen2-VL multimodal model for safety scene understanding.',
     category: 'experiment',

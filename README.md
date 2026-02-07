@@ -20,7 +20,7 @@ This repository contains my **interactive portfolio website** showcasing **produ
 | # | Project | Tech Stack | Live Demo | GitHub | HuggingFace |
 |---|---------|------------|-----------|--------|-------------|
 | 1 | **Policy Guard** | Pydantic-AI, Compliance | [Demo](https://davidfernandez.dev/projects/policy-guard) | [Repo](https://github.com/davidfertube/policy-guard) | [Space](https://huggingface.co/spaces/davidfertube/policy-guard) |
-| 2 | **Geo Insight HSE** | Qwen2-VL, VLM, Safety | [Demo](https://davidfernandez.dev/projects/geo-insight-hse) | [Repo](https://github.com/davidfertube/geo-insight-hse) | [Space](https://huggingface.co/spaces/davidfertube/geo-insight-hse) |
+| 2 | **Vision Agent** | Qwen2-VL, VLM, Safety | [Demo](https://davidfernandez.dev/projects/vision-agent) | [Repo](https://github.com/davidfertube/geo-insight-hse) | [Space](https://huggingface.co/spaces/davidfertube/geo-insight-hse) |
 | 3 | **IoT Anomaly Agent** | Isolation Forest, Mistral-7B | [Demo](https://davidfernandez.dev/projects/iot-anomaly-agent) | [Repo](https://github.com/davidfertube/iot-anomaly-agent) | [Space](https://huggingface.co/spaces/davidfertube/iot-anomaly-agent) |
 | 4 | **Predictive Maintenance** | Regression, RUL, Strategy | [Demo](https://davidfernandez.dev/projects/predictive-maintenance) | [Repo](https://github.com/davidfertube/predictive-maintenance) | [Space](https://huggingface.co/spaces/davidfertube/predictive-maintenance) |
 
