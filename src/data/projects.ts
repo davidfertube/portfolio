@@ -126,7 +126,7 @@ export const projects: ProjectData[] = [
       { value: 'Auto', label: 'RCA' },
       { value: 'SCADA', label: 'Integration' }
     ],
-    githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
+    githubUrl: 'https://github.com/davidfertube/anomaly-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/anomaly-agent',
     isPrivate: false,
     techStack: 'Python • Isolation Forest • Gradio • Time-Series • Docker',

@@ -21,7 +21,7 @@ This repository contains my **interactive portfolio website** showcasing **produ
 |---|---------|------------|-----------|--------|-------------|
 | 1 | **Predictive Agent** | LSTM, Scikit-Learn, Docker | [Demo](https://davidfernandez.dev/projects/predictive-agent) | [Repo](https://github.com/davidfertube/predictive-agent) | [Space](https://huggingface.co/spaces/davidfertube/predictive-agent) |
 | 2 | **Compliance Agent** | PydanticAI, DSPy, Mistral | [Demo](https://davidfernandez.dev/projects/compliance-agent) | [Repo](https://github.com/davidfertube/policy-guard) | [Space](https://huggingface.co/spaces/davidfertube/compliance-agent) |
-| 3 | **Anomaly Agent** | Isolation Forest, Mistral-7B | [Demo](https://davidfernandez.dev/projects/anomaly-agent) | [Repo](https://github.com/davidfertube/iot-anomaly-agent) | [Space](https://huggingface.co/spaces/davidfertube/anomaly-agent) |
+| 3 | **Anomaly Agent** | Isolation Forest, Mistral-7B | [Demo](https://davidfernandez.dev/projects/anomaly-agent) | [Repo](https://github.com/davidfertube/anomaly-agent) | [Space](https://huggingface.co/spaces/davidfertube/anomaly-agent) |
 | 4 | **Vision Agent** | Qwen2-VL, ONNX Runtime | [Demo](https://davidfernandez.dev/projects/vision-agent) | [Repo](https://github.com/davidfertube/vision-agent) | [Space](https://huggingface.co/spaces/davidfertube/geo-insight-hse) |
 
 ---

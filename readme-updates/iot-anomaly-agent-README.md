@@ -86,8 +86,8 @@ Turbine SCADA / Historian
 ## Getting Started
 
 ```bash
-git clone https://github.com/davidfertube/iot-anomaly-agent.git
-cd iot-anomaly-agent
+git clone https://github.com/davidfertube/anomaly-agent.git
+cd anomaly-agent
 
 pip install -r requirements.txt
 

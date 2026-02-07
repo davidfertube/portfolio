@@ -26,7 +26,7 @@ tags:
 Isolation Forest-based anomaly detection for gas turbine sensor streams, paired with LLM-powered root cause analysis that translates statistical outliers into actionable maintenance diagnostics.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-davidfernandez.dev-00d4ff?style=flat-square)](https://davidfernandez.dev/projects/anomaly-agent)
-[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=flat-square&logo=github)](https://github.com/davidfertube/iot-anomaly-agent)
+[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=flat-square&logo=github)](https://github.com/davidfertube/anomaly-agent)
 
 ---
 
