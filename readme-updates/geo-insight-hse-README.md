@@ -1,73 +1,113 @@
-# Geo-Insight HSE 🦺
+# Vision Agent
 
-**Real-Time PPE Detection for Site Safety**
+**VLM-Powered HSE Compliance Inspection for Energy Operations**
 
-Computer vision system for detecting Personal Protective Equipment (PPE) compliance in hazardous environments.
+Vision Language Model system using Qwen2-VL for safety scene understanding that goes beyond object detection — reasoning about behavioral compliance, environmental hazards, and procedural violations in natural language.
 
-[![Live Demo](https://img.shields.io/badge/🤗-Live_Demo-yellow)](https://huggingface.co/spaces/davidfertube/geo-insight-hse)
-[![Portfolio](https://img.shields.io/badge/📂-Portfolio-blue)](https://davidfernandez.dev)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HuggingFace-yellow?style=flat-square)](https://huggingface.co/spaces/davidfertube/geo-insight-hse)
+[![Portfolio](https://img.shields.io/badge/Portfolio-davidfernandez.dev-00d4ff?style=flat-square)](https://davidfernandez.dev/projects/vision-agent)
 
-## 🎯 The Problem
+---
 
-Workplace safety relies on manual spot checks. Non-compliance with PPE protocols is a leading cause of preventable industrial accidents.
+## Problem
 
-## 💡 The Solution
+HSE (Health, Safety, Environment) compliance in energy operations relies on manual site inspections. Traditional computer vision approaches (YOLO, Faster R-CNN) can detect PPE presence but cannot reason about context:
 
-Real-time computer vision pipeline running on edge devices. Instantly detects missing helmets/vests and logs safety incidents without cloud latency.
+- **Object detection misses behavioral violations**: A worker wearing a hardhat but not secured (chin strap undone) passes YOLO detection but fails compliance
+- **Environmental context is invisible**: Proximity to rotating equipment, working at height without tie-off, blocked emergency exits — none of these are detectable as bounding boxes
+- **Procedure adherence requires reasoning**: "Is this worker following the hot work permit protocol?" requires understanding the scene, not just classifying objects
+- **Incident reports need natural language**: Safety managers need descriptive findings, not bounding box coordinates
 
-## 🏗️ Architecture
+## Solution
+
+Vision Language Model (VLM) pipeline using Qwen2-VL that processes site images and generates structured safety assessments in natural language. Instead of predicting bounding boxes, the model reasons about the full safety context of a scene.
+
+**Key design decisions:**
+
+- **VLM over object detection**: Traditional CV answers "what objects are present?" VLMs answer "what is happening and is it safe?" — a fundamentally different capability for HSE compliance
+- **Qwen2-VL selection**: Among open-weight VLMs, Qwen2-VL offers the best balance of visual grounding accuracy and instruction-following for structured safety output. Runs on a single GPU without quantization at 7B scale
+- **ONNX Runtime for edge**: Converted model runs on ONNX Runtime for deployment on ruggedized edge hardware at remote well sites and offshore platforms where cloud connectivity is unreliable
+- **Structured safety output**: Model generates findings with severity classification (Critical/Warning/Observation), affected regulation (OSHA 1926, API RP 2220), and recommended corrective action — not just free-text descriptions
+
+## Architecture
 
 ```
-CCTV Stream → Edge Device (ONNX Runtime) → FastAPI Inference → Hazard Alert → Safety Dashboard
+Site Camera / Uploaded Image
+         │
+         ▼
+┌──────────────────────────┐
+│  Image Preprocessing      │  Resize, normalize for VLM input
+│  Scene Framing            │  Multi-region attention zones
+└──────────┬───────────────┘
+           ▼
+┌──────────────────────────┐
+│  Qwen2-VL Inference       │  7B multimodal model
+│  (ONNX Runtime)           │  Safety-specific prompt template
+└──────────┬───────────────┘
+           ▼
+┌──────────────────────────┐
+│  Safety Reasoning          │  Scene understanding + compliance check
+│  Finding Generation        │  Severity, regulation, corrective action
+└──────────┬───────────────┘
+           ▼
+┌──────────────────────────┐
+│  HSE Report               │  Structured findings per image
+│  Alert System             │  Critical findings trigger notifications
+└──────────────────────────┘
 ```
 
-## 📊 Key Metrics
+## Performance
 
-| Metric | Value |
-|--------|-------|
-| Detection Accuracy | 99% |
-| Inference Latency | <100ms |
-| Monitoring | 24/7 |
+| Metric | Value | Context |
+|--------|-------|---------|
+| Scene Understanding | VLM | Full behavioral + environmental reasoning |
+| Inference Latency | <100ms | ONNX Runtime on edge hardware |
+| Monitoring | 24/7 | Continuous feed processing |
+| Output Format | Structured | Severity + regulation + corrective action |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **YOLOv8** - State-of-the-art object detection
-- **ONNX Runtime** - Cross-platform ML inference
-- **FastAPI** - High-performance API framework
-- **Docker** - Containerized deployment
+| Component | Technology | Rationale |
+|-----------|-----------|-----------|
+| VLM | Qwen2-VL 7B | Best open-weight VLM for visual grounding |
+| Runtime | ONNX Runtime | Edge deployment without cloud dependency |
+| Framework | Transformers (HF) | Model loading and prompt management |
+| API | FastAPI | REST endpoints for SCADA/safety system integration |
+| UI | Gradio | Interactive image upload and analysis demo |
+| Deployment | Docker | Containerized for field and cloud deployment |
 
-## 🚀 Getting Started
+## Detection Capabilities
+
+Beyond traditional PPE detection, the VLM reasons about:
+
+- **PPE Compliance**: Hardhat, safety vest, glasses, gloves — including partial compliance (worn but unsecured)
+- **Behavioral Violations**: Improper lifting, working at unprotected edges, bypassing safety barriers
+- **Environmental Hazards**: Spill risks, blocked egress routes, proximity to energized equipment
+- **Procedural Context**: Hot work permit compliance, confined space entry protocol adherence
+
+## Getting Started
 
 ```bash
-# Clone the repository
 git clone https://github.com/davidfertube/geo-insight-hse.git
 cd geo-insight-hse
 
-# Install dependencies
 pip install -r requirements.txt
 
 # Run with Docker
-docker build -t geo-insight-hse .
-docker run -p 8000:8000 geo-insight-hse
+docker build -t vision-agent .
+docker run -p 8000:8000 vision-agent
 
 # Or run directly
 uvicorn app:app --host 0.0.0.0 --port 8000
 ```
 
-## 🔍 Detection Classes
+## License
 
-- Hard Hat (Present/Missing)
-- Safety Vest (Present/Missing)
-- Safety Glasses
-- Gloves
+MIT License - 2026 David Fernandez
 
-## 📝 License
+## Author
 
-MIT License © 2026 David Fernandez
-
-## 👤 Author
-
-**David Fernandez** - AI Engineer | Azure Native
+**David Fernandez** — Senior AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)

@@ -1,83 +1,61 @@
-# Geo-Insight HSE 🦺
+# Vision Agent
 
-**Real-Time PPE Detection for Site Safety**
+**VLM-Powered HSE Compliance Inspection for Energy Operations**
 
-Computer vision system for detecting Personal Protective Equipment (PPE) compliance in hazardous environments.
+Vision Language Model system using Qwen2-VL for safety scene understanding that goes beyond object detection — reasoning about behavioral compliance, environmental hazards, and procedural violations in natural language.
 
-[![Live Demo](https://img.shields.io/badge/🤗-Live_Demo-yellow)](https://huggingface.co/spaces/davidfertube/geo-insight-hse)
-[![Portfolio](https://img.shields.io/badge/📂-Portfolio-blue)](https://davidfernandez.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-davidfernandez.dev-00d4ff?style=flat-square)](https://davidfernandez.dev/projects/vision-agent)
+[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-181717?style=flat-square&logo=github)](https://github.com/davidfertube/geo-insight-hse)
 
-## 🎯 The Problem
+---
 
-Workplace safety relies on manual spot checks. Non-compliance with PPE protocols is a leading cause of preventable industrial accidents.
+## Overview
 
-## 💡 The Solution
+VLM pipeline using Qwen2-VL that processes site images and generates structured safety assessments in natural language. Instead of predicting bounding boxes, the model reasons about the full safety context of a scene.
 
-Real-time computer vision pipeline running on edge devices. Instantly detects missing helmets/vests and logs safety incidents without cloud latency.
+**Design decisions:**
 
-## 🏗️ Architecture
+- **VLM over object detection** — Traditional CV answers "what objects are present?" VLMs answer "what is happening and is it safe?" — fundamentally different for HSE
+- **Qwen2-VL** — Best open-weight VLM for visual grounding at 7B scale. Runs on single GPU without quantization
+- **ONNX Runtime for edge** — Deployment on ruggedized hardware at remote well sites and offshore platforms where cloud connectivity is unreliable
+- **Structured safety output** — Findings with severity (Critical/Warning/Observation), regulation (OSHA 1926, API RP 2220), and corrective action
+
+## Architecture
 
 ```
-CCTV Stream → Edge Device (ONNX Runtime) → FastAPI Inference → Hazard Alert → Safety Dashboard
+Site Camera → Image Preprocessing → Qwen2-VL Inference (ONNX) → Safety Reasoning → HSE Report + Alert
 ```
 
-## 📊 Key Metrics
+## Performance
 
 | Metric | Value |
 |--------|-------|
-| Detection Accuracy | 99% |
-| Inference Latency | <100ms |
-| Monitoring | 24/7 |
+| Scene Understanding | VLM (behavioral + environmental) |
+| Inference Latency | <100ms (ONNX Runtime) |
+| Monitoring | 24/7 continuous |
+| Output Format | Structured (severity + regulation + action) |
 
-## 🛠️ Tech Stack
+## Interactive Demos
 
-- **YOLOv8** - State-of-the-art object detection
-- **ONNX Runtime** - Cross-platform ML inference
-- **FastAPI** - High-performance API framework
-- **Docker** - Containerized deployment
+### 1. PPE Non-Compliance Detection
+**Input:** Image of workers entering a wellhead area. One worker wearing hardhat with unsecured chin strap, another missing safety glasses.
+**Expected:** Finding 1: WARNING — Hardhat chin strap unsecured on worker near wellhead (OSHA 1926.100). Corrective action: Secure chin strap before entering restricted zone. Finding 2: CRITICAL — Safety glasses missing in chemical exposure area (OSHA 1926.102). Corrective action: Immediate stop-work until eye protection obtained.
 
-## 🚀 Getting Started
+### 2. Environmental Hazard Assessment
+**Input:** Image of a work area near rotating equipment with no barrier guards and a visible fluid spill on the walking surface.
+**Expected:** Finding 1: CRITICAL — Unguarded rotating equipment within 7 feet of walkway (OSHA 1926.300). Finding 2: WARNING — Slip hazard from uncontained fluid on walking surface (API RP 2220). Corrective action: Install machine guarding, deploy spill containment and absorbent.
 
-```bash
-# Clone the repository
-git clone https://github.com/davidfertube/geo-insight-hse.git
-cd geo-insight-hse
+### 3. Compliant Work Scene
+**Input:** Image of workers in full PPE (hardhat, vest, glasses, gloves) operating within a properly barricaded work zone with visible safety signage.
+**Expected:** OBSERVATION — All personnel in full PPE compliance. Work zone properly barricaded with appropriate signage. No findings. HSE compliance: SATISFACTORY.
 
-# Install dependencies
-pip install -r requirements.txt
+## Tech Stack
 
-# Run with Docker
-docker build -t geo-insight-hse .
-docker run -p 8000:8000 geo-insight-hse
+Qwen2-VL 7B, ONNX Runtime, Transformers, FastAPI, Gradio, Docker
 
-# Or run directly
-uvicorn app:app --host 0.0.0.0 --port 8000
-```
+## Author
 
-## 🔍 Detection Classes
-
-- Hard Hat (Present/Missing)
-- Safety Vest (Present/Missing)
-- Safety Glasses
-- Gloves
-
-## 📝 License
-
-MIT License © 2026 David Fernandez
-
-## 🚀 Interactive Demos
-
-### 1. Safety Helmet Detection
-**Input:** Image/Frame of a worker entering a site without a helmet.
-**Expected Result:** Bounding box around worker flagged RED with Label "Missing Helmet". Hazard Score: 95%.
-
-### 2. High-Visibility Compliance
-**Input:** Frame of workers in dark conditions with reflective vests.
-**Expected Result:** Bounding boxes flagged GREEN with label "Vest Detected". Accuracy: 99.2%.
-
-## 👤 Author
-
-**David Fernandez** - AI Engineer | Azure Native
+**David Fernandez** — Senior AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)
