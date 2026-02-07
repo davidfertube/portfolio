@@ -10,12 +10,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "David Fernandez | Applied AI Engineer",
-  description: "Applied AI Engineer with 5+ years delivering production-grade GenAI solutions for the energy industry.",
-  keywords: "Applied AI Engineer, GenAI, LLM, RAG, LangGraph, LangChain, LlamaIndex, Azure, GCP, Kubernetes, MLOps, Energy Industry, Houston, Python, Vector Search, Multi-Agent Orchestration",
+  title: "David Fernandez | Cloud AI Engineer",
+  description: "Cloud AI Engineer building agentic RAG pipelines, LLM failover systems, and serverless AI infrastructure. Contributor to LangGraph and Pydantic. Houston, TX.",
+  keywords: "Cloud AI Engineer, Agentic RAG, LLM Infrastructure, GenAI, Serverless AI, Vector Databases, LangGraph, LangChain, LlamaIndex, Azure, GCP, Kubernetes, MLOps, CI/CD, Energy Industry, Houston, Python, TypeScript, Multi-Agent Orchestration",
   openGraph: {
-    title: "David Fernandez | Applied AI Engineer",
-    description: "Applied AI Engineer with 5+ years delivering production-grade GenAI solutions for the energy industry.",
+    title: "David Fernandez | Cloud AI Engineer",
+    description: "Cloud AI Engineer building agentic RAG pipelines, LLM failover systems, and serverless AI infrastructure. Contributor to LangGraph and Pydantic. Houston, TX.",
     type: "website",
     url: "https://davidfernandez.dev",
   },

@@ -40,11 +40,11 @@ export default function AboutSection() {
           priority
         />
         <h2 className={styles.name}>David Fernandez</h2>
-        <p className={styles.title}>APPLIED AI ENGINEER | CONTRIBUTOR LANGGRAPH AND PYDANTIC</p>
+        <p className={styles.title}>CLOUD AI ENGINEER | CONTRIBUTOR LANGGRAPH AND PYDANTIC</p>
         <p className={styles.location}>Katy, TX (Houston Metro)</p>
 
         <p className={styles.summary}>
-          Applied AI Engineer with 5+ years of software engineering experience and 3+ years specializing in GenAI. Contributor to LangGraph and Pydantic. Delivering enterprise RAG systems and multi-agent orchestration for the Energy & Commodities sector.
+          Cloud AI Engineer with 5+ years of software engineering experience and 3+ years deploying generative AI systems in production. Contributor to LangGraph and Pydantic. Architecting agentic RAG pipelines with multi-provider LLM failover, serverless infrastructure, and vector databases for the Energy & Commodities sector.
         </p>
 
         <div className={styles.socialLinks}>
