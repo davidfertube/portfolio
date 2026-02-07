@@ -62,7 +62,7 @@ def analyze(exhaust_temp, vibration_x, vibration_y, bearing_temp, inlet_pressure
 3. Log anomaly in maintenance system
 
 ---
-*Model: [turbine-anomaly-detector](https://huggingface.co/davidfertube/turbine-anomaly-detector) | Dataset: [turbine-sensor-streams](https://huggingface.co/datasets/davidfertube/turbine-sensor-streams)*
+*Model: [turbine-anomaly-detector](https://huggingface.co/davidfertube/turbine-anomaly-detector) | Dataset: [turbine-sensor-data](https://huggingface.co/datasets/davidfertube/turbine-sensor-data)*
 """
     else:
         return f"""# ✅ NORMAL OPERATION
@@ -109,7 +109,7 @@ demo = gr.Interface(
 SCADA Sensors → Feature Extraction → Isolation Forest → Root Cause Analysis → Alert
 ```
 
-**Resources:** [Model](https://huggingface.co/davidfertube/turbine-anomaly-detector) | [Dataset](https://huggingface.co/datasets/davidfertube/turbine-sensor-streams) | [Portfolio](https://davidfernandez.dev)
+**Resources:** [Model](https://huggingface.co/davidfertube/turbine-anomaly-detector) | [Dataset](https://huggingface.co/datasets/davidfertube/turbine-sensor-data) | [Portfolio](https://davidfernandez.dev)
 
 *Built by David Fernandez - Industrial AI Engineer | LangGraph Contributor*
 """,

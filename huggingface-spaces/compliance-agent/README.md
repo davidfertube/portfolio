@@ -49,8 +49,8 @@ Procedure Text -> Requirement Mapping -> Gap Analysis -> Evidence Extraction -> 
 
 ## Resources
 
-- **Model**: [nerc-cip-validator](https://huggingface.co/davidfertube/nerc-cip-validator)
-- **Dataset**: [nerc-cip-procedures](https://huggingface.co/datasets/davidfertube/nerc-cip-procedures) (219 likes)
+- **Model**: [compliance-policy-checker](https://huggingface.co/davidfertube/compliance-policy-checker)
+- **Dataset**: [compliance-procedures-data](https://huggingface.co/datasets/davidfertube/compliance-procedures-data) (219 likes)
 - **GitHub**: [compliance-agent](https://github.com/davidfertube/compliance-agent)
 - **Portfolio**: [davidfernandez.dev](https://davidfernandez.dev)
 

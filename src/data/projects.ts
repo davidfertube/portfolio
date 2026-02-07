@@ -126,7 +126,7 @@ export const projects: ProjectData[] = [
       { value: 'Auto', label: 'RCA' },
       { value: 'SCADA', label: 'Integration' }
     ],
-    githubUrl: 'https://github.com/davidfertube/anomaly-agent',
+    githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/anomaly-agent',
     isPrivate: false,
     techStack: 'Python • Isolation Forest • Gradio • Time-Series • Docker',
@@ -148,12 +148,12 @@ export const projects: ProjectData[] = [
       { value: 'Real-Time', label: 'Analysis' }
     ],
     githubUrl: 'https://github.com/davidfertube/vision-agent',
-    huggingFaceUrl: null,
+    huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/vision-agent',
     isPrivate: false,
-    techStack: 'Qwen2-VL • Transformers • Python • Gradio • Docker',
-    problem: 'Traditional object detection misses behavioral context. Safety requires understanding actions, not just objects.',
-    solution: 'VLM system using Qwen2-VL to reason about safety scenes in natural language.',
-    architecture: 'Video Feed → VLM Inference → Safety Reasoning → Alert System',
+    techStack: 'Qwen2-VL • Transformers • Python • Gradio • Docker • ONNX Runtime',
+    problem: 'Traditional object detection (YOLO, Faster R-CNN) misses behavioral context. A worker wearing a hardhat with an unsecured chin strap passes detection but fails compliance. Safety requires reasoning about actions and environment, not just classifying objects.',
+    solution: 'Vision Language Model pipeline using Qwen2-VL that processes site images and generates structured safety assessments across 5 categories — PPE, Housekeeping, Fall Protection, Fire Safety, and Electrical Safety — with severity classification and corrective actions.',
+    architecture: 'Site Camera → Image Preprocessing → Qwen2-VL Inference (ONNX Runtime) → Safety Reasoning → Severity Classification → HSE Report',
     demoType: 'none'
   },
 ];

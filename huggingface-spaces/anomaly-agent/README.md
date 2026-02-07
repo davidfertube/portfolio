@@ -39,7 +39,7 @@ SCADA Sensors -> Feature Scaling -> Isolation Forest -> Root Cause Analysis -> A
 ## Resources
 
 - **Model**: [turbine-anomaly-detector](https://huggingface.co/davidfertube/turbine-anomaly-detector)
-- **Dataset**: [turbine-sensor-streams](https://huggingface.co/datasets/davidfertube/turbine-sensor-streams)
+- **Dataset**: [turbine-sensor-data](https://huggingface.co/datasets/davidfertube/turbine-sensor-data)
 - **GitHub**: [anomaly-agent](https://github.com/davidfertube/anomaly-agent)
 - **Portfolio**: [davidfernandez.dev](https://davidfernandez.dev)
 

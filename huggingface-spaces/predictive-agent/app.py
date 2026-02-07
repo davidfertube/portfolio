@@ -91,7 +91,7 @@ def predict(health_index, vibration, heat_rate_delta, operating_hours, start_cou
 - **Confidence**: {int(composite * 100)}% composite health
 
 ---
-*Model: [rul-predictor-ccgt](https://huggingface.co/davidfertube/rul-predictor-ccgt) | Dataset: [ccgt-health-history](https://huggingface.co/datasets/davidfertube/ccgt-health-history)*
+*Model: [turbine-life-predictor](https://huggingface.co/davidfertube/turbine-life-predictor) | Dataset: [turbine-health-data](https://huggingface.co/datasets/davidfertube/turbine-health-data)*
 """
 
 # Create the interface
@@ -125,7 +125,7 @@ Health Metrics → LSTM Model → RUL Prediction → Maintenance Priority
 
 **Key Metrics:** Health Index, Vibration, Heat Rate Delta, Operating Hours, Start Count
 
-**Resources:** [Model](https://huggingface.co/davidfertube/rul-predictor-ccgt) | [Dataset](https://huggingface.co/datasets/davidfertube/ccgt-health-history) | [Portfolio](https://davidfernandez.dev)
+**Resources:** [Model](https://huggingface.co/davidfertube/turbine-life-predictor) | [Dataset](https://huggingface.co/datasets/davidfertube/turbine-health-data) | [Portfolio](https://davidfernandez.dev)
 
 *Built by David Fernandez - Industrial AI Engineer | LangGraph Contributor*
 """,

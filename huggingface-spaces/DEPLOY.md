@@ -38,21 +38,21 @@ git push --force https://davidfertube:$HF_TOKEN@huggingface.co/spaces/davidfertu
 ### Anomaly Agent
 - **Purpose**: Detect anomalies in gas turbine sensor streams
 - **Model**: Isolation Forest (turbine-anomaly-detector)
-- **Dataset**: turbine-sensor-streams (35 rows, 7 sensors)
+- **Dataset**: turbine-sensor-data (35 rows, 7 sensors)
 - **Demo 1**: Normal Operations - all sensors in range
 - **Demo 2**: Bearing Degradation - classic failure pattern
 
 ### Compliance Agent
 - **Purpose**: Validate procedures against NERC CIP-006-6
-- **Model**: Text classification (nerc-cip-validator)
-- **Dataset**: nerc-cip-procedures (219 documents)
+- **Model**: Text classification (compliance-policy-checker)
+- **Dataset**: compliance-procedures-data (219 documents)
 - **Demo 1**: Compliant Procedure - passes all 8 requirements
 - **Demo 2**: Procedure with Gaps - missing retention/monitoring
 
 ### Predictive Agent
 - **Purpose**: Predict Remaining Useful Life for CCGT equipment
-- **Model**: LSTM regression (rul-predictor-ccgt)
-- **Dataset**: ccgt-health-history (equipment health patterns)
+- **Model**: LSTM regression (turbine-life-predictor)
+- **Dataset**: turbine-health-data (equipment health patterns)
 - **Demo 1**: Healthy Equipment - 150+ cycles remaining
 - **Demo 2**: Degraded Equipment - <30 cycles, immediate action
 

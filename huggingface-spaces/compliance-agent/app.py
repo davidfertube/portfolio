@@ -111,7 +111,7 @@ def analyze(procedure_text):
 3. Maintain ✅ COMPLIANT items
 
 ---
-*Model: [nerc-cip-validator](https://huggingface.co/davidfertube/nerc-cip-validator) | Dataset: [nerc-cip-procedures](https://huggingface.co/datasets/davidfertube/nerc-cip-procedures)*
+*Model: [compliance-policy-checker](https://huggingface.co/davidfertube/compliance-policy-checker) | Dataset: [compliance-procedures-data](https://huggingface.co/datasets/davidfertube/compliance-procedures-data)*
 """
 
 # Create the interface
@@ -143,7 +143,7 @@ Procedure Document → Requirement Mapping → Keyword Analysis → Gap Detectio
 
 **Requirements Checked:** Physical Security Plan, Access Controls, Visitor Program, Monitoring, Logging, 90-Day Retention, 24hr Revocation
 
-**Resources:** [Model](https://huggingface.co/davidfertube/nerc-cip-validator) | [Dataset](https://huggingface.co/datasets/davidfertube/nerc-cip-procedures) | [Portfolio](https://davidfernandez.dev)
+**Resources:** [Model](https://huggingface.co/davidfertube/compliance-policy-checker) | [Dataset](https://huggingface.co/datasets/davidfertube/compliance-procedures-data) | [Portfolio](https://davidfernandez.dev)
 
 *Built by David Fernandez - Industrial AI Engineer | LangGraph Contributor*
 """,

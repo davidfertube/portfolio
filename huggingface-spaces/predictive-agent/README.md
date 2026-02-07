@@ -48,8 +48,8 @@ Health Metrics -> Sequence Generation -> LSTM Inference -> RUL Estimate -> Maint
 
 ## Resources
 
-- **Model**: [rul-predictor-ccgt](https://huggingface.co/davidfertube/rul-predictor-ccgt)
-- **Dataset**: [ccgt-health-history](https://huggingface.co/datasets/davidfertube/ccgt-health-history)
+- **Model**: [turbine-life-predictor](https://huggingface.co/davidfertube/turbine-life-predictor)
+- **Dataset**: [turbine-health-data](https://huggingface.co/datasets/davidfertube/turbine-health-data)
 - **GitHub**: [predictive-agent](https://github.com/davidfertube/predictive-agent)
 - **Portfolio**: [davidfernandez.dev](https://davidfernandez.dev)
 
