@@ -40,7 +40,7 @@ export default function AboutSection() {
           priority
         />
         <h2 className={styles.name}>David Fernandez</h2>
-        <p className={styles.title}>CLOUD AI ENGINEER | CONTRIBUTOR TO LANGGRAPH AND PYDANTIC</p>
+        <p className={styles.title}>CLOUD AI ENGINEER</p>
         <p className={styles.location}>Katy, TX (Houston Metro)</p>
 
         <p className={styles.summary}>
