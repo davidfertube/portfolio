@@ -4,8 +4,45 @@ import PortfolioSection from '@/components/PortfolioSection';
 import styles from './page.module.css';
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'David Fernandez',
+    jobTitle: 'Cloud AI Engineer',
+    url: 'https://davidfernandez.dev',
+    sameAs: [
+      'https://github.com/davidfertube',
+      'https://linkedin.com/in/davidfertube',
+      'https://x.com/davidfertube',
+      'https://huggingface.co/davidfertube',
+    ],
+    email: 'davidfertube@gmail.com',
+    image: 'https://davidfernandez.dev/assets/photo.jpg',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Katy',
+      addressRegion: 'TX',
+      addressCountry: 'US',
+    },
+    knowsAbout: [
+      'Artificial Intelligence',
+      'Machine Learning',
+      'LangGraph',
+      'Pydantic',
+      'RAG Pipelines',
+      'LLM Infrastructure',
+      'Cloud Computing',
+      'Energy Industry',
+    ],
+  };
+
   return (
     <main className={styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Section 1: Hero - Keep 3D sphere and titles */}
       <section id="hero" className={styles.hero}>
         <div className={styles.contentWrapper}>

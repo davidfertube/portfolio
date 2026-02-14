@@ -3,7 +3,7 @@ export interface ProjectMetric {
   label: string;
 }
 
-export type ProjectCategory = 'venture' | 'project' | 'experiment';
+export type ProjectCategory = 'venture' | 'experiment';
 
 export interface ProjectData {
   id: string;
@@ -16,12 +16,10 @@ export interface ProjectData {
   githubUrl: string | null;
   huggingFaceUrl: string | null;
   demoUrl?: string | null;
-  isPrivate: boolean;
   techStack: string;
   problem: string;
   solution: string;
   architecture: string;
-  demoType?: 'ppe-detection' | 'chat' | 'visualization' | 'iot-anomaly' | 'none';
 }
 
 export const projects: ProjectData[] = [
@@ -41,12 +39,12 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/steel-venture',
     huggingFaceUrl: null,
     demoUrl: 'https://specvault.app',
-    isPrivate: false,
+
     techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
     problem: 'Materials engineers spend 2-4 hours/day searching specs manually. Wrong material specification = $10M+ liability. NACE/ASTM/API docs scattered across systems cause compliance audit failures.',
     solution: 'RAG-powered compliance verification engine that retrieves precise specifications from uploaded PDFs with traceable [1] [2] citations pointing to exact documents and pages.',
     architecture: 'PDF Upload → Text Extraction → Voyage AI Embeddings (1024d) → pgvector Search → Groq Llama 3.3 70B → Cited Answer',
-    demoType: 'chat'
+
   },
   {
     id: 'altaviz',
@@ -63,12 +61,12 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/altaviz',
     huggingFaceUrl: null,
     demoUrl: 'https://altaviz.app',
-    isPrivate: false,
+
     techStack: 'PySpark • Delta Lake • PostgreSQL • Streamlit • Plotly • Docker • Terraform',
     problem: 'Gas compression operators rely on reactive maintenance, leading to unplanned downtime costing $50k+/day. Sensor data across distributed stations is siloed and not actionable.',
     solution: 'End-to-end MLOps pipeline: simulate sensor data, process through medallion architecture ETL, store multi-window aggregates in PostgreSQL, and visualize fleet health with real-time alerting.',
     architecture: 'Data Simulator → PySpark ETL (Bronze/Silver/Gold) → PostgreSQL (7 tables) → Streamlit Dashboard (4 pages)',
-    demoType: 'none'
+
   },
 
   // --- EXPERIMENTS (GitHub repos only) ---
@@ -86,12 +84,12 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/predictive-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-agent',
-    isPrivate: false,
+
     techStack: 'Python • Scikit-Learn • LSTM • Plotly • Docker • CI/CD',
     problem: 'Power plant operators need to predict equipment failures before they happen to schedule maintenance proactively.',
     solution: 'LSTM model trained on NASA C-MAPSS data, adapted for GE Frame 7FA turbines, predicting Remaining Useful Life from sensor degradation patterns.',
     architecture: 'Sensor History → Feature Engineering → LSTM Model → RUL Estimation → Maintenance Strategy',
-    demoType: 'visualization'
+
   },
   {
     id: 'compliance-agent',
@@ -107,12 +105,12 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/policy-guard',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/compliance-agent',
-    isPrivate: false,
+
     techStack: 'PydanticAI • DSPy • Mistral • Python • FastAPI',
     problem: 'NERC CIP compliance requires continuous monitoring of standards across BES cyber systems. Manual audits are resource-intensive and error-prone.',
     solution: 'NLP model fine-tuned on NERC CIP standards that automates procedure validation, gap detection, and remediation recommendations.',
     architecture: 'Procedure Document → NLP Analysis → CIP-006 Validation → Gap Report → Remediation Plan',
-    demoType: 'none'
+
   },
   {
     id: 'anomaly-agent',
@@ -128,12 +126,12 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/anomaly-agent',
-    isPrivate: false,
+
     techStack: 'Python • Isolation Forest • Gradio • Time-Series • Docker',
     problem: 'Gas turbines generate massive sensor streams. Manual monitoring misses subtle anomalies that precede forced outages.',
     solution: 'Isolation Forest model detecting anomalies in vibration, temperature, and pressure data with automated root cause analysis.',
     architecture: 'Turbine Sensors → Isolation Forest → Anomaly Detection → Root Cause Analysis → Operations Alert',
-    demoType: 'iot-anomaly'
+
   },
   {
     id: 'vision-agent',
@@ -149,12 +147,12 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/vision-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/vision-agent',
-    isPrivate: false,
+
     techStack: 'Qwen2-VL • Transformers • Python • Gradio • Docker • ONNX Runtime',
     problem: 'Traditional object detection (YOLO, Faster R-CNN) misses behavioral context. A worker wearing a hardhat with an unsecured chin strap passes detection but fails compliance. Safety requires reasoning about actions and environment, not just classifying objects.',
     solution: 'Vision Language Model pipeline using Qwen2-VL that processes site images and generates structured safety assessments across 5 categories — PPE, Housekeeping, Fall Protection, Fire Safety, and Electrical Safety — with severity classification and corrective actions.',
     architecture: 'Site Camera → Image Preprocessing → Qwen2-VL Inference (ONNX Runtime) → Safety Reasoning → Severity Classification → HSE Report',
-    demoType: 'none'
+
   },
 ];
 

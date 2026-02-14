@@ -30,8 +30,8 @@ This repository contains my **interactive portfolio website** showcasing **produ
 
 ```
 \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
-\u2502                       SENIOR AI ENGINEER                        \u2502
-\u2502                         AZURE NATIVE                            \u2502
+\u2502                       CLOUD AI ENGINEER                         \u2502
+\u2502                                                                 \u2502
 \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
 \u2502  COMPLIANCE AI      \u2502  AGENTIC SYSTEMS   \u2502  COMPUTER VISION       \u2502
 \u2502  \u2022 Pydantic-AI     \u2502  \u2022 LangGraph       \u2502  \u2022 Qwen2-VL           \u2502
@@ -40,9 +40,9 @@ This repository contains my **interactive portfolio website** showcasing **produ
 \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
 \u2502  RAG \u0026 SEARCH               \u2502  MLOPS \u0026 CLOUD                    \u2502
 \u2502  \u2022 ChromaDB / Search      \u2502  \u2022 Azure ML                       \u2502
-\u2502  \u2022 LangGraph              \u2502  \u2022 Docker Conteiner                \u2502
+\u2502  \u2022 LangGraph              \u2502  \u2022 Docker Container                \u2502
 \u2502  \u2022 Semantic Kernel        \u2502  \u2022 GitHub Actions                 \u2502
-\u2502  \u2022 Citation Gronding      \u2502  \u2022 Terraform                      \u2502
+\u2502  \u2022 Citation Grounding      \u2502  \u2022 Terraform                      \u2502
 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
 ```
 
@@ -66,13 +66,12 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ```
 src/
-\u251c\u2500\u2500 app/                    # Next.js 15 App Router pages
+\u251c\u2500\u2500 app/                    # Next.js 16 App Router pages
 \u2502   \u251c\u2500\u2500 page.tsx            # Home page
 \u2502   \u251c\u2500\u2500 about/              # About page
 \u2502   \u251c\u2500\u2500 portfolio/          # Portfolio grid
 \u2502   \u2514\u2500\u2500 projects/[id]/      # Dynamic project pages
 \u251c\u2500\u2500 components/
-\u2502   \u251c\u2500\u2500 demos/              # Interactive demo components
 \u2502   \u251c\u2500\u2500 ProjectPage.tsx     # Project page layout
 \u2502   \u2514\u2500\u2500 Navigation.tsx      # Site navigation
 \u251c\u2500\u2500 data/
@@ -92,7 +91,7 @@ This site is deployed on **Vercel** with automatic deployments from the `main` b
 
 ## Contact
 
-**David Fernandez** \u2014 Senior AI Engineer | Azure Native
+**David Fernandez** \u2014 Cloud AI Engineer
 
 - **Website:** [davidfernandez.dev](https://davidfernandez.dev)
 - **Email:** davidfertube@gmail.com
@@ -101,4 +100,4 @@ This site is deployed on **Vercel** with automatic deployments from the `main` b
 
 ---
 
-*Built with Next.js 15, React 19, and deployed on Vercel*
+*Built with Next.js 16, React 19, and deployed on Vercel*

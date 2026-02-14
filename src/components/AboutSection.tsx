@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './AboutSection.module.css';
 
 const skills = [
@@ -28,9 +29,12 @@ const contributions = [
 ];
 
 export default function AboutSection() {
+  const profileRef = useScrollReveal<HTMLDivElement>();
+  const blocksRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <div className={styles.aboutContainer}>
-      <div className={styles.profile}>
+      <div ref={profileRef} className={`${styles.profile} scroll-reveal`}>
         <Image
           src="/assets/photo.jpg"
           alt="David Fernandez"
@@ -77,7 +81,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className={styles.blocks}>
+      <div ref={blocksRef} className={`${styles.blocks} scroll-reveal`}>
         <div className={styles.block}>
           <h3>Experience</h3>
           <div className={styles.item}>

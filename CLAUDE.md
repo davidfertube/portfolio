@@ -21,11 +21,12 @@ src/
 │   ├── portfolio/page.tsx # Portfolio listing
 │   └── projects/[id]/     # Dynamic project pages
 ├── components/            # React components
-│   ├── demos/             # Interactive demo components
 │   ├── Navigation.tsx
 │   ├── ProjectCard.tsx
 │   ├── ProjectPage.tsx
 │   └── ...
+├── hooks/                 # Custom React hooks
+│   └── useScrollReveal.ts # Intersection Observer scroll animation
 └── data/
     └── projects.ts        # Project data & types
 ```
@@ -39,8 +40,7 @@ npm run lint     # Run ESLint
 ```
 
 ## Project Categories
-- **venture**: Business products (Steel Agents) - Show "Sign Up" button
-- **project**: Production projects with HuggingFace demos - Show "Run Demo" button
+- **venture**: Business products - Show "Sign Up" button
 - **experiment**: Code experiments - Show "View Code" button
 
 ## Key Files
