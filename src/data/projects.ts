@@ -28,7 +28,7 @@ export const projects: ProjectData[] = [
     id: 'specvault',
     title: 'SpecVault',
     tagline: 'RAG-Powered Document Retrieval with Traceable Citations',
-    description: 'Production RAG system with vector search and traceable citations. Retrieves precise answers from uploaded PDFs with [1] [2] source references pointing to exact documents and pages.',
+    description: 'RAG system with vector search and traceable [1] [2] citations from uploaded PDFs.',
     category: 'venture',
     tags: ['RAG', 'Vector Search', 'pgvector', 'LLM'],
     metrics: [
@@ -48,7 +48,7 @@ export const projects: ProjectData[] = [
     id: 'altaviz',
     title: 'Altaviz',
     tagline: 'MLOps Platform with Medallion Architecture ETL',
-    description: 'Production MLOps platform processing 50k+ sensor readings through Bronze/Silver/Gold medallion architecture. PySpark ETL pipelines feed real-time fleet health dashboards with automated drift detection and retraining triggers.',
+    description: 'MLOps platform processing 50k+ sensor readings through medallion architecture with drift detection and retraining.',
     category: 'venture',
     tags: ['MLOps', 'PySpark', 'Predictive Maintenance', 'Streaming'],
     metrics: [
@@ -70,7 +70,7 @@ export const projects: ProjectData[] = [
     id: 'predictive-agent',
     title: 'Predictive Agent',
     tagline: 'LSTM Time-Series Model for Remaining Useful Life',
-    description: 'LSTM-based predictive maintenance model extending equipment maintenance intervals 15-20%. Trained on NASA C-MAPSS turbofan degradation dataset with sensor feature engineering.',
+    description: 'LSTM model extending maintenance intervals 15-20%. Trained on NASA C-MAPSS turbofan dataset.',
     category: 'experiment',
     tags: ['LSTM', 'Time-Series', 'Predictive Maintenance'],
     metrics: [
@@ -89,7 +89,7 @@ export const projects: ProjectData[] = [
     id: 'compliance-agent',
     title: 'Compliance Agent',
     tagline: 'Multi-Agent RAG for Regulatory Compliance',
-    description: 'Multi-agent RAG system automating regulatory compliance validation, reducing audit preparation time 60% through automated procedure analysis against regulatory requirements.',
+    description: 'Multi-agent RAG automating compliance validation, reducing audit prep time 60%.',
     category: 'experiment',
     tags: ['Multi-Agent RAG', 'NLP', 'Compliance'],
     metrics: [
@@ -108,7 +108,7 @@ export const projects: ProjectData[] = [
     id: 'anomaly-agent',
     title: 'Anomaly Agent',
     tagline: 'Streaming Anomaly Detection with Automated Root Cause Analysis',
-    description: 'Real-time anomaly detection pipeline using Isolation Forest on streaming sensor data with automated root cause analysis. 92% precision tuned to minimize costly false dispatches.',
+    description: 'Isolation Forest anomaly detection on streaming sensor data with automated root cause analysis. 92% precision.',
     category: 'experiment',
     tags: ['Anomaly Detection', 'Isolation Forest', 'Streaming'],
     metrics: [
@@ -127,7 +127,7 @@ export const projects: ProjectData[] = [
     id: 'vision-agent',
     title: 'Vision Agent',
     tagline: 'Vision Language Model for Structured Scene Understanding',
-    description: 'VLM pipeline using Qwen2-VL that processes images and generates structured safety assessments with severity classification. Goes beyond object detection to reason about context and behavior.',
+    description: 'Qwen2-VL pipeline generating structured assessments with severity classification. Reasons about context, not just objects.',
     category: 'experiment',
     tags: ['VLM', 'Computer Vision', 'ONNX Runtime'],
     metrics: [
