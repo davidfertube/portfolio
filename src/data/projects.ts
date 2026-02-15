@@ -28,7 +28,7 @@ export const projects: ProjectData[] = [
     id: 'specvault',
     title: 'SpecVault',
     tagline: 'RAG-Powered Document Retrieval with Traceable Citations',
-    description: 'RAG system with vector search and traceable [1] [2] citations from uploaded PDFs.',
+    description: 'RAG system with vector search and traceable citations from uploaded PDFs.',
     category: 'venture',
     tags: ['RAG', 'Vector Search', 'pgvector', 'LLM'],
     metrics: [
