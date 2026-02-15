@@ -23,14 +23,14 @@ export interface ProjectData {
 }
 
 export const projects: ProjectData[] = [
-  // --- VENTURES (No links - business concepts) ---
+  // --- VENTURES ---
   {
     id: 'specvault',
     title: 'SpecVault',
-    tagline: 'AI Compliance Verification for O&G Materials Engineers',
-    description: 'AI-powered RAG system for querying steel specifications with traceable citations. Query NACE MR0175, ASTM, and API standards instantly with answers engineers can cite in compliance reports.',
+    tagline: 'RAG-Powered Document Retrieval with Traceable Citations',
+    description: 'Production RAG system with vector search and traceable citations. Retrieves precise answers from uploaded PDFs with [1] [2] source references pointing to exact documents and pages.',
     category: 'venture',
-    tags: ['RAG', 'NACE/ASTM/API', 'Compliance', 'O&G'],
+    tags: ['RAG', 'Vector Search', 'pgvector', 'LLM'],
     metrics: [
       { value: '<5s', label: 'Response Time' },
       { value: '100%', label: 'Cited Answers' },
@@ -39,120 +39,108 @@ export const projects: ProjectData[] = [
     githubUrl: 'https://github.com/davidfertube/steel-venture',
     huggingFaceUrl: null,
     demoUrl: 'https://specvault.app',
-
     techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
-    problem: 'Materials engineers spend 2-4 hours/day searching specs manually. Wrong material specification = $10M+ liability. NACE/ASTM/API docs scattered across systems cause compliance audit failures.',
-    solution: 'RAG-powered compliance verification engine that retrieves precise specifications from uploaded PDFs with traceable [1] [2] citations pointing to exact documents and pages.',
+    problem: 'Domain experts spend hours searching through technical documents manually. Scattered documentation across systems leads to missed information and costly errors.',
+    solution: 'RAG-powered retrieval engine that ingests PDFs, generates embeddings, and returns precise answers with traceable [1] [2] citations pointing to exact documents and pages.',
     architecture: 'PDF Upload → Text Extraction → Voyage AI Embeddings (1024d) → pgvector Search → Groq Llama 3.3 70B → Cited Answer',
-
   },
   {
     id: 'altaviz',
     title: 'Altaviz',
-    tagline: 'Predictive Maintenance MLOps for Natural Gas Compression',
-    description: 'Production-ready MLOps platform monitoring 10 compressor units across 4 Texas stations. PySpark ETL pipelines process 50k+ sensor readings through a Bronze/Silver/Gold medallion architecture into real-time fleet health dashboards.',
+    tagline: 'MLOps Platform with Medallion Architecture ETL',
+    description: 'Production MLOps platform processing 50k+ sensor readings through Bronze/Silver/Gold medallion architecture. PySpark ETL pipelines feed real-time fleet health dashboards with automated drift detection and retraining triggers.',
     category: 'venture',
-    tags: ['MLOps', 'PySpark', 'Predictive Maintenance', 'Energy'],
+    tags: ['MLOps', 'PySpark', 'Predictive Maintenance', 'Streaming'],
     metrics: [
       { value: '50k+', label: 'Sensor Readings' },
-      { value: '10', label: 'Compressors' },
-      { value: '4', label: 'TX Stations' }
+      { value: '10', label: 'Units Monitored' },
+      { value: '4', label: 'Stations' }
     ],
     githubUrl: 'https://github.com/davidfertube/altaviz',
     huggingFaceUrl: null,
     demoUrl: 'https://altaviz.app',
-
     techStack: 'PySpark • Delta Lake • PostgreSQL • Streamlit • Plotly • Docker • Terraform',
-    problem: 'Gas compression operators rely on reactive maintenance, leading to unplanned downtime costing $50k+/day. Sensor data across distributed stations is siloed and not actionable.',
-    solution: 'End-to-end MLOps pipeline: simulate sensor data, process through medallion architecture ETL, store multi-window aggregates in PostgreSQL, and visualize fleet health with real-time alerting.',
-    architecture: 'Data Simulator → PySpark ETL (Bronze/Silver/Gold) → PostgreSQL (7 tables) → Streamlit Dashboard (4 pages)',
-
+    problem: 'Industrial operators rely on reactive maintenance, leading to unplanned downtime. Sensor data across distributed stations is siloed and not actionable for ML models.',
+    solution: 'End-to-end MLOps pipeline: ingest sensor data, process through medallion architecture ETL, store multi-window aggregates in PostgreSQL, and monitor model health with automated drift detection.',
+    architecture: 'Data Ingestion → PySpark ETL (Bronze/Silver/Gold) → PostgreSQL (7 tables) → Streamlit Dashboard (4 pages)',
   },
 
-  // --- EXPERIMENTS (GitHub repos only) ---
+  // --- EXPERIMENTS ---
   {
     id: 'predictive-agent',
     title: 'Predictive Agent',
-    tagline: 'LSTM-Based RUL Prediction',
-    description: 'RUL prediction system extending turbine life 15-20% using LSTM neural networks trained on NASA C-MAPSS and GE 7FA patterns.',
+    tagline: 'LSTM Time-Series Model for Remaining Useful Life',
+    description: 'LSTM-based predictive maintenance model extending equipment maintenance intervals 15-20%. Trained on NASA C-MAPSS turbofan degradation dataset with sensor feature engineering.',
     category: 'experiment',
-    tags: ['LSTM', 'Time-Series', 'MLOps'],
+    tags: ['LSTM', 'Time-Series', 'Predictive Maintenance'],
     metrics: [
-      { value: '15-20%', label: 'Life Extension' },
+      { value: '15-20%', label: 'Interval Extension' },
       { value: 'LSTM', label: 'Model' },
       { value: 'NASA', label: 'C-MAPSS' }
     ],
     githubUrl: 'https://github.com/davidfertube/predictive-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-agent',
-
     techStack: 'Python • Scikit-Learn • LSTM • Plotly • Docker • CI/CD',
-    problem: 'Power plant operators need to predict equipment failures before they happen to schedule maintenance proactively.',
-    solution: 'LSTM model trained on NASA C-MAPSS data, adapted for GE Frame 7FA turbines, predicting Remaining Useful Life from sensor degradation patterns.',
+    problem: 'Equipment operators need to predict failures before they happen to schedule maintenance proactively and avoid costly unplanned downtime.',
+    solution: 'LSTM model trained on NASA C-MAPSS sensor degradation data, predicting Remaining Useful Life from multivariate time-series patterns.',
     architecture: 'Sensor History → Feature Engineering → LSTM Model → RUL Estimation → Maintenance Strategy',
-
   },
   {
     id: 'compliance-agent',
     title: 'Compliance Agent',
-    tagline: 'NERC CIP Compliance Automation',
-    description: 'NERC CIP compliance automation reducing audit prep 60% through automated procedure validation against CIP-006-6 requirements.',
+    tagline: 'Multi-Agent RAG for Regulatory Compliance',
+    description: 'Multi-agent RAG system automating regulatory compliance validation, reducing audit preparation time 60% through automated procedure analysis against regulatory requirements.',
     category: 'experiment',
-    tags: ['NERC CIP', 'Compliance', 'NLP'],
+    tags: ['Multi-Agent RAG', 'NLP', 'Compliance'],
     metrics: [
       { value: '60%', label: 'Audit Reduction' },
-      { value: 'CIP-006', label: 'Standard' },
+      { value: 'Multi-Agent', label: 'Architecture' },
       { value: 'Auto', label: 'Validation' }
     ],
     githubUrl: 'https://github.com/davidfertube/policy-guard',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/compliance-agent',
-
     techStack: 'PydanticAI • DSPy • Mistral • Python • FastAPI',
-    problem: 'NERC CIP compliance requires continuous monitoring of standards across BES cyber systems. Manual audits are resource-intensive and error-prone.',
-    solution: 'NLP model fine-tuned on NERC CIP standards that automates procedure validation, gap detection, and remediation recommendations.',
-    architecture: 'Procedure Document → NLP Analysis → CIP-006 Validation → Gap Report → Remediation Plan',
-
+    problem: 'Regulatory compliance requires continuous monitoring of standards across complex systems. Manual audits are resource-intensive and error-prone.',
+    solution: 'Multi-agent RAG architecture (LangGraph + pgvector) that automates procedure validation, gap detection, and remediation recommendations against regulatory standards.',
+    architecture: 'Procedure Document → Multi-Agent RAG → Regulatory Validation → Gap Report → Remediation Plan',
   },
   {
     id: 'anomaly-agent',
     title: 'Anomaly Agent',
-    tagline: 'Real-Time Turbine Monitoring',
-    description: 'Real-time turbine anomaly detection with auto root cause analysis using Isolation Forest and LLM-powered diagnostics.',
+    tagline: 'Streaming Anomaly Detection with Automated Root Cause Analysis',
+    description: 'Real-time anomaly detection pipeline using Isolation Forest on streaming sensor data with automated root cause analysis. 92% precision tuned to minimize costly false dispatches.',
     category: 'experiment',
-    tags: ['Anomaly Detection', 'IoT', 'LLM'],
+    tags: ['Anomaly Detection', 'Isolation Forest', 'Streaming'],
     metrics: [
-      { value: 'Real-Time', label: 'Detection' },
-      { value: 'Auto', label: 'RCA' },
-      { value: 'SCADA', label: 'Integration' }
+      { value: '92%', label: 'Precision' },
+      { value: '<5 min', label: 'Alert Latency' },
+      { value: 'Auto', label: 'Root Cause' }
     ],
     githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/anomaly-agent',
-
     techStack: 'Python • Isolation Forest • Gradio • Time-Series • Docker',
-    problem: 'Gas turbines generate massive sensor streams. Manual monitoring misses subtle anomalies that precede forced outages.',
-    solution: 'Isolation Forest model detecting anomalies in vibration, temperature, and pressure data with automated root cause analysis.',
-    architecture: 'Turbine Sensors → Isolation Forest → Anomaly Detection → Root Cause Analysis → Operations Alert',
-
+    problem: 'Industrial sensor streams generate massive data volumes. Manual monitoring misses subtle anomalies that precede equipment failures.',
+    solution: 'Isolation Forest model detecting anomalies in vibration, temperature, and pressure time-series data with automated root cause analysis surfaced to operations teams.',
+    architecture: 'Sensor Stream → Feature Extraction → Isolation Forest → Anomaly Detection → Root Cause Analysis → Alert',
   },
   {
     id: 'vision-agent',
     title: 'Vision Agent',
-    tagline: 'VLM for HSE Compliance',
-    description: 'Vision AI for HSE compliance inspection using Qwen2-VL multimodal model for safety scene understanding.',
+    tagline: 'Vision Language Model for Structured Scene Understanding',
+    description: 'VLM pipeline using Qwen2-VL that processes images and generates structured safety assessments with severity classification. Goes beyond object detection to reason about context and behavior.',
     category: 'experiment',
-    tags: ['VLM', 'Computer Vision', 'Safety'],
+    tags: ['VLM', 'Computer Vision', 'ONNX Runtime'],
     metrics: [
       { value: 'VLM', label: 'Multimodal' },
-      { value: 'HSE', label: 'Compliance' },
-      { value: 'Real-Time', label: 'Analysis' }
+      { value: '5', label: 'Categories' },
+      { value: 'Real-Time', label: 'Inference' }
     ],
     githubUrl: 'https://github.com/davidfertube/vision-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/vision-agent',
-
     techStack: 'Qwen2-VL • Transformers • Python • Gradio • Docker • ONNX Runtime',
-    problem: 'Traditional object detection (YOLO, Faster R-CNN) misses behavioral context. A worker wearing a hardhat with an unsecured chin strap passes detection but fails compliance. Safety requires reasoning about actions and environment, not just classifying objects.',
-    solution: 'Vision Language Model pipeline using Qwen2-VL that processes site images and generates structured safety assessments across 5 categories — PPE, Housekeeping, Fall Protection, Fire Safety, and Electrical Safety — with severity classification and corrective actions.',
-    architecture: 'Site Camera → Image Preprocessing → Qwen2-VL Inference (ONNX Runtime) → Safety Reasoning → Severity Classification → HSE Report',
-
+    problem: 'Traditional object detection (YOLO, Faster R-CNN) classifies objects but misses behavioral context. Real-world scene understanding requires reasoning about actions and environment, not just bounding boxes.',
+    solution: 'Vision Language Model pipeline using Qwen2-VL that processes images and generates structured assessments across multiple categories with severity classification and actionable recommendations.',
+    architecture: 'Image Input → Preprocessing → Qwen2-VL Inference (ONNX Runtime) → Structured Reasoning → Severity Classification → Report',
   },
 ];
 

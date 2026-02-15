@@ -75,7 +75,7 @@ PydanticAI, DSPy, Mistral 7B, FastAPI, Gradio, Python
 
 ## Author
 
-**David Fernandez** — Senior AI Engineer
+**David Fernandez** — AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)

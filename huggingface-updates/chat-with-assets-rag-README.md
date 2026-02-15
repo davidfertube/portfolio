@@ -61,7 +61,7 @@ Query → Vector Search (Azure AI Search / ChromaDB) → Context Retrieval → L
 
 ## 👤 Author
 
-**David Fernandez** | Industrial AI Engineer | Azure Native
+**David Fernandez** | AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)

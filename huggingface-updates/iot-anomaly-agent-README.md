@@ -75,7 +75,7 @@ Isolation Forest (scikit-learn), Mistral 7B (Groq), Pandas, NumPy, Gradio, Docke
 
 ## Author
 
-**David Fernandez** — Senior AI Engineer
+**David Fernandez** — AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)

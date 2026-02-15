@@ -8,7 +8,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'David Fernandez',
-    jobTitle: 'Cloud AI Engineer',
+    jobTitle: 'AI Engineer',
     url: 'https://davidfernandez.dev',
     sameAs: [
       'https://github.com/davidfertube',
@@ -20,19 +20,19 @@ export default function Home() {
     image: 'https://davidfernandez.dev/assets/photo.jpg',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Katy',
+      addressLocality: 'Houston',
       addressRegion: 'TX',
       addressCountry: 'US',
     },
     knowsAbout: [
-      'Artificial Intelligence',
       'Machine Learning',
-      'LangGraph',
-      'Pydantic',
-      'RAG Pipelines',
-      'LLM Infrastructure',
-      'Cloud Computing',
-      'Energy Industry',
+      'Predictive Maintenance',
+      'Anomaly Detection',
+      'Real-Time Classification',
+      'MLOps',
+      'Time-Series Modeling',
+      'Production ML Systems',
+      'Feature Engineering',
     ],
   };
 
@@ -52,9 +52,9 @@ export default function Home() {
           <div className={styles.titleContainer}>
             <h1>AI ENGINEER</h1>
             <h2>
-              <span>ENERGY INDUSTRY</span>
+              <span>PRODUCTION SYSTEMS</span>
               <span className={styles.separator}>|</span>
-              <span>Greater Houston</span>
+              <span>5 Years Engineering</span>
             </h2>
           </div>
         </div>

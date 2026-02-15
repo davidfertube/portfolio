@@ -55,7 +55,7 @@ Qwen2-VL 7B, ONNX Runtime, Transformers, FastAPI, Gradio, Docker
 
 ## Author
 
-**David Fernandez** — Senior AI Engineer
+**David Fernandez** — AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)

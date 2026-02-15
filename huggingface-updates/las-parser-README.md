@@ -73,7 +73,7 @@ LAS Files → Header Parser → Curve Normalizer → Quality Validator → Llama
 
 ## 👤 Author
 
-**David Fernandez** | Industrial AI Engineer | Azure Native
+**David Fernandez** | AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)

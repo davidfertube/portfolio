@@ -5,18 +5,18 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './AboutSection.module.css';
 
 const skills = [
-  // GenAI & Orchestration
-  'LangGraph (Contributor)', 'Pydantic (Contributor)', 'LangChain', 'LlamaIndex', 'Multi-Agent Workflows', 'Agentic RAG', 'Prompt Engineering', 'Fine-Tuning',
-  // LLM APIs & Models
-  'OpenAI', 'Claude', 'Gemini', 'Azure OpenAI', 'Model Eval (Ragas, DeepEval)',
-  // RAG & Vector Search
-  'ChromaDB', 'Pinecone', 'FAISS', 'Azure AI Search', 'Hybrid Search (BM25)',
-  // Cloud & MLOps
-  'Azure AI Foundry', 'GCP Vertex AI', 'Docker', 'Kubernetes (AKS/GKE)', 'Terraform (IaC)', 'CI/CD Pipelines',
-  // Languages & Frameworks
-  'Python', 'TypeScript', 'SQL', 'FastAPI', 'PydanticAI',
-  // Additional AI/ML
-  'Computer Vision', 'Reinforcement Learning', 'Physics-Informed Neural Networks', 'HITL Workflows'
+  // Core ML
+  'PyTorch', 'Scikit-Learn', 'LSTM', 'Gradient-Boosted Trees', 'Isolation Forest', 'Time-Series Modeling', 'Anomaly Detection', 'Classification',
+  // ML Systems & Serving
+  'Feature Engineering', 'Model Serving (FastAPI)', 'A/B Testing', 'Experiment Tracking', 'Model Monitoring', 'Drift Detection',
+  // MLOps & Infra
+  'Docker', 'Kubernetes (AKS/GKE)', 'Azure ML', 'GCP Vertex AI', 'Terraform (IaC)', 'CI/CD Pipelines',
+  // Data & Pipelines
+  'Python', 'SQL', 'PySpark', 'PostgreSQL', 'Streaming Pipelines', 'SCADA/Sensor Data',
+  // LLM & RAG
+  'LangGraph', 'RAG Pipelines', 'Multi-Agent Systems', 'pgvector', 'ChromaDB',
+  // Computer Vision
+  'Computer Vision', 'Qwen2-VL', 'ONNX Runtime'
 ];
 
 const contributions = [
@@ -44,11 +44,11 @@ export default function AboutSection() {
           priority
         />
         <h2 className={styles.name}>David Fernandez</h2>
-        <p className={styles.title}>CLOUD AI ENGINEER</p>
-        <p className={styles.location}>Katy, TX (Houston Metro)</p>
+        <p className={styles.title}>AI ENGINEER</p>
+        <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
-          Cloud AI Engineer with 5+ years of software engineering experience and 3+ years deploying generative AI systems in production. Contributor to LangGraph and Pydantic. Architecting agentic RAG pipelines with multi-provider LLM failover, serverless infrastructure, and vector databases for the Energy sector.
+          AI Engineer with 5 years of engineering and 3 years building production AI/ML systems. From adaptive learning engines to real-time blockchain fraud detection to industrial predictive maintenance — I take models from notebooks to production. M.S. in AI at CU Boulder.
         </p>
 
         <div className={styles.socialLinks}>
@@ -85,16 +85,16 @@ export default function AboutSection() {
         <div className={styles.block}>
           <h3>Experience</h3>
           <div className={styles.item}>
-            <strong>AI Engineer</strong>
-            <span>Independent Consultant | May 2024 - Present</span>
+            <strong>AI Engineer (Consultant)</strong>
+            <span>Self-Employed | May 2024 - Present</span>
           </div>
           <div className={styles.item}>
-            <strong>Product Engineer</strong>
-            <span>TestMachine Inc | Oct 2022 - Mar 2024</span>
+            <strong>Product Engineer, ML & Security</strong>
+            <span>TestMachine | Oct 2022 - Mar 2024</span>
           </div>
           <div className={styles.item}>
-            <strong>Founding Engineer</strong>
-            <span>Stealth AI Startup | Sept 2020 - Oct 2022</span>
+            <strong>Founding AI Engineer</strong>
+            <span>E-Learning Startup (Stealth) | Sep 2020 - Oct 2022</span>
           </div>
         </div>
 

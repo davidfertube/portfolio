@@ -55,7 +55,7 @@ Health Metrics -> Sequence Generation -> LSTM Inference -> RUL Estimate -> Maint
 
 ## Author
 
-**David Fernandez** - Industrial AI Engineer | LangGraph Contributor
+**David Fernandez** - AI Engineer
 
 - [LinkedIn](https://linkedin.com/in/davidfertube)
 - [GitHub](https://github.com/davidfertube)

@@ -20,4 +20,4 @@ Multi-variate time-series dataset containing simulated sensor readings from comp
 - **Labels:** Normal, Point Anomaly, Collective Anomaly, Contextual Anomaly.
 
 ## Rationale
-Enables robust testing of AI agents designed to handle multi-variate telemetry in manufacturing and energy sectors.
+Enables robust testing of AI agents designed to handle multi-variate telemetry in manufacturing and industrial sectors.

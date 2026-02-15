@@ -1,7 +1,7 @@
 # Portfolio - David Fernandez
 
 ## Overview
-Next.js 16 portfolio website showcasing AI/ML projects for energy sector applications.
+Next.js 16 portfolio website showcasing production ML systems and experiments.
 
 ## Tech Stack
 - **Framework**: Next.js 16.1.1 (React 19)

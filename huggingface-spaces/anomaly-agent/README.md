@@ -45,7 +45,7 @@ SCADA Sensors -> Feature Scaling -> Isolation Forest -> Root Cause Analysis -> A
 
 ## Author
 
-**David Fernandez** - Industrial AI Engineer | LangGraph Contributor
+**David Fernandez** - AI Engineer
 
 - [LinkedIn](https://linkedin.com/in/davidfertube)
 - [GitHub](https://github.com/davidfertube)

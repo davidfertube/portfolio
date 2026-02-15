@@ -9,7 +9,7 @@
 
 ## About This Portfolio
 
-This repository contains my **interactive portfolio website** showcasing **production-ready AI systems** built for high-stakes industries. Each project features a **live, working demo** that demonstrates real functionality, not just mockups.
+This repository contains my **interactive portfolio website** showcasing **production ML systems** built for high-stakes industries. Each project features a **live, working demo** that demonstrates real functionality, not just mockups.
 
 **Live Site: [davidfernandez.dev](https://davidfernandez.dev)**
 
@@ -30,7 +30,7 @@ This repository contains my **interactive portfolio website** showcasing **produ
 
 ```
 \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
-\u2502                       CLOUD AI ENGINEER                         \u2502
+\u2502                       AI ENGINEER                        \u2502
 \u2502                                                                 \u2502
 \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
 \u2502  COMPLIANCE AI      \u2502  AGENTIC SYSTEMS   \u2502  COMPUTER VISION       \u2502
@@ -91,7 +91,7 @@ This site is deployed on **Vercel** with automatic deployments from the `main` b
 
 ## Contact
 
-**David Fernandez** \u2014 Cloud AI Engineer
+**David Fernandez** \u2014 AI Engineer
 
 - **Website:** [davidfernandez.dev](https://davidfernandez.dev)
 - **Email:** davidfertube@gmail.com

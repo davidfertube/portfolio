@@ -107,7 +107,7 @@ MIT License - 2026 David Fernandez
 
 ## Author
 
-**David Fernandez** — Senior AI Engineer
+**David Fernandez** — AI Engineer
 
 - [Portfolio](https://davidfernandez.dev)
 - [LinkedIn](https://linkedin.com/in/davidfertube)
