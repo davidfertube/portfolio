@@ -52,9 +52,9 @@ export default function Home() {
           <div className={styles.titleContainer}>
             <h1>AI ENGINEER</h1>
             <h2>
-              <span>PRODUCTION SYSTEMS</span>
+              <span>ENERGY INDUSTRY</span>
               <span className={styles.separator}>|</span>
-              <span>5 Years Engineering</span>
+              <span>GREATER HOUSTON</span>
             </h2>
           </div>
         </div>

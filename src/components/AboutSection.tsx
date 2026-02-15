@@ -48,7 +48,7 @@ export default function AboutSection() {
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
-          AI Engineer with 5 years of engineering and 3 years building production AI/ML systems. From adaptive learning engines to real-time blockchain fraud detection to industrial predictive maintenance — I take models from notebooks to production. M.S. in AI at CU Boulder.
+          AI Engineer with 5 years of engineering and 3 years building production AI/ML systems. From adaptive learning engines to real-time blockchain fraud detection to industrial predictive maintenance. I take models from notebooks to production. M.S. in AI at CU Boulder.
         </p>
 
         <div className={styles.socialLinks}>
@@ -103,10 +103,6 @@ export default function AboutSection() {
           <div className={styles.item}>
             <strong>M.S. Artificial Intelligence</strong>
             <span>University of Colorado Boulder | Expected Apr 2027</span>
-          </div>
-          <div className={styles.item}>
-            <strong>B.A. Marketing</strong>
-            <span>Lindenwood University in St Charles | Dec 2017</span>
           </div>
         </div>
 
