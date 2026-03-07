@@ -48,7 +48,7 @@ export default function AboutSection() {
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
-          AI Engineer with 5 years of engineering and 3 years building production AI/ML systems. From adaptive learning to blockchain fraud detection to industrial predictive maintenance. I take models from notebooks to production. M.S. in AI at CU Boulder.
+          AI Engineer & Consultant with 5+ years of experience embedding with cross-functional teams to ship production AI systems. Proven track record of translating ambiguous business goals into measurable ROI, specifically within highly regulated sectors like Energy & Commodities. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor). Skilled in rapid prototyping and hardening systems for production using Python, FastAPI, React, and Cloud-Native infrastructure.
         </p>
 
         <div className={styles.socialLinks}>

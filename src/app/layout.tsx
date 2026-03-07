@@ -12,11 +12,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://davidfernandez.dev'),
   title: "David Fernandez | AI Engineer",
-  description: "AI Engineer with 5 years of engineering and 3 years of production AI/ML systems. Building predictive maintenance, anomaly detection, and real-time classification systems. M.S. in AI at CU Boulder.",
+  description: "AI Engineer & Consultant with 5+ years shipping production AI systems. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration. Core LangGraph Contributor. Python, FastAPI, React, Cloud-Native.",
   keywords: "AI Engineer, Machine Learning Engineer, ML Engineer, Predictive Maintenance, Anomaly Detection, Real-Time Classification, MLOps, PyTorch, Scikit-Learn, Time-Series, LSTM, Isolation Forest, Feature Engineering, Model Serving, Python, FastAPI, Docker, Kubernetes, Azure ML, Production ML Systems",
   openGraph: {
     title: "David Fernandez | AI Engineer",
-    description: "AI Engineer with 5 years of engineering and 3 years of production AI/ML systems. Building predictive maintenance, anomaly detection, and real-time classification systems.",
+    description: "AI Engineer & Consultant with 5+ years shipping production AI systems. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration. Core LangGraph Contributor.",
     type: "website",
     url: "https://davidfernandez.dev",
     siteName: "David Fernandez",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "David Fernandez | AI Engineer",
-    description: "AI Engineer with 5 years of engineering and 3 years of production AI/ML systems. Predictive maintenance, anomaly detection, and real-time classification systems.",
+    description: "AI Engineer & Consultant with 5+ years shipping production AI systems. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration. Core LangGraph Contributor.",
     creator: "@davidfertube",
     images: ["/assets/photo.jpg"],
   },
