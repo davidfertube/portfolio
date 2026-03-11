@@ -25,8 +25,8 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES ---
   {
-    id: 'specvault',
-    title: 'SpecVault',
+    id: 'steelagent',
+    title: 'SteelAgent',
     tagline: 'RAG-Powered Document Retrieval with Traceable Citations',
     description: 'RAG system with vector search and traceable citations from uploaded PDFs.',
     category: 'venture',
@@ -38,7 +38,7 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/steel-venture',
     huggingFaceUrl: null,
-    demoUrl: 'https://specvault.app',
+    demoUrl: 'https://steelagent.ai',
     techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
     problem: 'Domain experts spend hours searching through technical documents manually. Scattered documentation across systems leads to missed information and costly errors.',
     solution: 'RAG-powered retrieval engine that ingests PDFs, generates embeddings, and returns precise answers with traceable [1] [2] citations pointing to exact documents and pages.',
