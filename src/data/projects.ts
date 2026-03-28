@@ -44,26 +44,6 @@ export const projects: ProjectData[] = [
     solution: 'RAG-powered retrieval engine that ingests PDFs, generates embeddings, and returns precise answers with traceable [1] [2] citations pointing to exact documents and pages.',
     architecture: 'PDF Upload → Text Extraction → Voyage AI Embeddings (1024d) → pgvector Search → Groq Llama 3.3 70B → Cited Answer',
   },
-  {
-    id: 'altaviz',
-    title: 'Altaviz',
-    tagline: 'MLOps Platform with Medallion Architecture ETL',
-    description: 'MLOps platform processing 50k+ sensor readings through medallion architecture with drift detection and retraining.',
-    category: 'venture',
-    tags: ['MLOps', 'PySpark', 'Predictive Maintenance', 'Streaming'],
-    metrics: [
-      { value: '50k+', label: 'Sensor Readings' },
-      { value: '10', label: 'Units Monitored' },
-      { value: '4', label: 'Stations' }
-    ],
-    githubUrl: 'https://github.com/davidfertube/altaviz',
-    huggingFaceUrl: null,
-    demoUrl: 'https://altaviz.app',
-    techStack: 'PySpark • Delta Lake • PostgreSQL • Streamlit • Plotly • Docker • Terraform',
-    problem: 'Industrial operators rely on reactive maintenance, leading to unplanned downtime. Sensor data across distributed stations is siloed and not actionable for ML models.',
-    solution: 'End-to-end MLOps pipeline: ingest sensor data, process through medallion architecture ETL, store multi-window aggregates in PostgreSQL, and monitor model health with automated drift detection.',
-    architecture: 'Data Ingestion → PySpark ETL (Bronze/Silver/Gold) → PostgreSQL (7 tables) → Streamlit Dashboard (4 pages)',
-  },
 
   // --- EXPERIMENTS ---
   {
