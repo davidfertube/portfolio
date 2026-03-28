@@ -89,8 +89,16 @@ export default function AboutSection() {
             <span>Archorck | Apr 2026 - Present</span>
           </div>
           <div className={styles.item}>
+            <strong>AI Engineer (Consultant)</strong>
+            <span>Self-Employed | May 2024 - Present</span>
+          </div>
+          <div className={styles.item}>
+            <strong>Product Engineer, ML & Security</strong>
+            <span>TestMachine | Oct 2022 - Mar 2024</span>
+          </div>
+          <div className={styles.item}>
             <strong>Founding AI Engineer</strong>
-            <span>E-Learning Startup (Stealth) | Sep 2020 - Oct 2022</span>
+            <span>Startup (Stealth) | Sep 2020 - Oct 2022</span>
           </div>
         </div>
 
