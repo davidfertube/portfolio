@@ -85,12 +85,8 @@ export default function AboutSection() {
         <div className={styles.block}>
           <h3>Experience</h3>
           <div className={styles.item}>
-            <strong>AI Engineer (Consultant)</strong>
-            <span>Self-Employed | May 2024 - Present</span>
-          </div>
-          <div className={styles.item}>
-            <strong>Product Engineer, ML & Security</strong>
-            <span>TestMachine | Oct 2022 - Mar 2024</span>
+            <strong>AI Engineer</strong>
+            <span>Archorck | Apr 2026 - Present</span>
           </div>
           <div className={styles.item}>
             <strong>Founding AI Engineer</strong>
