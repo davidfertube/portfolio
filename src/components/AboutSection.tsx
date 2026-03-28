@@ -89,7 +89,7 @@ export default function AboutSection() {
             <span>Archorck | Apr 2026 - Present</span>
           </div>
           <div className={styles.item}>
-            <strong>AI Engineer (Consultant)</strong>
+            <strong>AI Engineer (Independent Consultant)</strong>
             <span>Self-Employed | May 2024 - Present</span>
           </div>
           <div className={styles.item}>
