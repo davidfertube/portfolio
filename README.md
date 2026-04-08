@@ -91,7 +91,16 @@ This site is deployed on **Vercel** with automatic deployments from the `main` b
 
 ## Contact
 
-**David Fernandez** \u2014 AI Engineer
+## Education
+
+**M.S. Artificial Intelligence** — University of Colorado Boulder | Expected Aug 2027
+- **GPA:** 4.0 | **Summa Cum Laude**
+
+---
+
+## Contact
+
+**David Fernandez** — AI Engineer
 
 - **Website:** [davidfernandez.dev](https://davidfernandez.dev)
 - **Email:** davidfertube@gmail.com
