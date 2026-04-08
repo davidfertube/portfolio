@@ -85,8 +85,8 @@ export default function AboutSection() {
         <div className={styles.block}>
           <h3>Experience</h3>
           <div className={styles.item}>
-            <strong>Cloud AI Solutions Engineer</strong>
-            <span>Archorck | Apr 2026 - Present</span>
+            <strong>AI/ML Engineer @ Archrock | MS in AI</strong>
+            <span>Archrock | Apr 2026 - Present</span>
           </div>
           <div className={styles.item}>
             <strong>AI Engineer (Independent Consultant)</strong>

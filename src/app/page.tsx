@@ -8,7 +8,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'David Fernandez',
-    jobTitle: 'AI Engineer',
+    jobTitle: 'AI/ML Engineer',
     url: 'https://davidfernandez.dev',
     sameAs: [
       'https://github.com/davidfertube',
