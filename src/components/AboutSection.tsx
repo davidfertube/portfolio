@@ -106,7 +106,8 @@ export default function AboutSection() {
           <h3>Education</h3>
           <div className={styles.item}>
             <strong>M.S. Artificial Intelligence</strong>
-            <span>University of Colorado Boulder | Expected Apr 2027</span>
+            <span>University of Colorado Boulder | Expected Aug 2027</span>
+            <span>GPA: 4.0 | Summa Cum Laude</span>
           </div>
         </div>
 
