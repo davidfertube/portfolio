@@ -69,7 +69,7 @@ export const projects: ProjectData[] = [
     id: 'compliance-agent',
     title: 'Compliance Agent',
     tagline: 'Multi-Agent RAG for Regulatory Compliance',
-    description: 'Multi-agent RAG automating compliance validation, reducing audit prep time 60%.',
+    description: 'Multi-agent RAG system automating compliance validation and document review, reducing audit prep time 60%.',
     category: 'experiment',
     tags: ['Multi-Agent RAG', 'NLP', 'Compliance'],
     metrics: [
