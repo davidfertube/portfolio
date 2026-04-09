@@ -89,7 +89,7 @@ export default function AboutSection() {
             <span>Archrock | Apr 2026 - Present</span>
           </div>
           <div className={styles.item}>
-            <strong>Forward Deployed AI Engineer (Independent Consultant)</strong>
+            <strong>FDE (Independent Consultant)</strong>
             <span>Self-Employed | Mar 2024 - Mar 2026</span>
           </div>
           <div className={styles.item}>
