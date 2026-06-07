@@ -16,7 +16,9 @@ const skills = [
   // LLM & RAG
   'LangGraph', 'RAG Pipelines', 'Multi-Agent Systems', 'pgvector', 'ChromaDB',
   // Computer Vision
-  'Computer Vision', 'Qwen2-VL', 'ONNX Runtime'
+  'Computer Vision', 'Qwen2-VL', 'ONNX Runtime',
+  // Microsoft AI & Data Platform
+  'Microsoft Fabric', 'Power BI', 'Power Automate', 'Copilot Studio', 'Azure AI Foundry', 'Azure AI Toolkit'
 ];
 
 const contributions = [
@@ -73,11 +75,6 @@ export default function AboutSection() {
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
             </svg>
           </a>
-          <a href="https://huggingface.co/davidfertube" target="_blank" rel="noopener noreferrer" title="HuggingFace" className={styles.socialIcon}>
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1.5 6a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm3 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm-5 6.5c.5 2 2 3.5 3.5 3.5s3-1.5 3.5-3.5c0-.276-.224-.5-.5-.5h-6c-.276 0-.5.224-.5.5z" />
-            </svg>
-          </a>
         </div>
       </div>
 
@@ -99,15 +96,6 @@ export default function AboutSection() {
           <div className={styles.item}>
             <strong>Founder Engineer</strong>
             <span>Stealth AI Startup | Feb 2021 - Nov 2022</span>
-          </div>
-        </div>
-
-        <div className={styles.block}>
-          <h3>Education</h3>
-          <div className={styles.item}>
-            <strong>M.S. Artificial Intelligence</strong>
-            <span>University of Colorado Boulder | Expected Aug 2027</span>
-            <span>GPA: 4.0 | Summa Cum Laude</span>
           </div>
         </div>
 
