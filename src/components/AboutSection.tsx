@@ -4,32 +4,6 @@ import Image from 'next/image';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './AboutSection.module.css';
 
-const skills = [
-  // Core ML
-  'PyTorch', 'Scikit-Learn', 'LSTM', 'Gradient-Boosted Trees', 'Isolation Forest', 'Time-Series Modeling', 'Anomaly Detection', 'Classification',
-  // ML Systems & Serving
-  'Feature Engineering', 'Model Serving (FastAPI)', 'A/B Testing', 'Experiment Tracking', 'Model Monitoring', 'Drift Detection',
-  // MLOps & Infra
-  'Docker', 'Kubernetes (AKS/GKE)', 'Azure ML', 'GCP Vertex AI', 'Terraform (IaC)', 'CI/CD Pipelines',
-  // Enterprise / Microsoft AI
-  'Microsoft Fabric', 'Fabric Data Agents', 'Copilot Studio', 'Azure AI Foundry', 'Azure AI Toolkit', 'Power BI', 'Power Apps', 'Power Automate', 'Power Platform',
-  // Data & Pipelines
-  'Python', 'SQL', 'PySpark', 'PostgreSQL', 'Streaming Pipelines', 'SCADA/Sensor Data',
-  // LLM & RAG
-  'LangGraph', 'RAG Pipelines', 'Multi-Agent Systems', 'pgvector', 'ChromaDB',
-  // Computer Vision
-  'Computer Vision', 'Qwen2-VL', 'ONNX Runtime'
-];
-
-const contributions = [
-  // Core Contributions (with PRs)
-  'LangGraph (PR236437, PR239225)', 'Microsoft AutoGen (PR237157)', 'CrewAI (PR234260)',
-  // Other Contributions
-  'LangChain', 'HuggingFace Transformers', 'DSPy (Stanford NLP)', 'LlamaIndex',
-  // Agentic Tools
-  'PydanticAI', 'MCP', 'Agno', 'Claude Code', 'Cursor'
-];
-
 export default function AboutSection() {
   const profileRef = useScrollReveal<HTMLDivElement>();
   const blocksRef = useScrollReveal<HTMLDivElement>();
@@ -96,24 +70,6 @@ export default function AboutSection() {
           <div className={styles.item}>
             <strong>Founder Engineer</strong>
             <span>Stealth AI Startup | Jul 2021 - Nov 2022</span>
-          </div>
-        </div>
-
-        <div className={styles.block}>
-          <h3>Skills</h3>
-          <div className={styles.tags}>
-            {skills.map((skill, i) => (
-              <span key={i}>{skill}</span>
-            ))}
-          </div>
-        </div>
-
-        <div className={styles.block}>
-          <h3>Open Source</h3>
-          <div className={styles.tags}>
-            {contributions.map((contrib, i) => (
-              <span key={i}>{contrib}</span>
-            ))}
           </div>
         </div>
       </div>
