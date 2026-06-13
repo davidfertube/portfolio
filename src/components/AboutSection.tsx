@@ -11,14 +11,14 @@ const skills = [
   'Feature Engineering', 'Model Serving (FastAPI)', 'A/B Testing', 'Experiment Tracking', 'Model Monitoring', 'Drift Detection',
   // MLOps & Infra
   'Docker', 'Kubernetes (AKS/GKE)', 'Azure ML', 'GCP Vertex AI', 'Terraform (IaC)', 'CI/CD Pipelines',
+  // Enterprise / Microsoft AI
+  'Microsoft Fabric', 'Fabric Data Agents', 'Copilot Studio', 'Azure AI Foundry', 'Azure AI Toolkit', 'Power BI', 'Power Apps', 'Power Automate', 'Power Platform',
   // Data & Pipelines
   'Python', 'SQL', 'PySpark', 'PostgreSQL', 'Streaming Pipelines', 'SCADA/Sensor Data',
   // LLM & RAG
   'LangGraph', 'RAG Pipelines', 'Multi-Agent Systems', 'pgvector', 'ChromaDB',
   // Computer Vision
-  'Computer Vision', 'Qwen2-VL', 'ONNX Runtime',
-  // Microsoft AI & Data Platform
-  'Microsoft Fabric', 'Power BI', 'Power Automate', 'Copilot Studio', 'Azure AI Foundry', 'Azure AI Toolkit'
+  'Computer Vision', 'Qwen2-VL', 'ONNX Runtime'
 ];
 
 const contributions = [
@@ -50,7 +50,7 @@ export default function AboutSection() {
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
-          AI Engineer & Consultant with 5+ years of experience embedding with cross-functional teams to ship production AI systems. Proven track record of translating ambiguous business goals into measurable ROI, specifically within highly regulated sectors like Energy & Commodities. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor). Skilled in rapid prototyping and hardening systems for production using Python, FastAPI, React, and Cloud-Native infrastructure.
+          AI Solutions Engineer with 5+ years of experience embedding with cross-functional teams to ship production AI systems. Proven track record of translating ambiguous business goals into measurable ROI, specifically within highly regulated sectors like Energy & Commodities. At Archrock, I build enterprise AI on the Microsoft stack — Fabric data agents, Copilot Studio, Azure AI Foundry, Power BI, and Power Apps. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor), with deep experience hardening systems for production using Python, FastAPI, and Cloud-Native infrastructure.
         </p>
 
         <div className={styles.socialLinks}>
@@ -70,9 +70,9 @@ export default function AboutSection() {
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
           </a>
-          <a href="https://x.com/davidfertube" target="_blank" rel="noopener noreferrer" title="Twitter" className={styles.socialIcon}>
+          <a href="https://huggingface.co/davidfertube" target="_blank" rel="noopener noreferrer" title="HuggingFace" className={styles.socialIcon}>
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1.5 6a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm3 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm-5 6.5c.5 2 2 3.5 3.5 3.5s3-1.5 3.5-3.5c0-.276-.224-.5-.5-.5h-6c-.276 0-.5.224-.5.5z" />
             </svg>
           </a>
         </div>
@@ -82,7 +82,7 @@ export default function AboutSection() {
         <div className={styles.block}>
           <h3>Experience</h3>
           <div className={styles.item}>
-            <strong>AI Engineer</strong>
+            <strong>AI Solutions Engineer</strong>
             <span>Archrock | Apr 2026 - Present</span>
           </div>
           <div className={styles.item}>

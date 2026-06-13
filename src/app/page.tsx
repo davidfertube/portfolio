@@ -13,7 +13,7 @@ export default function Home() {
     sameAs: [
       'https://github.com/davidfertube',
       'https://linkedin.com/in/davidfertube',
-      'https://x.com/davidfertube',
+      'https://huggingface.co/davidfertube',
     ],
     email: 'davidfertube@gmail.com',
     image: 'https://davidfernandez.dev/assets/photo.jpg',
