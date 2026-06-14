@@ -24,7 +24,7 @@ export default function AboutSection() {
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
-          AI Solutions Engineer with 5+ years of experience embedding with cross-functional teams to ship production AI systems. Proven track record of translating ambiguous business goals into measurable ROI, specifically within highly regulated sectors like Energy & Commodities. At Archrock, I build enterprise AI on the Microsoft stack — Fabric data agents, Copilot Studio, Azure AI Foundry, Power BI, and Power Apps. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor), with deep experience hardening systems for production using Python, FastAPI, and Cloud-Native infrastructure.
+          AI Engineer at Archrock, building enterprise AI on the Microsoft platform — Fabric data agents, Copilot Studio, Azure AI Foundry, Power BI, and Power Apps. I specialize in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor), shipping production systems with Python, FastAPI, and cloud-native infrastructure.
         </p>
 
         <div className={styles.socialLinks}>
@@ -42,11 +42,6 @@ export default function AboutSection() {
           <a href="https://www.linkedin.com/in/davidfertube/" target="_blank" rel="noopener noreferrer" title="LinkedIn" className={styles.socialIcon}>
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-          <a href="https://huggingface.co/davidfertube" target="_blank" rel="noopener noreferrer" title="HuggingFace" className={styles.socialIcon}>
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1.5 6a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm3 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm-5 6.5c.5 2 2 3.5 3.5 3.5s3-1.5 3.5-3.5c0-.276-.224-.5-.5-.5h-6c-.276 0-.5.224-.5.5z" />
             </svg>
           </a>
         </div>
