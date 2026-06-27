@@ -12,11 +12,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://davidfernandez.dev'),
   title: "David Fernandez | AI Engineer",
-  description: "AI Engineer & Consultant with 5+ years shipping production AI systems. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration. Core LangGraph Contributor. Python, FastAPI, React, Cloud-Native.",
+  description: "AI Engineer & AI Solutions Engineer with 5+ years shipping production AI systems across energy, fintech, and edtech. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor) and the Microsoft AI stack — Azure AI Foundry, Copilot Studio, and Fabric Data Agents. Python, FastAPI, React, Cloud-Native.",
   keywords: "AI Engineer, Machine Learning Engineer, ML Engineer, Predictive Maintenance, Anomaly Detection, Real-Time Classification, MLOps, PyTorch, Scikit-Learn, Time-Series, LSTM, Isolation Forest, Feature Engineering, Model Serving, Python, FastAPI, Docker, Kubernetes, Azure ML, Production ML Systems",
   openGraph: {
     title: "David Fernandez | AI Engineer",
-    description: "AI Engineer & Consultant with 5+ years shipping production AI systems. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration. Core LangGraph Contributor.",
+    description: "AI Engineer & AI Solutions Engineer with 5+ years shipping production AI systems across energy, fintech, and edtech. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor) and the Microsoft AI stack.",
     type: "website",
     url: "https://davidfernandez.dev",
     siteName: "David Fernandez",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "David Fernandez | AI Engineer",
-    description: "AI Engineer & Consultant with 5+ years shipping production AI systems. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration. Core LangGraph Contributor.",
+    description: "AI Engineer & AI Solutions Engineer with 5+ years shipping production AI systems across energy, fintech, and edtech. Expert in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor) and the Microsoft AI stack.",
     creator: "@davidfertube",
     images: ["/assets/photo.jpg"],
   },

@@ -50,8 +50,6 @@ export default function Home() {
           <div className={styles.titleContainer}>
             <h1>AI ENGINEER</h1>
             <h2>
-              <span>ENERGY INDUSTRY</span>
-              <span className={styles.separator}>|</span>
               <span>GREATER HOUSTON</span>
             </h2>
           </div>
