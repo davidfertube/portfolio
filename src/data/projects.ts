@@ -25,26 +25,6 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES ---
   {
-    id: 'altaviz',
-    title: 'Altaviz',
-    tagline: 'AI Media Buying Copilot with Statistical Anomaly Detection + MCP',
-    description: 'Cross-platform ad monitoring that detects anomalies with real statistics, prices them in dollars, and drafts fixes behind human approval.',
-    category: 'venture',
-    tags: ['Agentic AI', 'Anomaly Detection', 'MCP', 'Claude', 'Tool-Calling'],
-    metrics: [
-      { value: '5', label: 'Detectors' },
-      { value: '7', label: 'Agent + MCP Tools' },
-      { value: 'HITL', label: 'Approval Gate' }
-    ],
-    githubUrl: 'https://github.com/davidfertube/altaviz',
-    huggingFaceUrl: null,
-    demoUrl: 'https://altaviz.vercel.app',
-    techStack: 'Next.js 16 • React 19 • TypeScript • Anthropic Claude • mcp-handler • Recharts • React Three Fiber • Vercel',
-    problem: 'Media buying teams lose money in the gap between when a campaign breaks and when a human notices. Fatigued creative doubles CPA for days; a tracking outage burns spend across platforms; a winning ad set stays budget-capped. At affiliate scale that detection lag is a permanent tax on ROI.',
-    solution: 'A statistical engine (not LLM guesses) scans every campaign across Meta, Google, Taboola, and TikTok for creative fatigue, CPA drift, spend spikes, tracking outages, and underfunded winners — each priced in $/day. A Claude tool-calling copilot answers "what should I kill today?" in dollars and drafts typed actions that never execute without human approval. The same tool registry ships as an MCP server for Claude Desktop, Claude Code, and Cursor.',
-    architecture: 'Seeded Multi-Platform Account → Detection Engine (z-scores, trend slopes, significance gates) → One zod Tool Registry → Claude Streaming Agent + MCP Server → Human-Approval Action Queue',
-  },
-  {
     id: 'steelagent',
     title: 'SteelAgent',
     tagline: 'RAG-Powered Document Retrieval with Traceable Citations',
