@@ -23,14 +23,19 @@ export default function Home() {
       addressCountry: 'US',
     },
     knowsAbout: [
+      'Microsoft AI Platform',
+      'Microsoft Fabric',
+      'Azure AI Foundry',
+      'Copilot Studio',
+      'Power Platform',
+      'Azure OpenAI',
+      'Agentic RAG',
+      'Multi Agent Orchestration',
       'Machine Learning',
       'Predictive Maintenance',
       'Anomaly Detection',
-      'Real Time Classification',
       'MLOps',
-      'Time Series Modeling',
       'Production ML Systems',
-      'Feature Engineering',
     ],
   };
 

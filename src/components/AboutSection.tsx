@@ -24,7 +24,7 @@ export default function AboutSection() {
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
-          AI Engineer at Archrock, building enterprise AI on the Microsoft platform: Fabric data agents, Copilot Studio, Azure AI Foundry, Power BI, and Power Apps. I specialize in GenAI, Agentic RAG, and Multi Agent Orchestration (Core LangGraph Contributor), shipping production systems with Python, FastAPI, and cloud native infrastructure.
+          AI Engineer at Archrock, building enterprise AI end to end on the Microsoft AI platform: Fabric and OneLake for the data layer, Azure AI Foundry for models and agents, Copilot Studio for the conversational surface in Teams, and Power BI and Power Apps where the work reaches the business. I specialize in GenAI, Agentic RAG, and Multi Agent Orchestration (Core LangGraph Contributor), shipping production systems with Python, FastAPI, and Azure infrastructure.
         </p>
 
         <div className={styles.socialLinks}>
@@ -48,6 +48,34 @@ export default function AboutSection() {
       </div>
 
       <div ref={blocksRef} className={`${styles.blocks} scroll-reveal`}>
+        <div className={styles.block}>
+          <h3>Microsoft AI Platform, End to End</h3>
+          <div className={styles.item}>
+            <strong>Data</strong>
+            <span>Fabric · OneLake · PySpark</span>
+          </div>
+          <div className={styles.item}>
+            <strong>Models</strong>
+            <span>Azure AI Foundry · Azure OpenAI</span>
+          </div>
+          <div className={styles.item}>
+            <strong>Agents</strong>
+            <span>Copilot Studio · Foundry Agents · Semantic Kernel</span>
+          </div>
+          <div className={styles.item}>
+            <strong>Apps</strong>
+            <span>Power Apps · Power Automate · Teams</span>
+          </div>
+          <div className={styles.item}>
+            <strong>Analytics</strong>
+            <span>Power BI · Fabric Data Agents</span>
+          </div>
+          <div className={styles.item}>
+            <strong>Platform</strong>
+            <span>Azure ML · Entra ID · GitHub Actions</span>
+          </div>
+        </div>
+
         <div className={styles.block}>
           <h3>Experience</h3>
           <div className={styles.item}>

@@ -32,17 +32,29 @@ This repository holds my **interactive portfolio website**, showcasing **product
 
 ---
 
-## Tech Stack
+## Stack
 
-**Site**
-Next.js 16 · React 19 · TypeScript · CSS Modules · Three.js · next-themes
+### Microsoft AI Platform, End To End
 
-**What The Work Runs On**
+| Layer | What I Build With |
+|-------|-------------------|
+| **Data** | Microsoft Fabric · OneLake · Lakehouse · PySpark notebooks · Delta tables |
+| **Models** | Azure AI Foundry · Azure OpenAI · Foundry Agent Service (SharePoint grounding) |
+| **Agents** | Copilot Studio (Teams) · agent flows in Power Automate · Semantic Kernel |
+| **Apps** | Power Apps · Power Automate · Microsoft Teams |
+| **Analytics** | Power BI · Fabric Data Agents · SQL analytics endpoint |
+| **Platform** | Azure ML · Entra ID · Azure Container Apps · GitHub Actions |
+
+### Beyond The Platform
+
 - **GenAI and agents:** LangGraph · AutoGen · CrewAI · PydanticAI · DSPy · MCP
 - **Retrieval:** pgvector · Voyage AI · reranking · citation grounding
 - **Machine learning:** PyTorch · Scikit-Learn · time series · anomaly detection
-- **Microsoft AI platform:** Azure AI Foundry · Copilot Studio · Fabric Data Agents · Power Platform
-- **Infrastructure:** Python · FastAPI · Docker · Azure · Vercel · GitHub Actions
+- **Engineering:** Python · TypeScript · FastAPI · Docker
+
+### This Site
+
+Next.js 16 · React 19 · TypeScript · CSS Modules · Three.js · next-themes · Vercel
 
 ---
 

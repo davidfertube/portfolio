@@ -12,11 +12,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://davidfernandez.dev'),
   title: "David Fernandez | AI Engineer",
-  description: "AI Engineer and AI Solutions Engineer with 5+ years shipping production AI systems across energy, fintech, and edtech. Expert in GenAI, Agentic RAG, and Multi Agent Orchestration (Core LangGraph Contributor) and the Microsoft AI stack: Azure AI Foundry, Copilot Studio, and Fabric Data Agents. Python, FastAPI, React, Cloud Native.",
-  keywords: "AI Engineer, Machine Learning Engineer, ML Engineer, Predictive Maintenance, Anomaly Detection, Real Time Classification, MLOps, PyTorch, Scikit-Learn, Time Series, LSTM, Isolation Forest, Feature Engineering, Model Serving, Python, FastAPI, Docker, Kubernetes, Azure ML, Production ML Systems",
+  description: "AI Engineer building enterprise AI end to end on the Microsoft AI platform: Microsoft Fabric and OneLake, Azure AI Foundry, Copilot Studio, Power BI, and Power Apps. 5+ years shipping production AI across energy, fintech, and edtech. Expert in GenAI, Agentic RAG, and Multi Agent Orchestration (Core LangGraph Contributor). Python, FastAPI, React, Azure.",
+  keywords: "AI Engineer, Microsoft AI Platform, Azure AI Foundry, Copilot Studio, Microsoft Fabric, Fabric Data Agents, OneLake, Power Platform, Power BI, Power Apps, Power Automate, Azure OpenAI, Semantic Kernel, Azure ML, Entra ID, Machine Learning Engineer, ML Engineer, Agentic RAG, Multi Agent Orchestration, Predictive Maintenance, Anomaly Detection, MLOps, Python, FastAPI, Production ML Systems",
   openGraph: {
     title: "David Fernandez | AI Engineer",
-    description: "AI Engineer and AI Solutions Engineer with 5+ years shipping production AI systems across energy, fintech, and edtech. Expert in GenAI, Agentic RAG, and Multi Agent Orchestration (Core LangGraph Contributor) and the Microsoft AI stack.",
+    description: "AI Engineer building enterprise AI end to end on the Microsoft AI platform: Fabric, Azure AI Foundry, Copilot Studio, and Power Platform. 5+ years shipping production AI across energy, fintech, and edtech.",
     type: "website",
     url: "https://davidfernandez.dev",
     siteName: "David Fernandez",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "David Fernandez | AI Engineer",
-    description: "AI Engineer and AI Solutions Engineer with 5+ years shipping production AI systems across energy, fintech, and edtech. Expert in GenAI, Agentic RAG, and Multi Agent Orchestration (Core LangGraph Contributor) and the Microsoft AI stack.",
+    description: "AI Engineer building enterprise AI end to end on the Microsoft AI platform: Fabric, Azure AI Foundry, Copilot Studio, and Power Platform. 5+ years shipping production AI across energy, fintech, and edtech.",
     creator: "@davidfertube",
     images: ["/assets/photo.jpg"],
   },
