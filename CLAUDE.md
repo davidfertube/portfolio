@@ -53,8 +53,14 @@ npm run lint     # Run ESLint
 - Deploy `/out` folder to any static host
 
 ## Related Repositories
-- HuggingFace Spaces: `davidfertube/predictive-agent`, `davidfertube/compliance-agent`, `davidfertube/anomaly-agent`
+- Venture: `davidfertube/geothermal-agent` (Geothermal Agent, live at geoagent.energy)
+- HuggingFace Spaces: `davidfertube/predictive-agent`, `davidfertube/anomaly-agent`
 - GitHub Profile: `davidfertube/davidfertube`
+
+## Copy Conventions
+- Product wordmark is **Geothermal Agent** (never SteelAgent); the venture lives at geoagent.energy
+- No hyphens or dashes in user-facing copy. Reword instead ("multi agent", "real time", "Apr 2026 to Present").
+  Proper nouns keep theirs: Scikit-Learn, C-MAPSS, Next.js. URLs and route slugs are unaffected.
 
 ## Testing Changes
 1. Run `npm run dev` and verify at localhost:3000

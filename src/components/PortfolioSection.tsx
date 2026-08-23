@@ -18,7 +18,7 @@ export default function PortfolioSection() {
       <div ref={titleRef} className="scroll-reveal">
         <h2 className={styles.sectionTitle}>Portfolio</h2>
         <p className={styles.subtitle}>
-          Production ML systems | Predictive maintenance, anomaly detection, real-time classification, and MLOps platforms deployed at scale.
+          Production ML systems | Predictive maintenance, anomaly detection, real time classification, and MLOps platforms deployed at scale.
         </p>
       </div>
 

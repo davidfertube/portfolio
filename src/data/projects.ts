@@ -25,36 +25,36 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   // --- VENTURES ---
   {
-    id: 'steelagent',
-    title: 'SteelAgent',
-    tagline: 'RAG-Powered Document Retrieval with Traceable Citations',
-    description: 'RAG system with vector search and traceable citations from uploaded PDFs.',
+    id: 'geothermal-agent',
+    title: 'Geothermal Agent',
+    tagline: 'The Agent Powered Intelligence Platform for Geothermal Energy',
+    description: 'Cited answers on brine chemistry, casing alloys, scaling, and well integrity for geothermal operators.',
     category: 'venture',
-    tags: ['RAG', 'Vector Search', 'pgvector', 'LLM'],
+    tags: ['Agentic RAG', 'Geothermal', 'pgvector', 'Citations'],
     metrics: [
-      { value: '<5s', label: 'Response Time' },
-      { value: '100%', label: 'Cited Answers' },
-      { value: '$0', label: 'Monthly Cost' }
+      { value: '3', label: 'Agents' },
+      { value: 'Cited', label: 'Every Claim' },
+      { value: 'Live', label: 'geoagent.energy' }
     ],
-    githubUrl: 'https://github.com/davidfertube/steel-venture',
+    githubUrl: null,
     huggingFaceUrl: null,
-    demoUrl: 'https://steelagent.ai',
-    techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Groq • Vercel',
-    problem: 'Domain experts spend hours searching through technical documents manually. Scattered documentation across systems leads to missed information and costly errors.',
-    solution: 'RAG-powered retrieval engine that ingests PDFs, generates embeddings, and returns precise answers with traceable [1] [2] citations pointing to exact documents and pages.',
-    architecture: 'PDF Upload → Text Extraction → Voyage AI Embeddings (1024d) → pgvector Search → Groq Llama 3.3 70B → Cited Answer',
+    demoUrl: 'https://geoagent.energy',
+    techStack: 'Next.js 16 • React 19 • TypeScript • Supabase pgvector • Voyage AI • Claude • Vercel',
+    problem: 'Geothermal operators lose days hunting through standards, service reports, and vendor data to answer one question: what survives this brine. The sources are scattered, and a wrong call on casing alloy or scaling control shows up later as a failed well.',
+    solution: 'A corrosion and materials agent that retrieves from a curated geothermal corpus, writes every claim with the page it came from, checks that claim against the page, and refuses to answer when the corpus cannot back it. Three agents cover cited questions, integrity programs, and casing survey analysis.',
+    architecture: 'Question → Voyage Retrieval → Reranking → Claude Answer → Citation Check → Cited Response',
   },
 
   // --- EXPERIMENTS ---
   {
     id: 'predictive-agent',
     title: 'Predictive Agent',
-    tagline: 'LSTM Time-Series Model for Remaining Useful Life',
-    description: 'LSTM model extending maintenance intervals 15-20%. Trained on NASA C-MAPSS turbofan dataset.',
+    tagline: 'LSTM Time Series Model for Remaining Useful Life',
+    description: 'LSTM model extending maintenance intervals 15 to 20 percent. Trained on the NASA C-MAPSS turbofan dataset.',
     category: 'experiment',
-    tags: ['LSTM', 'Time-Series', 'Predictive Maintenance'],
+    tags: ['LSTM', 'Time Series', 'Predictive Maintenance'],
     metrics: [
-      { value: '15-20%', label: 'Interval Extension' },
+      { value: '15 to 20%', label: 'Interval Extension' },
       { value: 'LSTM', label: 'Model' },
       { value: 'NASA', label: 'C-MAPSS' }
     ],
@@ -62,7 +62,7 @@ export const projects: ProjectData[] = [
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/predictive-agent',
     techStack: 'Python • Scikit-Learn • LSTM • Plotly • Docker • CI/CD',
     problem: 'Equipment operators need to predict failures before they happen to schedule maintenance proactively and avoid costly unplanned downtime.',
-    solution: 'LSTM model trained on NASA C-MAPSS sensor degradation data, predicting Remaining Useful Life from multivariate time-series patterns.',
+    solution: 'LSTM model trained on NASA C-MAPSS sensor degradation data, predicting Remaining Useful Life from multivariate time series patterns.',
     architecture: 'Sensor History → Feature Engineering → LSTM Model → RUL Estimation → Maintenance Strategy',
   },
   {
@@ -79,9 +79,9 @@ export const projects: ProjectData[] = [
     ],
     githubUrl: 'https://github.com/davidfertube/iot-anomaly-agent',
     huggingFaceUrl: 'https://huggingface.co/spaces/davidfertube/anomaly-agent',
-    techStack: 'Python • Isolation Forest • Gradio • Time-Series • Docker',
+    techStack: 'Python • Isolation Forest • Gradio • Time Series • Docker',
     problem: 'Industrial sensor streams generate massive data volumes. Manual monitoring misses subtle anomalies that precede equipment failures.',
-    solution: 'Isolation Forest model detecting anomalies in vibration, temperature, and pressure time-series data with automated root cause analysis surfaced to operations teams.',
+    solution: 'Isolation Forest model detecting anomalies in vibration, temperature, and pressure time series data with automated root cause analysis surfaced to operations teams.',
     architecture: 'Sensor Stream → Feature Extraction → Isolation Forest → Anomaly Detection → Root Cause Analysis → Alert',
   },
 ];

@@ -24,7 +24,7 @@ export default function AboutSection() {
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
-          AI Engineer at Archrock, building enterprise AI on the Microsoft platform — Fabric data agents, Copilot Studio, Azure AI Foundry, Power BI, and Power Apps. I specialize in GenAI, Agentic RAG, and Multi-Agent Orchestration (Core LangGraph Contributor), shipping production systems with Python, FastAPI, and cloud-native infrastructure.
+          AI Engineer at Archrock, building enterprise AI on the Microsoft platform: Fabric data agents, Copilot Studio, Azure AI Foundry, Power BI, and Power Apps. I specialize in GenAI, Agentic RAG, and Multi Agent Orchestration (Core LangGraph Contributor), shipping production systems with Python, FastAPI, and cloud native infrastructure.
         </p>
 
         <div className={styles.socialLinks}>
@@ -52,19 +52,19 @@ export default function AboutSection() {
           <h3>Experience</h3>
           <div className={styles.item}>
             <strong>AI Engineer</strong>
-            <span>Archrock | Apr 2026 - Present</span>
+            <span>Archrock | Apr 2026 to Present</span>
           </div>
           <div className={styles.item}>
             <strong>AI Solutions Engineer</strong>
-            <span>Self-Employed | Mar 2024 - Mar 2026</span>
+            <span>Self Employed | Mar 2024 to Mar 2026</span>
           </div>
           <div className={styles.item}>
             <strong>ML Engineer</strong>
-            <span>TestMachine | Dec 2022 - Feb 2024</span>
+            <span>TestMachine | Dec 2022 to Feb 2024</span>
           </div>
           <div className={styles.item}>
             <strong>Founder Engineer</strong>
-            <span>Stealth AI Startup | Jul 2021 - Nov 2022</span>
+            <span>Stealth AI Startup | Jul 2021 to Nov 2022</span>
           </div>
         </div>
       </div>
