@@ -130,6 +130,30 @@
   text-transform: uppercase;
 }
 
+/* Role with a duties list beneath the title row */
+.role {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.role .item {
+  border-bottom: none;
+  padding-bottom: 0.25rem;
+}
+
+.duties {
+  margin: 0 0 0.75rem 1.1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.duties li {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--color-text-light);
+}
+
 /* Tags */
 .tags {
   display: flex;
