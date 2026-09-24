@@ -78,25 +78,9 @@ export default function AboutSection() {
 
         <div className={styles.block}>
           <h3>Experience</h3>
-          <div className={styles.role}>
-            <div className={styles.item}>
-              <strong>AI Engineer</strong>
-              <span>Archrock | Apr 2026 to Present</span>
-            </div>
-            <ul className={styles.duties}>
-              <li>
-                Ship Copilot Studio agents in Microsoft Teams for HR and the IT service desk. The IT agent creates, tracks, and updates tickets through agent flows over the Freshservice REST API, refuses any request for scripts or credentials, and releases behind a solution validator, evaluation cases, and read only production smoke checks.
-              </li>
-              <li>
-                Build an Azure AI Foundry agent with SharePoint grounded RAG, called from a Microsoft Fabric PySpark notebook, that classifies free text compressor service tickets into vibration failure patterns and writes a governed Delta table for Power BI and Fabric Data Agents. Entra ID service principal auth with no API keys, and one configuration change from pilot to full fleet.
-              </li>
-              <li>
-                Develop predictive maintenance models for natural gas compressors on streaming SCADA and sensor data, with event driven features over a medallion architecture in Fabric and OneLake, and a leadership facing decision tool that ties model accuracy to avoided unplanned shutdowns, downtime hours, and maintenance cost.
-              </li>
-              <li>
-                Run statistical anomaly detection over multichannel compressor sensor signals, with the measured detection rate curve pinned by a regression test so reported model quality never silently goes stale.
-              </li>
-            </ul>
+          <div className={styles.item}>
+            <strong>AI Engineer</strong>
+            <span>Archrock | Apr 2026 to Present</span>
           </div>
           <div className={styles.item}>
             <strong>AI Solutions Engineer</strong>
