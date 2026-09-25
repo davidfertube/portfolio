@@ -40,7 +40,7 @@ This repository holds my **interactive portfolio website**, showcasing **product
 |-------|-------------------|
 | **Data** | Microsoft Fabric · OneLake · Lakehouse · PySpark notebooks · Delta tables |
 | **Models** | Azure AI Foundry · Azure OpenAI · Foundry Agent Service (SharePoint grounding) |
-| **Agents** | Copilot Studio (Teams) · agent flows in Power Automate · Semantic Kernel |
+| **Agents** | Copilot Studio (Teams) · agent flows in Power Automate |
 | **Apps** | Power Apps · Power Automate · Microsoft Teams |
 | **Analytics** | Power BI · Fabric Data Agents · SQL analytics endpoint |
 | **Platform** | Azure ML · Entra ID · Azure Container Apps · GitHub Actions |

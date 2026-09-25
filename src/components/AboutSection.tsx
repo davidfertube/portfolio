@@ -60,7 +60,7 @@ export default function AboutSection() {
           </div>
           <div className={styles.item}>
             <strong>Agents</strong>
-            <span>Copilot Studio · Foundry Agents · Semantic Kernel</span>
+            <span>Copilot Studio · Foundry Agents</span>
           </div>
           <div className={styles.item}>
             <strong>Apps</strong>
