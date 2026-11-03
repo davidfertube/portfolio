@@ -1,4 +1,4 @@
-# David Fernandez \ Product Engineer
+# David Fernandez \ AI Engineer
 
 [![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-davidfernandez.dev-00d4ff?style=for-the-badge)](https://davidfernandez.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/davidfertube)
@@ -98,7 +98,7 @@ Deployed on **Vercel**, with automatic deployments from the `main` branch.
 
 ## Contact
 
-**David Fernandez**, Product Engineer
+**David Fernandez**, AI Engineer
 
 - **Website:** [davidfernandez.dev](https://davidfernandez.dev)
 - **Email:** davidfertube@gmail.com

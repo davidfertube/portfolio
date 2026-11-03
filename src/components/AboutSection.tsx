@@ -20,7 +20,7 @@ export default function AboutSection() {
           priority
         />
         <h2 className={styles.name}>David Fernandez</h2>
-        <p className={styles.title}>PRODUCT ENGINEER</p>
+        <p className={styles.title}>AI ENGINEER</p>
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
@@ -87,7 +87,7 @@ export default function AboutSection() {
             <span>Self Employed | Mar 2024 to Mar 2026</span>
           </div>
           <div className={styles.item}>
-            <strong>ML Engineer</strong>
+            <strong>Product Engineer</strong>
             <span>TestMachine | Dec 2022 to Feb 2024</span>
           </div>
         </div>

@@ -8,7 +8,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'David Fernandez',
-    jobTitle: 'Product Engineer',
+    jobTitle: 'AI Engineer',
     url: 'https://davidfernandez.dev',
     sameAs: [
       'https://github.com/davidfertube',
@@ -51,7 +51,7 @@ export default function Home() {
             <AzureGraphBackground />
           </div>
           <div className={styles.titleContainer}>
-            <h1>PRODUCT ENGINEER</h1>
+            <h1>AI ENGINEER</h1>
             <h2>
               <span>GREATER HOUSTON</span>
             </h2>
