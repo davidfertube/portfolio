@@ -1,4 +1,4 @@
-# David Fernandez \ AI Engineer
+# David Fernandez \ Product Engineer
 
 [![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-davidfernandez.dev-00d4ff?style=for-the-badge)](https://davidfernandez.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/davidfertube)
@@ -23,13 +23,6 @@ This repository holds my **interactive portfolio website**, showcasing **product
 |---------|--------------|------|------|
 | **Geothermal Agent** | Cited answers on brine chemistry, casing alloys, scaling, and well integrity for geothermal operators | Next.js 16, Claude, Voyage AI, Supabase pgvector | [geoagent.energy](https://geoagent.energy) |
 
-### Experiments
-
-| Project | What It Does | Tech | Demo | Code |
-|---------|--------------|------|------|------|
-| **Predictive Agent** | Remaining Useful Life estimation on turbine sensor streams | LSTM, PyTorch, Docker | [Space](https://huggingface.co/spaces/davidfertube/predictive-agent) | [Repo](https://github.com/davidfertube/predictive-agent) |
-| **Anomaly Agent** | Streaming anomaly detection with automated root cause analysis | Isolation Forest, Mistral 7B, Gradio | [Space](https://huggingface.co/spaces/davidfertube/anomaly-agent) | [Repo](https://github.com/davidfertube/iot-anomaly-agent) |
-
 ---
 
 ## Stack
@@ -49,7 +42,7 @@ This repository holds my **interactive portfolio website**, showcasing **product
 
 - **GenAI and agents:** LangGraph · AutoGen · CrewAI · PydanticAI · DSPy · MCP
 - **Retrieval:** pgvector · Voyage AI · reranking · citation grounding
-- **Machine learning:** PyTorch · Scikit-Learn · time series · anomaly detection
+- **Machine learning:** PyTorch · Scikit-Learn · time series
 - **Engineering:** Python · TypeScript · FastAPI · Docker
 
 ### This Site
@@ -105,7 +98,7 @@ Deployed on **Vercel**, with automatic deployments from the `main` branch.
 
 ## Contact
 
-**David Fernandez**, AI Engineer
+**David Fernandez**, Product Engineer
 
 - **Website:** [davidfernandez.dev](https://davidfernandez.dev)
 - **Email:** davidfertube@gmail.com

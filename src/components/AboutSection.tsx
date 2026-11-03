@@ -20,7 +20,7 @@ export default function AboutSection() {
           priority
         />
         <h2 className={styles.name}>David Fernandez</h2>
-        <p className={styles.title}>AI ENGINEER</p>
+        <p className={styles.title}>PRODUCT ENGINEER</p>
         <p className={styles.location}>Houston, TX</p>
 
         <p className={styles.summary}>
